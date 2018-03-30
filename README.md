@@ -11,7 +11,9 @@ The project was forked from a ViewMaster catalog application being built by Dr. 
 ### Commands
 
 `pull` = download latest project
+
 `commit` = solidify all changes into one official commit
+
 `push` = upload latest commits to remote server (github)
 
 - To see commit history in Xcode go to Source Code Navigator instead of Project Navigator using the menu on the left
