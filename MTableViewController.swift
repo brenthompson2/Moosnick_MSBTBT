@@ -1,17 +1,17 @@
 //
-//  VMRPacketsTableViewController.swift
-//  Moosnick Museum
+//  MTableViewController.swift
+//  ViewMasterSwift
 //
-//  Created by Robert England on 3/11/18 for ViewMasterSwift
-//  Copyright (c) 2018 Robert England. All rights reserved.
+//  Created by Brendan Thompson on 3/30/18.
+//  Copyright © 2018 Robert England. All rights reserved.
 //
 
 import UIKit
 
-@objc(VMRPacketsTableViewController)
-class VMRPacketsTableViewController : UITableViewController {
-    var dataSource : VMRPacketsTableDataSourceProtocol? {
-      didSet {
+@objc(MTableViewController)
+class MTableViewController: UITableViewController {
+    var dataSource : MTableViewDataSourceProtocol? {
+        didSet {
             // Set the title and tab bar images from the dataSource object
             // They have to be there because of the VMRPacketDataSourceProtocol
             self.title = self.dataSource!.name
@@ -19,14 +19,14 @@ class VMRPacketsTableViewController : UITableViewController {
             
             // Set the long name shown in the navigation bar
             self.navigationItem.title = self.dataSource!.navigationBarName
-
+            
         }
     }
     
     required init (coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,7 +37,7 @@ class VMRPacketsTableViewController : UITableViewController {
         
         // Create a custom navigation bar button and set it to always say "Packets"
         let tempBarButtonItem = UIBarButtonItem()
-        tempBarButtonItem.title = "Packets"
+        tempBarButtonItem.title = "Catalog"
         self.navigationItem.backBarButtonItem = tempBarButtonItem
     }
     
@@ -59,11 +59,11 @@ class VMRPacketsTableViewController : UITableViewController {
     
     // Google: "swift prepareforsegue"
     //https://stackoverflow.com/questions/44790918/swift-prepareforsegue-not-working
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    //    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
-//            let selectedIndexPath = tableView.indexPathForSelectedRow()
-              let selectedIndexPath = tableView.indexPathForSelectedRow
+            //            let selectedIndexPath = tableView.indexPathForSelectedRow()
+            let selectedIndexPath = tableView.indexPathForSelectedRow
             // Find the corresponding view controller
             let aPacket = dataSource!.packetForindexPath(indexPath: selectedIndexPath! as NSIndexPath)
             var viewController: VMRPacketViewController? = segue.destination as? VMRPacketViewController
@@ -71,11 +71,10 @@ class VMRPacketsTableViewController : UITableViewController {
             if viewController != nil {
                 // Hide the bottom tab bar when we push this new view controller
                 viewController!.hidesBottomBarWhenPushed = true
-            
+                
                 // Pass the packet to this view controller
                 viewController!.myPacket = aPacket
             }
         }
     }
 }
-

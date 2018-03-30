@@ -1,5 +1,5 @@
 //
-//  VMRPacketsSortedByNumberDataSource.swift
+//  VMRPacketsCollectionDataSource.swift
 //  Moosnick Museum
 //
 //  Created by Robert England on 3/11/18 for ViewMasterSwift
@@ -10,42 +10,61 @@
 
 import UIKit
 
-// Note: Thie *automatically* picks up UITableDataSource protocol through
-//    VMRPacketsTableDataSourceProtocol
+// Note: Thie *automatically* picks up UICollectionDataSource protocol through
+//    VMRPacketsCollectionDataSourceProtocol
 
-class VMRPacketsSortedByNumberDataSource: NSObject, VMRPacketsTableDataSourceProtocol {
+class MCollectionDataSource: NSObject, MCollectionDataSourceProtocol {
     
     //// Protocol methods to comply with "VMRPacketsDataSource" protocol
     
     // Getters for properties for navagation and tab bars
     var name: String {
         get {
-            return "Number"
+            return "Grid"
         }
     }
     var navigationBarName: String {
         get {
-            return "Packets Sorted by Number"
+            return "Packets by Number in Grid"
         }
     }
     var tabBarImage: UIImage {
         get {
-            return UIImage(named: "TabNumber.png")!
+            return UIImage(named: "TabGrid.png")!
         }
     }
     
-    // Sorted by titles is a plain table style
-    var tableViewStyle: UITableViewStyle {
-        get {
-            return UITableViewStyle.plain
-        }
+    //// Make UICollectionViewDataSource happy...
+    
+    // Number of items in the section is the number of packets
+    func collectionView(_ collectionView: UICollectionView,
+        numberOfItemsInSection section: Int) -> Int {
+         //   print(#function)
+         //   print("Returning \(VMRViewMasterPackets.packetsSortedByNumber!.count)")
+            return VMRViewMasterPackets.packetsSortedByNumber!.count
+    }
+    
+    // Just one section in the grid
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    // Return a cell for the corresponding index path
+    func collectionView(_ collectionView: UICollectionView,
+                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "VMRPacketCollectionViewCell", for: indexPath as IndexPath) as! VMRPacketCollectionViewCell
+
+            // Set the packet for this cell as indicated by the datasource
+        cell.packet = packetForindexPath(indexPath: indexPath as NSIndexPath)
+            cell.setNeedsDisplay()
+            return cell
     }
     
     // Return the packet for the given index path (--> Take a closer look at this!)
     func packetForindexPath(indexPath: NSIndexPath) -> VMRPacket {
-//        println("packetForIndexPath")
-//        let firstLetter = VMRViewMasterPackets.packetTitleIndexArray![indexPath.section]
-//        let packetsWithSameFirstLetter = VMRViewMasterPackets.packetsWithInitialLetter(firstLetter)
+        //        println("packetForIndexPath")
+        //        let firstLetter = VMRViewMasterPackets.packetTitleIndexArray![indexPath.section]
+        //        let packetsWithSameFirstLetter = VMRViewMasterPackets.packetsWithInitialLetter(firstLetter)
         return VMRViewMasterPackets.packetsSortedByNumber![indexPath.row]
     }
     
@@ -55,20 +74,14 @@ class VMRPacketsSortedByNumberDataSource: NSObject, VMRPacketsTableDataSourcePro
     }
     
 //    #pragma mark - UITableViewDataSource
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
  //       println("Making a cell...")
-        let cell = tableView.dequeueReusableCell(withIdentifier: "VMRPacketTableViewCell", for: indexPath) as! VMRPacketTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "VMRPacketTableViewCell", for: indexPath as IndexPath) as! VMRPacketTableViewCell
         
         // Set the packet for this cell as indicated by the datasource
-        cell.packet = packetForindexPath(indexPath: indexPath as NSIndexPath)
+        cell.packet = packetForindexPath(indexPath: indexPath)
         cell.setNeedsDisplay()
         return cell
-    }
-    
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-  //      println("numberOfSectionsInTableView is \(VMRViewMasterPackets.packetTitleIndexArray!.count)")
-        // The numbers table is just one big section
-        return 1
     }
     
 //    func sectionIndexTitlesForTableView(tableView: UITableView) -> [AnyObject]! {
@@ -82,7 +95,7 @@ class VMRPacketsSortedByNumberDataSource: NSObject, VMRPacketsTableDataSourcePro
 //        return index
 //    }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // One big section: Return how many packets there are total
         return VMRViewMasterPackets.packetsSortedByNumber!.count
      }

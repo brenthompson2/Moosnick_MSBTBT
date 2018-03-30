@@ -63,7 +63,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         
         // The class for the data source is not important, but it must implement the
         //    VMRPacketDataSourceProtocol (...and the UITableViewDataSource protocol, too?)
-        var _ : VMRPacketsTableDataSourceProtocol
+        var _ : MTableViewDataSourceProtocol
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         var tempViewControllers = [UINavigationController]()
         
@@ -73,26 +73,26 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         
         // Sorted by title...
         var tempNavController = storyBoard.instantiateViewController(withIdentifier: "navForTableView") as! UINavigationController
-        var tempViewController = tempNavController.topViewController! as! VMRPacketsTableViewController
-        tempViewController.dataSource = VMRPacketsSortedByTitleDataSource()
+        var tempViewController = tempNavController.topViewController! as! MTableViewController
+        tempViewController.dataSource = MTitleDataSource()
         tempViewControllers.append(tempNavController)
         
         // Sorted by number...
-        tempNavController = storyBoard.instantiateViewController(withIdentifier: "navForTableView") as! UINavigationController
-        tempViewController = tempNavController.topViewController! as! VMRPacketsTableViewController
-        tempViewController.dataSource = VMRPacketsSortedByNumberDataSource()
-        tempViewControllers.append(tempNavController)
+//        tempNavController = storyBoard.instantiateViewController(withIdentifier: "navForTableView") as! UINavigationController
+//        tempViewController = tempNavController.topViewController! as! MTableViewController
+//        tempViewController.dataSource = MNumberDataSource()
+//        tempViewControllers.append(tempNavController)
         
         // Sorted by category...
         tempNavController = storyBoard.instantiateViewController(withIdentifier: "navForTableView") as! UINavigationController
-        tempViewController = tempNavController.topViewController! as! VMRPacketsTableViewController
-        tempViewController.dataSource = VMRPacketsSortedByCategoryDataSource()
+        tempViewController = tempNavController.topViewController! as! MTableViewController
+        tempViewController.dataSource = MCategoryDataSource()
         tempViewControllers.append(tempNavController)
 
         // Sorted by number, as a grid...
         tempNavController = storyBoard.instantiateViewController(withIdentifier: "navForCollectionView") as! UINavigationController
-        let tempGridViewController = tempNavController.topViewController! as! VMRPacketsCollectionViewController
-        tempGridViewController.dataSource = VMRPacketsCollectionDataSource()
+        let tempGridViewController = tempNavController.topViewController! as! MCollectionViewController
+        tempGridViewController.dataSource = MCollectionDataSource()
         tempViewControllers.append(tempNavController)
         // print("Got this far... Grid VC exists")
         

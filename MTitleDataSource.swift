@@ -13,7 +13,7 @@ import UIKit
 // Note: Thie *automatically* picks up UITableDataSource protocol through
 //    VMRPacketsTableDataSourceProtocol
 
-class VMRPacketsSortedByTitleDataSource: NSObject, VMRPacketsTableDataSourceProtocol {
+class MTitleDataSource: NSObject, MTableViewDataSourceProtocol {
  
     //// Protocol methods to comply with "VMRPacketsDataSource" protocol
     

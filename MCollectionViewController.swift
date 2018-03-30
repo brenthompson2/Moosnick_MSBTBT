@@ -9,8 +9,8 @@
 import UIKit
 
 
-class VMRPacketsCollectionViewController : UICollectionViewController {
-    var dataSource : VMRPacketsCollectionDataSourceProtocol? {
+class MCollectionViewController : UICollectionViewController {
+    var dataSource : MCollectionDataSourceProtocol? {
       didSet {
         
             // Set the title and tab bar images from the dataSource object
