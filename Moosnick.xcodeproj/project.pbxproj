@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5948E5A81B31F85A003EC566 /* VMRPacketsCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5948E5A71B31F85A003EC566 /* VMRPacketsCollectionDataSource.swift */; };
 		5948E5AA1B32037E003EC566 /* VMRPacketCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5948E5A91B32037E003EC566 /* VMRPacketCollectionViewCell.swift */; };
 		595A58861B2091FC007957A4 /* TabTitle.png in Resources */ = {isa = PBXBuildFile; fileRef = 595A58851B2091FC007957A4 /* TabTitle.png */; };
 		595A58E71B20A121007957A4 /* A486Back_256.png in Resources */ = {isa = PBXBuildFile; fileRef = 595A58871B20A120007957A4 /* A486Back_256.png */; };
@@ -220,11 +219,9 @@
 		595A5A281B20A169007957A4 /* A991Back_256.png in Resources */ = {isa = PBXBuildFile; fileRef = 595A5A161B20A169007957A4 /* A991Back_256.png */; };
 		595A5A291B20A169007957A4 /* A991Front_37.png in Resources */ = {isa = PBXBuildFile; fileRef = 595A5A171B20A169007957A4 /* A991Front_37.png */; };
 		595A5A2A1B20A169007957A4 /* A991Front_256.png in Resources */ = {isa = PBXBuildFile; fileRef = 595A5A181B20A169007957A4 /* A991Front_256.png */; };
-		595A5A2C1B20B51A007957A4 /* VMRPacketsSortedByNumberDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595A5A2B1B20B51A007957A4 /* VMRPacketsSortedByNumberDataSource.swift */; };
 		595A5A301B20B583007957A4 /* TabCategory.png in Resources */ = {isa = PBXBuildFile; fileRef = 595A5A2D1B20B583007957A4 /* TabCategory.png */; };
 		595A5A311B20B583007957A4 /* TabGrid.png in Resources */ = {isa = PBXBuildFile; fileRef = 595A5A2E1B20B583007957A4 /* TabGrid.png */; };
 		595A5A321B20B583007957A4 /* TabNumber.png in Resources */ = {isa = PBXBuildFile; fileRef = 595A5A2F1B20B583007957A4 /* TabNumber.png */; };
-		595A5A341B20B7B3007957A4 /* VMRPacketsSortedByCategoryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595A5A331B20B7B3007957A4 /* VMRPacketsSortedByCategoryDataSource.swift */; };
 		595A5A3A1B20D44B007957A4 /* VMRPacketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 595A5A391B20D44B007957A4 /* VMRPacketViewController.m */; };
 		595A5A3D1B20D479007957A4 /* VMRPacketFlippedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 595A5A3C1B20D479007957A4 /* VMRPacketFlippedView.m */; };
 		595A5A401B20D48F007957A4 /* VMRPacketView.m in Sources */ = {isa = PBXBuildFile; fileRef = 595A5A3F1B20D48F007957A4 /* VMRPacketView.m */; };
@@ -235,9 +232,6 @@
 		59617B1A1B1D263A0013149B /* Packets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59617B191B1D263A0013149B /* Packets.plist */; };
 		59617B1C1B1E0CC70013149B /* VMRPacketTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59617B1B1B1E0CC70013149B /* VMRPacketTileView.swift */; };
 		59617B1F1B1E10860013149B /* VMRPacketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59617B1E1B1E10860013149B /* VMRPacketTableViewCell.swift */; };
-		59617B241B1E199C0013149B /* VMRPacketsTableDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59617B231B1E199C0013149B /* VMRPacketsTableDataSourceProtocol.swift */; };
-		59617B261B1E1DA40013149B /* VMRPacketsSortedByTitleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59617B251B1E1DA40013149B /* VMRPacketsSortedByTitleDataSource.swift */; };
-		59617B291B1E53540013149B /* VMRPacketsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59617B281B1E53540013149B /* VMRPacketsTableViewController.swift */; };
 		59617B8A1B1F434B0013149B /* 3853757757_b13b5e361d.png in Resources */ = {isa = PBXBuildFile; fileRef = 59617B2B1B1F434B0013149B /* 3853757757_b13b5e361d.png */; };
 		59617B8B1B1F434B0013149B /* A390Back_37.png in Resources */ = {isa = PBXBuildFile; fileRef = 59617B2C1B1F434B0013149B /* A390Back_37.png */; };
 		59617B8C1B1F434B0013149B /* A390Back_256.png in Resources */ = {isa = PBXBuildFile; fileRef = 59617B2D1B1F434B0013149B /* A390Back_256.png */; };
@@ -339,13 +333,19 @@
 		597394F4205C247E00C87E03 /* VMRPacketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597394F3205C247E00C87E03 /* VMRPacketView.swift */; };
 		597394F6205C2EB500C87E03 /* VMRPacketFlippedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597394F5205C2EB500C87E03 /* VMRPacketFlippedView.swift */; };
 		597394F8205C32BC00C87E03 /* VMRPacketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597394F7205C32BC00C87E03 /* VMRPacketViewController.swift */; };
-		598F12C61B31F4FA00FD31FE /* VMRPacketsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598F12C51B31F4FA00FD31FE /* VMRPacketsCollectionViewController.swift */; };
-		598F12C81B31F54000FD31FE /* VMRPacketsCollectionDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598F12C71B31F54000FD31FE /* VMRPacketsCollectionDataSourceProtocol.swift */; };
 		59E455A11B1B4E3B0061458D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E455A01B1B4E3B0061458D /* AppDelegate.swift */; };
 		59E455A81B1B4E3B0061458D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59E455A61B1B4E3B0061458D /* Main.storyboard */; };
-		59E455AA1B1B4E3B0061458D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59E455A91B1B4E3B0061458D /* Images.xcassets */; };
 		59E455AD1B1B4E3B0061458D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59E455AB1B1B4E3B0061458D /* LaunchScreen.xib */; };
 		59E455B91B1B4E3B0061458D /* ViewMasterSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E455B81B1B4E3B0061458D /* ViewMasterSwiftTests.swift */; };
+		9ACBB5D0206EF649001E31AB /* MTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACBB5CF206EF649001E31AB /* MTableViewController.swift */; };
+		9ACBB5D2206EF769001E31AB /* MTableViewDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACBB5D1206EF769001E31AB /* MTableViewDataSourceProtocol.swift */; };
+		9ACBB5D4206EFD7F001E31AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ACBB5D3206EFD7F001E31AB /* Images.xcassets */; };
+		9ACBB5D6206EFF05001E31AB /* MCategoryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACBB5D5206EFF05001E31AB /* MCategoryDataSource.swift */; };
+		9ACBB5D8206EFF3B001E31AB /* MNumberDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACBB5D7206EFF3B001E31AB /* MNumberDataSource.swift */; };
+		9ACBB5DA206EFF6A001E31AB /* MCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACBB5D9206EFF6A001E31AB /* MCollectionDataSource.swift */; };
+		9ACBB5DC206EFFD7001E31AB /* MCollectionDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACBB5DB206EFFD7001E31AB /* MCollectionDataSourceProtocol.swift */; };
+		9ACBB5DE206F001B001E31AB /* MTitleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACBB5DD206F001B001E31AB /* MTitleDataSource.swift */; };
+		9ACBB5E0206F012E001E31AB /* MCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACBB5DF206F012E001E31AB /* MCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -359,7 +359,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5948E5A71B31F85A003EC566 /* VMRPacketsCollectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMRPacketsCollectionDataSource.swift; sourceTree = "<group>"; };
 		5948E5A91B32037E003EC566 /* VMRPacketCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMRPacketCollectionViewCell.swift; sourceTree = "<group>"; };
 		595A58851B2091FC007957A4 /* TabTitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabTitle.png; sourceTree = "<group>"; };
 		595A58871B20A120007957A4 /* A486Back_256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A486Back_256.png; sourceTree = "<group>"; };
@@ -572,11 +571,9 @@
 		595A5A161B20A169007957A4 /* A991Back_256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A991Back_256.png; sourceTree = "<group>"; };
 		595A5A171B20A169007957A4 /* A991Front_37.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A991Front_37.png; sourceTree = "<group>"; };
 		595A5A181B20A169007957A4 /* A991Front_256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A991Front_256.png; sourceTree = "<group>"; };
-		595A5A2B1B20B51A007957A4 /* VMRPacketsSortedByNumberDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMRPacketsSortedByNumberDataSource.swift; sourceTree = "<group>"; };
 		595A5A2D1B20B583007957A4 /* TabCategory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabCategory.png; sourceTree = "<group>"; };
 		595A5A2E1B20B583007957A4 /* TabGrid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabGrid.png; sourceTree = "<group>"; };
 		595A5A2F1B20B583007957A4 /* TabNumber.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabNumber.png; sourceTree = "<group>"; };
-		595A5A331B20B7B3007957A4 /* VMRPacketsSortedByCategoryDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMRPacketsSortedByCategoryDataSource.swift; sourceTree = "<group>"; };
 		595A5A381B20D44B007957A4 /* VMRPacketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMRPacketViewController.h; sourceTree = "<group>"; };
 		595A5A391B20D44B007957A4 /* VMRPacketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMRPacketViewController.m; sourceTree = "<group>"; };
 		595A5A3B1B20D479007957A4 /* VMRPacketFlippedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMRPacketFlippedView.h; sourceTree = "<group>"; };
@@ -591,9 +588,6 @@
 		59617B191B1D263A0013149B /* Packets.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Packets.plist; sourceTree = "<group>"; };
 		59617B1B1B1E0CC70013149B /* VMRPacketTileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMRPacketTileView.swift; sourceTree = "<group>"; };
 		59617B1E1B1E10860013149B /* VMRPacketTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMRPacketTableViewCell.swift; sourceTree = "<group>"; };
-		59617B231B1E199C0013149B /* VMRPacketsTableDataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMRPacketsTableDataSourceProtocol.swift; sourceTree = "<group>"; };
-		59617B251B1E1DA40013149B /* VMRPacketsSortedByTitleDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMRPacketsSortedByTitleDataSource.swift; sourceTree = "<group>"; };
-		59617B281B1E53540013149B /* VMRPacketsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMRPacketsTableViewController.swift; sourceTree = "<group>"; };
 		59617B2B1B1F434B0013149B /* 3853757757_b13b5e361d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3853757757_b13b5e361d.png; sourceTree = "<group>"; };
 		59617B2C1B1F434B0013149B /* A390Back_37.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A390Back_37.png; sourceTree = "<group>"; };
 		59617B2D1B1F434B0013149B /* A390Back_256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A390Back_256.png; sourceTree = "<group>"; };
@@ -695,17 +689,23 @@
 		597394F3205C247E00C87E03 /* VMRPacketView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMRPacketView.swift; sourceTree = "<group>"; };
 		597394F5205C2EB500C87E03 /* VMRPacketFlippedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMRPacketFlippedView.swift; sourceTree = "<group>"; };
 		597394F7205C32BC00C87E03 /* VMRPacketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMRPacketViewController.swift; sourceTree = "<group>"; };
-		598F12C51B31F4FA00FD31FE /* VMRPacketsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMRPacketsCollectionViewController.swift; sourceTree = "<group>"; };
-		598F12C71B31F54000FD31FE /* VMRPacketsCollectionDataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMRPacketsCollectionDataSourceProtocol.swift; sourceTree = "<group>"; };
 		59E4559B1B1B4E3B0061458D /* ViewMasterSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewMasterSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59E4559F1B1B4E3B0061458D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59E455A01B1B4E3B0061458D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59E455A71B1B4E3B0061458D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		59E455A91B1B4E3B0061458D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		59E455AC1B1B4E3B0061458D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		59E455B21B1B4E3B0061458D /* ViewMasterSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewMasterSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59E455B71B1B4E3B0061458D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59E455B81B1B4E3B0061458D /* ViewMasterSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMasterSwiftTests.swift; sourceTree = "<group>"; };
+		9ACBB5CF206EF649001E31AB /* MTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTableViewController.swift; sourceTree = "<group>"; };
+		9ACBB5D1206EF769001E31AB /* MTableViewDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTableViewDataSourceProtocol.swift; sourceTree = "<group>"; };
+		9ACBB5D3206EFD7F001E31AB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = viewmasterswift/Images.xcassets; sourceTree = "<group>"; };
+		9ACBB5D5206EFF05001E31AB /* MCategoryDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCategoryDataSource.swift; sourceTree = "<group>"; };
+		9ACBB5D7206EFF3B001E31AB /* MNumberDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNumberDataSource.swift; sourceTree = "<group>"; };
+		9ACBB5D9206EFF6A001E31AB /* MCollectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCollectionDataSource.swift; sourceTree = "<group>"; };
+		9ACBB5DB206EFFD7001E31AB /* MCollectionDataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCollectionDataSourceProtocol.swift; sourceTree = "<group>"; };
+		9ACBB5DD206F001B001E31AB /* MTitleDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTitleDataSource.swift; sourceTree = "<group>"; };
+		9ACBB5DF206F012E001E31AB /* MCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -780,12 +780,12 @@
 		59617B201B1E19560013149B /* Data Sources */ = {
 			isa = PBXGroup;
 			children = (
-				59617B231B1E199C0013149B /* VMRPacketsTableDataSourceProtocol.swift */,
-				598F12C71B31F54000FD31FE /* VMRPacketsCollectionDataSourceProtocol.swift */,
-				59617B251B1E1DA40013149B /* VMRPacketsSortedByTitleDataSource.swift */,
-				595A5A331B20B7B3007957A4 /* VMRPacketsSortedByCategoryDataSource.swift */,
-				595A5A2B1B20B51A007957A4 /* VMRPacketsSortedByNumberDataSource.swift */,
-				5948E5A71B31F85A003EC566 /* VMRPacketsCollectionDataSource.swift */,
+				9ACBB5D1206EF769001E31AB /* MTableViewDataSourceProtocol.swift */,
+				9ACBB5DB206EFFD7001E31AB /* MCollectionDataSourceProtocol.swift */,
+				9ACBB5DD206F001B001E31AB /* MTitleDataSource.swift */,
+				9ACBB5D5206EFF05001E31AB /* MCategoryDataSource.swift */,
+				9ACBB5D7206EFF3B001E31AB /* MNumberDataSource.swift */,
+				9ACBB5D9206EFF6A001E31AB /* MCollectionDataSource.swift */,
 			);
 			name = "Data Sources";
 			sourceTree = "<group>";
@@ -793,8 +793,8 @@
 		59617B271B1E53130013149B /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				59617B281B1E53540013149B /* VMRPacketsTableViewController.swift */,
-				598F12C51B31F4FA00FD31FE /* VMRPacketsCollectionViewController.swift */,
+				9ACBB5CF206EF649001E31AB /* MTableViewController.swift */,
+				9ACBB5DF206F012E001E31AB /* MCollectionViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -1123,6 +1123,7 @@
 		59E455921B1B4E3B0061458D = {
 			isa = PBXGroup;
 			children = (
+				9ACBB5D3206EFD7F001E31AB /* Images.xcassets */,
 				595A5A441B20DAC3007957A4 /* VMR-bridging-header.h */,
 				595A5A351B20D3AB007957A4 /* Single Packet View */,
 				59617B2A1B1F42F60013149B /* Pictures */,
@@ -1149,7 +1150,6 @@
 			isa = PBXGroup;
 			children = (
 				59E455A01B1B4E3B0061458D /* AppDelegate.swift */,
-				59E455A91B1B4E3B0061458D /* Images.xcassets */,
 				59E455AB1B1B4E3B0061458D /* LaunchScreen.xib */,
 				59E4559E1B1B4E3B0061458D /* Supporting Files */,
 			);
@@ -1239,7 +1239,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 59E455961B1B4E3B0061458D /* Build configuration list for PBXProject "viewmasterswift" */;
+			buildConfigurationList = 59E455961B1B4E3B0061458D /* Build configuration list for PBXProject "Moosnick" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -1290,6 +1290,7 @@
 				595A59EE1B20A14D007957A4 /* B390Front_256.png in Resources */,
 				595A5A291B20A169007957A4 /* A991Front_37.png in Resources */,
 				59617BBF1B1F434B0013149B /* B008Back_256.png in Resources */,
+				9ACBB5D4206EFD7F001E31AB /* Images.xcassets in Resources */,
 				59617BE41B1F434B0013149B /* B790Front_37.png in Resources */,
 				595A593F1B20A121007957A4 /* H8Front_37.png in Resources */,
 				595A593E1B20A121007957A4 /* H8Back_256.png in Resources */,
@@ -1540,7 +1541,6 @@
 				595A59F31B20A14D007957A4 /* B536Front_37.png in Resources */,
 				595A590D1B20A121007957A4 /* B370Front_256.png in Resources */,
 				595A59211B20A121007957A4 /* B498Front_37.png in Resources */,
-				59E455AA1B1B4E3B0061458D /* Images.xcassets in Resources */,
 				595A59041B20A121007957A4 /* B235Front_256.png in Resources */,
 				595A59C71B20A14D007957A4 /* B171Front_256.png in Resources */,
 				595A59201B20A121007957A4 /* B498Back_256.png in Resources */,
@@ -1598,26 +1598,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59617B241B1E199C0013149B /* VMRPacketsTableDataSourceProtocol.swift in Sources */,
 				595A5A3D1B20D479007957A4 /* VMRPacketFlippedView.m in Sources */,
+				9ACBB5D2206EF769001E31AB /* MTableViewDataSourceProtocol.swift in Sources */,
+				9ACBB5D8206EFF3B001E31AB /* MNumberDataSource.swift in Sources */,
 				59617B1F1B1E10860013149B /* VMRPacketTableViewCell.swift in Sources */,
 				5948E5AA1B32037E003EC566 /* VMRPacketCollectionViewCell.swift in Sources */,
 				597394F8205C32BC00C87E03 /* VMRPacketViewController.swift in Sources */,
-				59617B261B1E1DA40013149B /* VMRPacketsSortedByTitleDataSource.swift in Sources */,
 				595A5A401B20D48F007957A4 /* VMRPacketView.m in Sources */,
+				9ACBB5DA206EFF6A001E31AB /* MCollectionDataSource.swift in Sources */,
 				597394F4205C247E00C87E03 /* VMRPacketView.swift in Sources */,
+				9ACBB5D0206EF649001E31AB /* MTableViewController.swift in Sources */,
 				59E455A11B1B4E3B0061458D /* AppDelegate.swift in Sources */,
-				5948E5A81B31F85A003EC566 /* VMRPacketsCollectionDataSource.swift in Sources */,
 				59617B181B1CF8A60013149B /* VMRViewMasterPackets.swift in Sources */,
-				595A5A2C1B20B51A007957A4 /* VMRPacketsSortedByNumberDataSource.swift in Sources */,
-				595A5A341B20B7B3007957A4 /* VMRPacketsSortedByCategoryDataSource.swift in Sources */,
-				598F12C81B31F54000FD31FE /* VMRPacketsCollectionDataSourceProtocol.swift in Sources */,
+				9ACBB5DE206F001B001E31AB /* MTitleDataSource.swift in Sources */,
 				595A5A3A1B20D44B007957A4 /* VMRPacketViewController.m in Sources */,
 				597394F6205C2EB500C87E03 /* VMRPacketFlippedView.swift in Sources */,
-				598F12C61B31F4FA00FD31FE /* VMRPacketsCollectionViewController.swift in Sources */,
+				9ACBB5D6206EFF05001E31AB /* MCategoryDataSource.swift in Sources */,
+				9ACBB5DC206EFFD7001E31AB /* MCollectionDataSourceProtocol.swift in Sources */,
 				59617B1C1B1E0CC70013149B /* VMRPacketTileView.swift in Sources */,
 				59617B151B1CE8FE0013149B /* VMRPacket.swift in Sources */,
-				59617B291B1E53540013149B /* VMRPacketsTableViewController.swift in Sources */,
+				9ACBB5E0206F012E001E31AB /* MCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1833,7 +1833,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		59E455961B1B4E3B0061458D /* Build configuration list for PBXProject "viewmasterswift" */ = {
+		59E455961B1B4E3B0061458D /* Build configuration list for PBXProject "Moosnick" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				59E455BA1B1B4E3B0061458D /* Debug */,

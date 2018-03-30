@@ -28,10 +28,10 @@
             </objects>
             <point key="canvasLocation" x="-1095" y="96"/>
         </scene>
-        <!--Packets Table View Controller-->
+        <!--Moosnick Table View Controller-->
         <scene sceneID="izz-E2-itn">
             <objects>
-                <tableViewController id="QM7-Xr-R48" userLabel="Packets Table View Controller" customClass="VMRPacketsTableViewController" sceneMemberID="viewController">
+                <tableViewController id="QM7-Xr-R48" userLabel="Moosnick Table View Controller" customClass="MTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="grN-1f-fKS">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -81,10 +81,10 @@
             </objects>
             <point key="canvasLocation" x="403" y="112"/>
         </scene>
-        <!--Packets Collection View Controller-->
+        <!--Collection View Controller-->
         <scene sceneID="Aj7-6G-lpY">
             <objects>
-                <collectionViewController id="E1m-ri-X1e" customClass="VMRPacketsCollectionViewController" customModule="ViewMasterSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="E1m-ri-X1e" customClass="MCollectionViewController" customModule="ViewMasterSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="ZHc-3f-bdk">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -180,6 +180,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="JRd-wJ-MsW"/>
+        <segue reference="GjF-om-gzU"/>
     </inferredMetricsTieBreakers>
 </document>
