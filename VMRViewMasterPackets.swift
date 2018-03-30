@@ -1,8 +1,8 @@
 //
 //  VMRViewMasterPackets.swift
-//  ViewMasterSwift
+//  Moosnick Museum
 //
-//  Created by Robert England on 3/12/18.
+//  Created by Robert England on 3/11/18 for ViewMasterSwift
 //  Copyright (c) 2018 Robert England. All rights reserved.
 //
 //  Description: MODEL: Encapsulates collection of View-Master packets and return it in

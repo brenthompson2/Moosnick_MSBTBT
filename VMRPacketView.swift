@@ -1,8 +1,8 @@
 //
 //  VMRPacketView.swift (formerly VMRPacketView.m)
-//  ViewMaster
+//  Moosnick Museum
 //
-//  Created by Robert England on 3/11/18.
+//  Created by Robert England on 3/11/18 for ViewMasterSwift
 //  Copyright (c) 2018 Robert England. All rights reserved.
 //
 //  Abstract: Displays the packet information in a large format tile.
