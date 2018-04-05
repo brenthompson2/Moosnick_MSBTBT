@@ -229,7 +229,7 @@
 		595A5A4A1B20FA95007957A4 /* FlipFrontButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 595A5A491B20FA95007957A4 /* FlipFrontButton.png */; };
 		59617B151B1CE8FE0013149B /* VMRPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59617B141B1CE8FE0013149B /* VMRPacket.swift */; };
 		59617B181B1CF8A60013149B /* VMRViewMasterPackets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59617B171B1CF8A60013149B /* VMRViewMasterPackets.swift */; };
-		59617B1A1B1D263A0013149B /* Packets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59617B191B1D263A0013149B /* Packets.plist */; };
+		59617B1A1B1D263A0013149B /* Artifacts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59617B191B1D263A0013149B /* Artifacts.plist */; };
 		59617B1C1B1E0CC70013149B /* VMRPacketTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59617B1B1B1E0CC70013149B /* VMRPacketTileView.swift */; };
 		59617B1F1B1E10860013149B /* VMRPacketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59617B1E1B1E10860013149B /* VMRPacketTableViewCell.swift */; };
 		59617B8A1B1F434B0013149B /* 3853757757_b13b5e361d.png in Resources */ = {isa = PBXBuildFile; fileRef = 59617B2B1B1F434B0013149B /* 3853757757_b13b5e361d.png */; };
@@ -346,6 +346,12 @@
 		9ACBB5DC206EFFD7001E31AB /* MCollectionDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACBB5DB206EFFD7001E31AB /* MCollectionDataSourceProtocol.swift */; };
 		9ACBB5DE206F001B001E31AB /* MTitleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACBB5DD206F001B001E31AB /* MTitleDataSource.swift */; };
 		9ACBB5E0206F012E001E31AB /* MCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACBB5DF206F012E001E31AB /* MCollectionViewController.swift */; };
+		B6361FE0207584CA0051C631 /* MArtifactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6361FDF207584CA0051C631 /* MArtifactRow.swift */; };
+		B6361FE42075A3CA0051C631 /* MArtifactArchive.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6361FE32075A3CA0051C631 /* MArtifactArchive.swift */; };
+		B6A797FA2073D302003AA7B9 /* MArtifact.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A797F92073D302003AA7B9 /* MArtifact.swift */; };
+		B6A797FC2073D41D003AA7B9 /* MCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A797FB2073D41D003AA7B9 /* MCategory.swift */; };
+		B6A797FE2073DB35003AA7B9 /* MCabinet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A797FD2073DB35003AA7B9 /* MCabinet.swift */; };
+		B6DD41562075C75D00AD93A3 /* Packets.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6DD41552075C75D00AD93A3 /* Packets.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -585,7 +591,7 @@
 		595A5A491B20FA95007957A4 /* FlipFrontButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FlipFrontButton.png; sourceTree = "<group>"; };
 		59617B141B1CE8FE0013149B /* VMRPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VMRPacket.swift; path = ViewMasterSwift/VMRPacket.swift; sourceTree = "<group>"; };
 		59617B171B1CF8A60013149B /* VMRViewMasterPackets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMRViewMasterPackets.swift; sourceTree = "<group>"; };
-		59617B191B1D263A0013149B /* Packets.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Packets.plist; sourceTree = "<group>"; };
+		59617B191B1D263A0013149B /* Artifacts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Artifacts.plist; sourceTree = "<group>"; };
 		59617B1B1B1E0CC70013149B /* VMRPacketTileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMRPacketTileView.swift; sourceTree = "<group>"; };
 		59617B1E1B1E10860013149B /* VMRPacketTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMRPacketTableViewCell.swift; sourceTree = "<group>"; };
 		59617B2B1B1F434B0013149B /* 3853757757_b13b5e361d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3853757757_b13b5e361d.png; sourceTree = "<group>"; };
@@ -706,6 +712,12 @@
 		9ACBB5DB206EFFD7001E31AB /* MCollectionDataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCollectionDataSourceProtocol.swift; sourceTree = "<group>"; };
 		9ACBB5DD206F001B001E31AB /* MTitleDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTitleDataSource.swift; sourceTree = "<group>"; };
 		9ACBB5DF206F012E001E31AB /* MCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCollectionViewController.swift; sourceTree = "<group>"; };
+		B6361FDF207584CA0051C631 /* MArtifactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MArtifactRow.swift; sourceTree = "<group>"; };
+		B6361FE32075A3CA0051C631 /* MArtifactArchive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MArtifactArchive.swift; sourceTree = "<group>"; };
+		B6A797F92073D302003AA7B9 /* MArtifact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MArtifact.swift; sourceTree = "<group>"; };
+		B6A797FB2073D41D003AA7B9 /* MCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCategory.swift; sourceTree = "<group>"; };
+		B6A797FD2073DB35003AA7B9 /* MCabinet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCabinet.swift; sourceTree = "<group>"; };
+		B6DD41552075C75D00AD93A3 /* Packets.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Packets.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -763,6 +775,11 @@
 			children = (
 				59617B141B1CE8FE0013149B /* VMRPacket.swift */,
 				59617B171B1CF8A60013149B /* VMRViewMasterPackets.swift */,
+				B6A797F92073D302003AA7B9 /* MArtifact.swift */,
+				B6A797FB2073D41D003AA7B9 /* MCategory.swift */,
+				B6A797FD2073DB35003AA7B9 /* MCabinet.swift */,
+				B6361FDF207584CA0051C631 /* MArtifactRow.swift */,
+				B6361FE32075A3CA0051C631 /* MArtifactArchive.swift */,
 			);
 			name = "Data Model";
 			sourceTree = "<group>";
@@ -1159,7 +1176,8 @@
 		59E4559E1B1B4E3B0061458D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				59617B191B1D263A0013149B /* Packets.plist */,
+				59617B191B1D263A0013149B /* Artifacts.plist */,
+				B6DD41552075C75D00AD93A3 /* Packets.plist */,
 				59E4559F1B1B4E3B0061458D /* Info.plist */,
 				59E455A61B1B4E3B0061458D /* Main.storyboard */,
 			);
@@ -1281,6 +1299,7 @@
 				59617B9F1B1F434B0013149B /* A792Front_37.png in Resources */,
 				595A59E41B20A14D007957A4 /* B305Front_37.png in Resources */,
 				595A59091B20A121007957A4 /* B362Front_37.png in Resources */,
+				B6DD41562075C75D00AD93A3 /* Packets.plist in Resources */,
 				595A58F11B20A121007957A4 /* A962Front_37.png in Resources */,
 				59617B981B1F434B0013149B /* A790Back_256.png in Resources */,
 				59617B921B1F434B0013149B /* A449Back_256.png in Resources */,
@@ -1463,7 +1482,7 @@
 				595A58EB1B20A121007957A4 /* A664Front_37.png in Resources */,
 				59617BAE1B1F434B0013149B /* A797Front_37.png in Resources */,
 				595A593B1B20A121007957A4 /* B793Back_256.png in Resources */,
-				59617B1A1B1D263A0013149B /* Packets.plist in Resources */,
+				59617B1A1B1D263A0013149B /* Artifacts.plist in Resources */,
 				595A5A021B20A14D007957A4 /* C251Front_37.png in Resources */,
 				595A5A261B20A169007957A4 /* A984Front_37.png in Resources */,
 				595A59CB1B20A14D007957A4 /* B185Back_256.png in Resources */,
@@ -1601,18 +1620,23 @@
 				595A5A3D1B20D479007957A4 /* VMRPacketFlippedView.m in Sources */,
 				9ACBB5D2206EF769001E31AB /* MTableViewDataSourceProtocol.swift in Sources */,
 				9ACBB5D8206EFF3B001E31AB /* MNumberDataSource.swift in Sources */,
+				B6A797FC2073D41D003AA7B9 /* MCategory.swift in Sources */,
 				59617B1F1B1E10860013149B /* VMRPacketTableViewCell.swift in Sources */,
 				5948E5AA1B32037E003EC566 /* VMRPacketCollectionViewCell.swift in Sources */,
 				597394F8205C32BC00C87E03 /* VMRPacketViewController.swift in Sources */,
 				595A5A401B20D48F007957A4 /* VMRPacketView.m in Sources */,
+				B6361FE0207584CA0051C631 /* MArtifactRow.swift in Sources */,
 				9ACBB5DA206EFF6A001E31AB /* MCollectionDataSource.swift in Sources */,
 				597394F4205C247E00C87E03 /* VMRPacketView.swift in Sources */,
+				B6361FE42075A3CA0051C631 /* MArtifactArchive.swift in Sources */,
 				9ACBB5D0206EF649001E31AB /* MTableViewController.swift in Sources */,
 				59E455A11B1B4E3B0061458D /* AppDelegate.swift in Sources */,
 				59617B181B1CF8A60013149B /* VMRViewMasterPackets.swift in Sources */,
 				9ACBB5DE206F001B001E31AB /* MTitleDataSource.swift in Sources */,
 				595A5A3A1B20D44B007957A4 /* VMRPacketViewController.m in Sources */,
 				597394F6205C2EB500C87E03 /* VMRPacketFlippedView.swift in Sources */,
+				B6A797FE2073DB35003AA7B9 /* MCabinet.swift in Sources */,
+				B6A797FA2073D302003AA7B9 /* MArtifact.swift in Sources */,
 				9ACBB5D6206EFF05001E31AB /* MCategoryDataSource.swift in Sources */,
 				9ACBB5DC206EFFD7001E31AB /* MCollectionDataSourceProtocol.swift in Sources */,
 				59617B1C1B1E0CC70013149B /* VMRPacketTileView.swift in Sources */,

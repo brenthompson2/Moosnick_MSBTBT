@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Weird smoke up your butt thing</string>
+		<key>description</key>
+		<string>If they thought you&apos;d drowned they gave you a *very* direct hit of nicotine</string>
+		<key>date</key>
+		<date>1918-04-05T02:17:15Z</date>
+		<key>imagePath</key>
+		<string></string>
+		<key>categories</key>
+		<array>
+			<string>20th Century</string>
+			<string>Medical Tools</string>
+			<string>Butts</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Box of Penises</string>
+		<key>description</key>
+		<string>Because of course we have one</string>
+		<key>date</key>
+		<date>1872-07-23T07:13:04Z</date>
+		<key>imagePath</key>
+		<string></string>
+		<key>categories</key>
+		<array>
+			<string>19th Century</string>
+			<string>Human Remains</string>
+		</array>
+	</dict>
+</array>
+</plist>
