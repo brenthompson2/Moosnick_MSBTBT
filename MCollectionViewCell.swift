@@ -1,5 +1,5 @@
 //
-//  VMRPacketCollectionViewCell.swift
+//  MCollectionViewCell
 //  Moosnick Museum
 //
 //  Created by Robert England on 3/11/18 for ViewMasterSwift
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class VMRPacketCollectionViewCell: UICollectionViewCell {
+class MCollectionViewCell: UICollectionViewCell {
     
     var packet : VMRPacket {
         didSet {

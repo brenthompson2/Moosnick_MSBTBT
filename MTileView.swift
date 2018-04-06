@@ -1,5 +1,5 @@
 //
-//  VMRPacketTileView.swift
+//  MTileView
 //  Moosnick Museum
 //
 //  Created by Robert England on 3/11/18 for ViewMasterSwift
@@ -10,7 +10,7 @@
 
 import UIKit
 
-class VMRPacketTileView: UIView {
+class MTileView: UIView {
     var packet : VMRPacket
     
     override init(frame aRect: CGRect) {

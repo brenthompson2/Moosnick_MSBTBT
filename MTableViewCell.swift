@@ -1,5 +1,5 @@
 //
-//  VMRPacketTableViewCell.swift
+//  MTableViewCell
 //  Moosnick Museum
 //
 //  Created by Robert England on 3/11/18 for ViewMasterSwift
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class VMRPacketTableViewCell: UITableViewCell {
+class MTableViewCell: UITableViewCell {
     var packet : VMRPacket {
         didSet {
             // Associate a packet with the tile view in this cell
-            let packetTileView = self.contentView.viewWithTag(1) as? VMRPacketTileView
+            let packetTileView = self.contentView.viewWithTag(1) as? MTileView
             packetTileView!.packet = self.packet
             
             // Set the label to the title of the packet

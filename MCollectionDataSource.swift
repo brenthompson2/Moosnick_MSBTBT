@@ -52,7 +52,7 @@ class MCollectionDataSource: NSObject, MCollectionDataSourceProtocol {
     // Return a cell for the corresponding index path
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "VMRPacketCollectionViewCell", for: indexPath as IndexPath) as! VMRPacketCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MCollectionViewCell", for: indexPath as IndexPath) as! MCollectionViewCell
 
             // Set the packet for this cell as indicated by the datasource
         cell.packet = packetForindexPath(indexPath: indexPath as NSIndexPath)
@@ -76,7 +76,7 @@ class MCollectionDataSource: NSObject, MCollectionDataSourceProtocol {
 //    #pragma mark - UITableViewDataSource
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
  //       println("Making a cell...")
-        let cell = tableView.dequeueReusableCell(withIdentifier: "VMRPacketTableViewCell", for: indexPath as IndexPath) as! VMRPacketTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MTableViewCell", for: indexPath as IndexPath) as! MTableViewCell
         
         // Set the packet for this cell as indicated by the datasource
         cell.packet = packetForindexPath(indexPath: indexPath)

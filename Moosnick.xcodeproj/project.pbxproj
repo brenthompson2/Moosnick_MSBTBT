@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5948E5AA1B32037E003EC566 /* VMRPacketCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5948E5A91B32037E003EC566 /* VMRPacketCollectionViewCell.swift */; };
+		5948E5AA1B32037E003EC566 /* MCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5948E5A91B32037E003EC566 /* MCollectionViewCell.swift */; };
 		595A58861B2091FC007957A4 /* TabTitle.png in Resources */ = {isa = PBXBuildFile; fileRef = 595A58851B2091FC007957A4 /* TabTitle.png */; };
 		595A58E71B20A121007957A4 /* A486Back_256.png in Resources */ = {isa = PBXBuildFile; fileRef = 595A58871B20A120007957A4 /* A486Back_256.png */; };
 		595A58E81B20A121007957A4 /* A486Front_37.png in Resources */ = {isa = PBXBuildFile; fileRef = 595A58881B20A120007957A4 /* A486Front_37.png */; };
@@ -222,16 +222,12 @@
 		595A5A301B20B583007957A4 /* TabCategory.png in Resources */ = {isa = PBXBuildFile; fileRef = 595A5A2D1B20B583007957A4 /* TabCategory.png */; };
 		595A5A311B20B583007957A4 /* TabGrid.png in Resources */ = {isa = PBXBuildFile; fileRef = 595A5A2E1B20B583007957A4 /* TabGrid.png */; };
 		595A5A321B20B583007957A4 /* TabNumber.png in Resources */ = {isa = PBXBuildFile; fileRef = 595A5A2F1B20B583007957A4 /* TabNumber.png */; };
-		595A5A3A1B20D44B007957A4 /* VMRPacketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 595A5A391B20D44B007957A4 /* VMRPacketViewController.m */; };
-		595A5A3D1B20D479007957A4 /* VMRPacketFlippedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 595A5A3C1B20D479007957A4 /* VMRPacketFlippedView.m */; };
-		595A5A401B20D48F007957A4 /* VMRPacketView.m in Sources */ = {isa = PBXBuildFile; fileRef = 595A5A3F1B20D48F007957A4 /* VMRPacketView.m */; };
 		595A5A481B20FA7A007957A4 /* FlipBackButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 595A5A471B20FA7A007957A4 /* FlipBackButton.png */; };
 		595A5A4A1B20FA95007957A4 /* FlipFrontButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 595A5A491B20FA95007957A4 /* FlipFrontButton.png */; };
 		59617B151B1CE8FE0013149B /* VMRPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59617B141B1CE8FE0013149B /* VMRPacket.swift */; };
 		59617B181B1CF8A60013149B /* VMRViewMasterPackets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59617B171B1CF8A60013149B /* VMRViewMasterPackets.swift */; };
 		59617B1A1B1D263A0013149B /* Artifacts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59617B191B1D263A0013149B /* Artifacts.plist */; };
-		59617B1C1B1E0CC70013149B /* VMRPacketTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59617B1B1B1E0CC70013149B /* VMRPacketTileView.swift */; };
-		59617B1F1B1E10860013149B /* VMRPacketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59617B1E1B1E10860013149B /* VMRPacketTableViewCell.swift */; };
+		59617B1F1B1E10860013149B /* MTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59617B1E1B1E10860013149B /* MTableViewCell.swift */; };
 		59617B8A1B1F434B0013149B /* 3853757757_b13b5e361d.png in Resources */ = {isa = PBXBuildFile; fileRef = 59617B2B1B1F434B0013149B /* 3853757757_b13b5e361d.png */; };
 		59617B8B1B1F434B0013149B /* A390Back_37.png in Resources */ = {isa = PBXBuildFile; fileRef = 59617B2C1B1F434B0013149B /* A390Back_37.png */; };
 		59617B8C1B1F434B0013149B /* A390Back_256.png in Resources */ = {isa = PBXBuildFile; fileRef = 59617B2D1B1F434B0013149B /* A390Back_256.png */; };
@@ -330,13 +326,14 @@
 		59617BEC1B1F436B0013149B /* C282Back_256.png in Resources */ = {isa = PBXBuildFile; fileRef = 59617BE91B1F436B0013149B /* C282Back_256.png */; };
 		59617BED1B1F436B0013149B /* C282Front_37.png in Resources */ = {isa = PBXBuildFile; fileRef = 59617BEA1B1F436B0013149B /* C282Front_37.png */; };
 		59617BEE1B1F436B0013149B /* C282Front_256.png in Resources */ = {isa = PBXBuildFile; fileRef = 59617BEB1B1F436B0013149B /* C282Front_256.png */; };
-		597394F4205C247E00C87E03 /* VMRPacketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597394F3205C247E00C87E03 /* VMRPacketView.swift */; };
-		597394F6205C2EB500C87E03 /* VMRPacketFlippedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597394F5205C2EB500C87E03 /* VMRPacketFlippedView.swift */; };
+		597394F4205C247E00C87E03 /* MArtifactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597394F3205C247E00C87E03 /* MArtifactView.swift */; };
+		597394F6205C2EB500C87E03 /* MArtifactFlippedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597394F5205C2EB500C87E03 /* MArtifactFlippedView.swift */; };
 		597394F8205C32BC00C87E03 /* VMRPacketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597394F7205C32BC00C87E03 /* VMRPacketViewController.swift */; };
 		59E455A11B1B4E3B0061458D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E455A01B1B4E3B0061458D /* AppDelegate.swift */; };
 		59E455A81B1B4E3B0061458D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59E455A61B1B4E3B0061458D /* Main.storyboard */; };
 		59E455AD1B1B4E3B0061458D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59E455AB1B1B4E3B0061458D /* LaunchScreen.xib */; };
 		59E455B91B1B4E3B0061458D /* ViewMasterSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E455B81B1B4E3B0061458D /* ViewMasterSwiftTests.swift */; };
+		9A9A18582077F2B600A0D8A5 /* MTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9A18572077F2B600A0D8A5 /* MTileView.swift */; };
 		9ACBB5D0206EF649001E31AB /* MTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACBB5CF206EF649001E31AB /* MTableViewController.swift */; };
 		9ACBB5D2206EF769001E31AB /* MTableViewDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACBB5D1206EF769001E31AB /* MTableViewDataSourceProtocol.swift */; };
 		9ACBB5D4206EFD7F001E31AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ACBB5D3206EFD7F001E31AB /* Images.xcassets */; };
@@ -365,7 +362,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5948E5A91B32037E003EC566 /* VMRPacketCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMRPacketCollectionViewCell.swift; sourceTree = "<group>"; };
+		5948E5A91B32037E003EC566 /* MCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCollectionViewCell.swift; sourceTree = "<group>"; };
 		595A58851B2091FC007957A4 /* TabTitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabTitle.png; sourceTree = "<group>"; };
 		595A58871B20A120007957A4 /* A486Back_256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A486Back_256.png; sourceTree = "<group>"; };
 		595A58881B20A120007957A4 /* A486Front_37.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A486Front_37.png; sourceTree = "<group>"; };
@@ -580,20 +577,12 @@
 		595A5A2D1B20B583007957A4 /* TabCategory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabCategory.png; sourceTree = "<group>"; };
 		595A5A2E1B20B583007957A4 /* TabGrid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabGrid.png; sourceTree = "<group>"; };
 		595A5A2F1B20B583007957A4 /* TabNumber.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabNumber.png; sourceTree = "<group>"; };
-		595A5A381B20D44B007957A4 /* VMRPacketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMRPacketViewController.h; sourceTree = "<group>"; };
-		595A5A391B20D44B007957A4 /* VMRPacketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMRPacketViewController.m; sourceTree = "<group>"; };
-		595A5A3B1B20D479007957A4 /* VMRPacketFlippedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMRPacketFlippedView.h; sourceTree = "<group>"; };
-		595A5A3C1B20D479007957A4 /* VMRPacketFlippedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMRPacketFlippedView.m; sourceTree = "<group>"; };
-		595A5A3E1B20D48F007957A4 /* VMRPacketView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMRPacketView.h; sourceTree = "<group>"; };
-		595A5A3F1B20D48F007957A4 /* VMRPacketView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMRPacketView.m; sourceTree = "<group>"; };
-		595A5A441B20DAC3007957A4 /* VMR-bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VMR-bridging-header.h"; sourceTree = "<group>"; };
 		595A5A471B20FA7A007957A4 /* FlipBackButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FlipBackButton.png; sourceTree = "<group>"; };
 		595A5A491B20FA95007957A4 /* FlipFrontButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FlipFrontButton.png; sourceTree = "<group>"; };
 		59617B141B1CE8FE0013149B /* VMRPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VMRPacket.swift; path = ViewMasterSwift/VMRPacket.swift; sourceTree = "<group>"; };
 		59617B171B1CF8A60013149B /* VMRViewMasterPackets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMRViewMasterPackets.swift; sourceTree = "<group>"; };
 		59617B191B1D263A0013149B /* Artifacts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Artifacts.plist; sourceTree = "<group>"; };
-		59617B1B1B1E0CC70013149B /* VMRPacketTileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMRPacketTileView.swift; sourceTree = "<group>"; };
-		59617B1E1B1E10860013149B /* VMRPacketTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMRPacketTableViewCell.swift; sourceTree = "<group>"; };
+		59617B1E1B1E10860013149B /* MTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTableViewCell.swift; sourceTree = "<group>"; };
 		59617B2B1B1F434B0013149B /* 3853757757_b13b5e361d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3853757757_b13b5e361d.png; sourceTree = "<group>"; };
 		59617B2C1B1F434B0013149B /* A390Back_37.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A390Back_37.png; sourceTree = "<group>"; };
 		59617B2D1B1F434B0013149B /* A390Back_256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A390Back_256.png; sourceTree = "<group>"; };
@@ -692,8 +681,8 @@
 		59617BE91B1F436B0013149B /* C282Back_256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = C282Back_256.png; sourceTree = "<group>"; };
 		59617BEA1B1F436B0013149B /* C282Front_37.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = C282Front_37.png; sourceTree = "<group>"; };
 		59617BEB1B1F436B0013149B /* C282Front_256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = C282Front_256.png; sourceTree = "<group>"; };
-		597394F3205C247E00C87E03 /* VMRPacketView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMRPacketView.swift; sourceTree = "<group>"; };
-		597394F5205C2EB500C87E03 /* VMRPacketFlippedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMRPacketFlippedView.swift; sourceTree = "<group>"; };
+		597394F3205C247E00C87E03 /* MArtifactView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MArtifactView.swift; sourceTree = "<group>"; };
+		597394F5205C2EB500C87E03 /* MArtifactFlippedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MArtifactFlippedView.swift; sourceTree = "<group>"; };
 		597394F7205C32BC00C87E03 /* VMRPacketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMRPacketViewController.swift; sourceTree = "<group>"; };
 		59E4559B1B1B4E3B0061458D /* ViewMasterSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewMasterSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59E4559F1B1B4E3B0061458D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -703,6 +692,8 @@
 		59E455B21B1B4E3B0061458D /* ViewMasterSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewMasterSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59E455B71B1B4E3B0061458D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59E455B81B1B4E3B0061458D /* ViewMasterSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMasterSwiftTests.swift; sourceTree = "<group>"; };
+		9A9A18572077F2B600A0D8A5 /* MTileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTileView.swift; sourceTree = "<group>"; };
+		9A9A18592077F65200A0D8A5 /* VMR-bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VMR-bridging-header.h"; sourceTree = "<group>"; };
 		9ACBB5CF206EF649001E31AB /* MTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTableViewController.swift; sourceTree = "<group>"; };
 		9ACBB5D1206EF769001E31AB /* MTableViewDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTableViewDataSourceProtocol.swift; sourceTree = "<group>"; };
 		9ACBB5D3206EFD7F001E31AB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = viewmasterswift/Images.xcassets; sourceTree = "<group>"; };
@@ -750,8 +741,6 @@
 		595A5A361B20D3C0007957A4 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
-				595A5A381B20D44B007957A4 /* VMRPacketViewController.h */,
-				595A5A391B20D44B007957A4 /* VMRPacketViewController.m */,
 				597394F7205C32BC00C87E03 /* VMRPacketViewController.swift */,
 			);
 			name = "View Controller";
@@ -760,12 +749,8 @@
 		595A5A371B20D3D3007957A4 /* User Interface Elements */ = {
 			isa = PBXGroup;
 			children = (
-				595A5A3E1B20D48F007957A4 /* VMRPacketView.h */,
-				595A5A3F1B20D48F007957A4 /* VMRPacketView.m */,
-				597394F3205C247E00C87E03 /* VMRPacketView.swift */,
-				595A5A3B1B20D479007957A4 /* VMRPacketFlippedView.h */,
-				595A5A3C1B20D479007957A4 /* VMRPacketFlippedView.m */,
-				597394F5205C2EB500C87E03 /* VMRPacketFlippedView.swift */,
+				597394F3205C247E00C87E03 /* MArtifactView.swift */,
+				597394F5205C2EB500C87E03 /* MArtifactFlippedView.swift */,
 			);
 			name = "User Interface Elements";
 			sourceTree = "<group>";
@@ -787,9 +772,9 @@
 		59617B1D1B1E0CD10013149B /* User Interface Elements */ = {
 			isa = PBXGroup;
 			children = (
-				59617B1B1B1E0CC70013149B /* VMRPacketTileView.swift */,
-				59617B1E1B1E10860013149B /* VMRPacketTableViewCell.swift */,
-				5948E5A91B32037E003EC566 /* VMRPacketCollectionViewCell.swift */,
+				9A9A18572077F2B600A0D8A5 /* MTileView.swift */,
+				59617B1E1B1E10860013149B /* MTableViewCell.swift */,
+				5948E5A91B32037E003EC566 /* MCollectionViewCell.swift */,
 			);
 			name = "User Interface Elements";
 			sourceTree = "<group>";
@@ -1140,8 +1125,8 @@
 		59E455921B1B4E3B0061458D = {
 			isa = PBXGroup;
 			children = (
+				9A9A18592077F65200A0D8A5 /* VMR-bridging-header.h */,
 				9ACBB5D3206EFD7F001E31AB /* Images.xcassets */,
-				595A5A441B20DAC3007957A4 /* VMR-bridging-header.h */,
 				595A5A351B20D3AB007957A4 /* Single Packet View */,
 				59617B2A1B1F42F60013149B /* Pictures */,
 				59617B271B1E53130013149B /* View Controllers */,
@@ -1617,29 +1602,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				595A5A3D1B20D479007957A4 /* VMRPacketFlippedView.m in Sources */,
 				9ACBB5D2206EF769001E31AB /* MTableViewDataSourceProtocol.swift in Sources */,
 				9ACBB5D8206EFF3B001E31AB /* MNumberDataSource.swift in Sources */,
 				B6A797FC2073D41D003AA7B9 /* MCategory.swift in Sources */,
-				59617B1F1B1E10860013149B /* VMRPacketTableViewCell.swift in Sources */,
-				5948E5AA1B32037E003EC566 /* VMRPacketCollectionViewCell.swift in Sources */,
+				59617B1F1B1E10860013149B /* MTableViewCell.swift in Sources */,
+				5948E5AA1B32037E003EC566 /* MCollectionViewCell.swift in Sources */,
 				597394F8205C32BC00C87E03 /* VMRPacketViewController.swift in Sources */,
-				595A5A401B20D48F007957A4 /* VMRPacketView.m in Sources */,
 				B6361FE0207584CA0051C631 /* MArtifactRow.swift in Sources */,
 				9ACBB5DA206EFF6A001E31AB /* MCollectionDataSource.swift in Sources */,
-				597394F4205C247E00C87E03 /* VMRPacketView.swift in Sources */,
+				597394F4205C247E00C87E03 /* MArtifactView.swift in Sources */,
 				B6361FE42075A3CA0051C631 /* MArtifactArchive.swift in Sources */,
 				9ACBB5D0206EF649001E31AB /* MTableViewController.swift in Sources */,
 				59E455A11B1B4E3B0061458D /* AppDelegate.swift in Sources */,
 				59617B181B1CF8A60013149B /* VMRViewMasterPackets.swift in Sources */,
 				9ACBB5DE206F001B001E31AB /* MTitleDataSource.swift in Sources */,
-				595A5A3A1B20D44B007957A4 /* VMRPacketViewController.m in Sources */,
-				597394F6205C2EB500C87E03 /* VMRPacketFlippedView.swift in Sources */,
+				597394F6205C2EB500C87E03 /* MArtifactFlippedView.swift in Sources */,
 				B6A797FE2073DB35003AA7B9 /* MCabinet.swift in Sources */,
 				B6A797FA2073D302003AA7B9 /* MArtifact.swift in Sources */,
 				9ACBB5D6206EFF05001E31AB /* MCategoryDataSource.swift in Sources */,
 				9ACBB5DC206EFFD7001E31AB /* MCollectionDataSourceProtocol.swift in Sources */,
-				59617B1C1B1E0CC70013149B /* VMRPacketTileView.swift in Sources */,
+				9A9A18582077F2B600A0D8A5 /* MTileView.swift in Sources */,
 				59617B151B1CE8FE0013149B /* VMRPacket.swift in Sources */,
 				9ACBB5E0206F012E001E31AB /* MCollectionViewController.swift in Sources */,
 			);

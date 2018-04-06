@@ -65,7 +65,7 @@ class MTitleDataSource: NSObject, MTableViewDataSourceProtocol {
 //    #pragma mark - UITableViewDataSource
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
  //       println("Making a cell...")
-        let cell = tableView.dequeueReusableCell(withIdentifier: "VMRPacketTableViewCell", for: indexPath) as! VMRPacketTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MTableViewCell", for: indexPath) as! MTableViewCell
         
         // Set the packet for this cell as indicated by the datasource
         cell.packet = packetForindexPath(indexPath: indexPath as NSIndexPath)

@@ -37,14 +37,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="VMRPacketTableViewCell" id="6dg-H9-PfX" customClass="VMRPacketTableViewCell" customModule="ViewMasterSwift" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MTableViewCell" id="6dg-H9-PfX" userLabel="MTableViewCell" customClass="MTableViewCell" customModule="ViewMasterSwift" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="22" width="834" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6dg-H9-PfX" id="eFl-Jd-6Xb">
                                     <rect key="frame" x="0.0" y="0.0" width="796" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dji-cQ-Cad" customClass="VMRPacketTileView" customModule="ViewMasterSwift" customModuleProvider="target">
+                                        <view tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dji-cQ-Cad" customClass="MTileView" customModule="ViewMasterSwift" customModuleProvider="target">
                                             <rect key="frame" x="10" y="3" width="41" height="38"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -95,7 +95,7 @@
                             <inset key="sectionInset" minX="2" minY="2" maxX="2" maxY="2"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VMRPacketCollectionViewCell" id="ybB-Zd-F7r" customClass="VMRPacketCollectionViewCell" customModule="ViewMasterSwift" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MCollectionViewCell" id="ybB-Zd-F7r" userLabel="MCollectionViewCell" customClass="MCollectionViewCell" customModule="ViewMasterSwift" customModuleProvider="target">
                                 <rect key="frame" x="2" y="2" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">

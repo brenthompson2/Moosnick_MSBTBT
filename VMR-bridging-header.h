@@ -9,8 +9,8 @@
 #ifndef ViewMasterSwift_VMR_bridging_header_h
 #define ViewMasterSwift_VMR_bridging_header_h
 
-#import "VMRPacketView.h"
-#import "VMRPacketFlippedView.h"
-#import "VMRPacketViewController.h"
+// #import "VMRPacketView.h"
+// #import "VMRPacketFlippedView.h"
+// #import "VMRPacketViewController.h"
 
 #endif
