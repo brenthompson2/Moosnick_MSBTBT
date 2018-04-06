@@ -29,7 +29,7 @@ class MTileView: UIView {
     override func draw(_ rect: CGRect) {
         let tileImage = packet.imageForPacketTileView()
 //        let tileImageRectangle = CGRectMake(0, 0, tileImage!.size.width, tileImage!.size.height)
-        let tileImageRectangle = CGRect(x:0, y:0, width:tileImage!.size.width, height:tileImage!.size.height)
+        let tileImageRectangle = CGRect(x:0, y:0, width:tileImage!.size.width / 2, height:tileImage!.size.height / 2)
 
         tileImage?.draw(in: tileImageRectangle)
     }

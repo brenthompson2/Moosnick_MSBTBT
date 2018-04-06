@@ -86,7 +86,7 @@ class VMRPacket: CustomStringConvertible {
     
     // tile front image
     func imageForPacketTileView() -> UIImage? {
-        let packetTileImageName = self.imageFileNameBase + "Front_37.png"
+        let packetTileImageName = self.imageFileNameBase + "Front_256.png"
  //       println("Is there an image named \(packetTileImageName)?")
         let packetTileImage = UIImage(named: packetTileImageName)
         return packetTileImage

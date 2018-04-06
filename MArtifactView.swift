@@ -18,7 +18,7 @@ class MArtifactView: UIView {
     
     // the preferred size of this view is the size of the packet background image
     class func preferredViewSize() -> CGSize {
-        return CGSize(width: 256, height: 256)
+        return CGSize(width: 512, height: 512)
     }
     
     // initialize the view, calling super and setting the properties to nil
@@ -55,7 +55,7 @@ class MArtifactView: UIView {
     
     override func draw(_ rect: CGRect) {
         let packetImage = self.packet?.imageForPacketFrontView()
-        let packetImageRectangle = CGRect(x: 0, y:0, width: (packetImage?.size.width)!, height: (packetImage?.size.height)!)
+        let packetImageRectangle = CGRect(x: 0, y:0, width: (packetImage?.size.width)! * 2, height: (packetImage?.size.height)! * 2)
         packetImage?.draw(in: packetImageRectangle)
     }
     
