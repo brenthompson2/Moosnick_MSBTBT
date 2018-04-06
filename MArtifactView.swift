@@ -14,7 +14,7 @@ import UIKit
 class MArtifactView: UIView {
     
     var packet: VMRPacket?
-    weak var viewController: VMRPacketViewController?
+    weak var viewController: MArtifactViewController?
     
     // the preferred size of this view is the size of the packet background image
     class func preferredViewSize() -> CGSize {

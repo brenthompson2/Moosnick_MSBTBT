@@ -1,5 +1,5 @@
 //
-//  VMRPacketViewController.swift   (copied from .m version)
+//  MArtifactViewController
 //  ViewMaster
 //
 //  Created by Robert England on 3/11/18.
@@ -11,8 +11,8 @@
 
 import UIKit
 
-@objc(VMRPacketViewController)
-class VMRPacketViewController: UIViewController {
+@objc(MArtifactViewController)
+class MArtifactViewController: UIViewController {
     
     var myPacket: VMRPacket?
     
@@ -94,7 +94,7 @@ class VMRPacketViewController: UIViewController {
         self.flipIndicatorButton.setBackgroundImage(UIImage(named: "FlipBackButton.png"), for: UIControlState())
         
         let flipButtonBarItem = UIBarButtonItem(customView: self.flipIndicatorButton)
-        self.flipIndicatorButton.addTarget(self, action: #selector(VMRPacketViewController.flipCurrentView),
+        self.flipIndicatorButton.addTarget(self, action: #selector(MArtifactViewController.flipCurrentView),
                                            for: UIControlEvents.touchDown)
         self.navigationItem.setRightBarButton(flipButtonBarItem, animated: true)
     }
@@ -109,7 +109,7 @@ class VMRPacketViewController: UIViewController {
         UIView.beginAnimations(nil, context: nil)
         UIView.setAnimationDuration(kFlipTranslationDuration)
         UIView.setAnimationDelegate(self)
-        UIView.setAnimationDidStop(#selector(VMRPacketViewController.myTransitionDidStop(_:finished:context:)))
+        UIView.setAnimationDidStop(#selector(MArtifactViewController.myTransitionDidStop(_:finished:context:)))
         
         // swap the views and transition
         if self.frontViewIsVisible {
@@ -139,7 +139,7 @@ class VMRPacketViewController: UIViewController {
         UIView.setAnimationDuration(kFlipTranslationDuration)
         UIView.setAnimationDelegate(self)
         
-        UIView.setAnimationDidStop(#selector(VMRPacketViewController.myTransitionDidStop(_:finished:context:)))
+        UIView.setAnimationDidStop(#selector(MArtifactViewController.myTransitionDidStop(_:finished:context:)))
         
         if self.frontViewIsVisible {
             UIView.setAnimationTransition(.flipFromRight, for: self.flipIndicatorButton, cache: true)
@@ -207,7 +207,7 @@ class VMRPacketViewController: UIViewController {
         self.ebayButton.contentHorizontalAlignment = UIControlContentHorizontalAlignment.center
         self.ebayButton.contentVerticalAlignment = UIControlContentVerticalAlignment.center
         
-        self.ebayButton.addTarget(self, action:#selector(VMRPacketViewController.jumpToEbay(_:)), for: UIControlEvents.touchUpInside)
+        self.ebayButton.addTarget(self, action:#selector(MArtifactViewController.jumpToEbay(_:)), for: UIControlEvents.touchUpInside)
         
         self.view.addSubview(self.ebayButton)
     }

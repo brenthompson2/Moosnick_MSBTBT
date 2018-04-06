@@ -57,7 +57,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         
         // For each table view screen we need to create a separate data source instance
         // We then need to create an instance of VMRPacketsTableViewCOntroller with that data source instance.
-        // Finally, we need to return a UINavigationController for each screen, with the VMRPacketViewCOntroller
+        // Finally, we need to return a UINavigationController for each screen, with the MArtifactViewController
         //    as its root view controller
         let tabBarController = self.window?.rootViewController as! UITabBarController
         

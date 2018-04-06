@@ -125,10 +125,10 @@
             </objects>
             <point key="canvasLocation" x="451" y="790"/>
         </scene>
-        <!--Packet View Controller-->
+        <!--Artifact View Controller-->
         <scene sceneID="4kK-ek-Kn9">
             <objects>
-                <viewController id="VCy-ha-eFJ" customClass="VMRPacketViewController" sceneMemberID="viewController">
+                <viewController id="VCy-ha-eFJ" customClass="MArtifactViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hkm-tU-g3R"/>
                         <viewControllerLayoutGuide type="bottom" id="AsA-Yk-9LM"/>
