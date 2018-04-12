@@ -11,22 +11,22 @@ import Foundation
 class MArtifact {
     var name: String
     var description: String
-    var date: Date
+    var year: String
     var imagePath: String
     var category: MCategory
     
     init() {
         name = "DEFAULT_NAME"
         description = "DEFAULT_DESCRIPTION"
-        date = Date.distantPast
-        imagePath = ""
+        year = "2018"
+        imagePath = "A071Front_256.png"
         category = MCategory()
     }
     
-    init(name: String, description: String, date: Date, imagePath: String) {
+    init(name: String, description: String, year: String, imagePath: String) {
         self.name = name
-        self.description = name
-        self.date = date
+        self.description = description
+        self.year = year
         self.imagePath = imagePath
         self.category = MCategory()
     }

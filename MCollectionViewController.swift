@@ -72,7 +72,7 @@ class MCollectionViewController : UICollectionViewController {
             let selectedIndexPath = collectionView?.indexPathsForSelectedItems?.first as NSIndexPath?
             
             // Find the corresponding view controller
-            let aPacket = dataSource!.packetForindexPath(indexPath: selectedIndexPath!)
+            let aPacket = dataSource!.artifactForIndexPath(indexPath: selectedIndexPath!)
             var viewController: MArtifactViewController? = segue.destination as? MArtifactViewController
             
             if viewController != nil {
@@ -80,7 +80,7 @@ class MCollectionViewController : UICollectionViewController {
                 viewController!.hidesBottomBarWhenPushed = true
             
                 // Pass the packet to this view controller
-                viewController!.myPacket = aPacket
+                viewController!.myArtifact = aPacket
             }
         }
     }

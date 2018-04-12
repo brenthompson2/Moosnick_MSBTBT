@@ -10,18 +10,18 @@ import UIKit
 
 class MCollectionViewCell: UICollectionViewCell {
     
-    var packet : VMRPacket {
+    var artifact : MArtifact {
         didSet {
             // Associate a packet with the image view in this cell
             let imageView = self.contentView.viewWithTag(1) as! UIImageView
-            imageView.image = self.packet.imageForPacketFrontView()
+            imageView.image = UIImage(named: artifact.imagePath)
             // Tell the system these need refreshing
             imageView.setNeedsDisplay()
         }
     }
     
     required init (coder aDecoder: NSCoder) {
-        packet = VMRPacket()
+        artifact = MArtifact()
         super.init(coder: aDecoder)!
     }
     

@@ -9,26 +9,32 @@
 import UIKit
 
 class MTableViewCell: UITableViewCell {
-    var packet : VMRPacket {
+    var artifact : MArtifact {
         didSet {
             // Associate a packet with the tile view in this cell
-            let packetTileView = self.contentView.viewWithTag(1) as? MTileView
-            packetTileView!.packet = self.packet
+            let artifactTileView = self.contentView.viewWithTag(1) as? MTileView
+            artifactTileView!.artifact = self.artifact
             
-            // Set the label to the title of the packet
+            // Set the label to the name of the artifact
             var labelView = self.contentView.viewWithTag(2) as? UILabel
-            labelView!.text = self.packet.title
+            labelView!.text = self.artifact.name
+            
+            // Set the label to the date of the artifact
             labelView = self.contentView.viewWithTag(3) as? UILabel
-            labelView!.text = self.packet.number
+            labelView!.text = self.artifact.year
+            
+            // Set the label to the description of the artifact (excerpt)
+            labelView = self.contentView.viewWithTag(4) as? UILabel
+            labelView!.text = self.artifact.description
             
             // Tell the system these need refreshing
-            packetTileView!.setNeedsDisplay()
+            artifactTileView!.setNeedsDisplay()
             labelView!.setNeedsDisplay()
         }
     }
     
     required init (coder aDecoder: NSCoder) {
-        packet = VMRPacket()
+        artifact = MArtifact()
         super.init(coder: aDecoder)!
     }
     

@@ -15,6 +15,7 @@ import UIKit
 
 class MCollectionDataSource: NSObject, MCollectionDataSourceProtocol {
     
+    
     //// Protocol methods to comply with "VMRPacketsDataSource" protocol
     
     // Getters for properties for navagation and tab bars
@@ -25,7 +26,7 @@ class MCollectionDataSource: NSObject, MCollectionDataSourceProtocol {
     }
     var navigationBarName: String {
         get {
-            return "Packets by Number in Grid"
+            return "Artifacts in Grid"
         }
     }
     var tabBarImage: UIImage {
@@ -39,9 +40,7 @@ class MCollectionDataSource: NSObject, MCollectionDataSourceProtocol {
     // Number of items in the section is the number of packets
     func collectionView(_ collectionView: UICollectionView,
         numberOfItemsInSection section: Int) -> Int {
-         //   print(#function)
-         //   print("Returning \(VMRViewMasterPackets.packetsSortedByNumber!.count)")
-            return VMRViewMasterPackets.packetsSortedByNumber!.count
+        return MArtifactArchive.artifacts.count
     }
     
     // Just one section in the grid
@@ -50,63 +49,17 @@ class MCollectionDataSource: NSObject, MCollectionDataSourceProtocol {
     }
     
     // Return a cell for the corresponding index path
-    func collectionView(_ collectionView: UICollectionView,
-                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MCollectionViewCell", for: indexPath as IndexPath) as! MCollectionViewCell
 
-            // Set the packet for this cell as indicated by the datasource
-        cell.packet = packetForindexPath(indexPath: indexPath as NSIndexPath)
-            cell.setNeedsDisplay()
-            return cell
-    }
-    
-    // Return the packet for the given index path (--> Take a closer look at this!)
-    func packetForindexPath(indexPath: NSIndexPath) -> VMRPacket {
-        //        println("packetForIndexPath")
-        //        let firstLetter = VMRViewMasterPackets.packetTitleIndexArray![indexPath.section]
-        //        let packetsWithSameFirstLetter = VMRViewMasterPackets.packetsWithInitialLetter(firstLetter)
-        return VMRViewMasterPackets.packetsSortedByNumber![indexPath.row]
-    }
-    
-    // (Don't really use this)
-    func titleForHeaderInSection(tableView: UITableView, section: Int) -> String {
-        return ""
-    }
-    
-//    #pragma mark - UITableViewDataSource
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
- //       println("Making a cell...")
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MTableViewCell", for: indexPath as IndexPath) as! MTableViewCell
-        
         // Set the packet for this cell as indicated by the datasource
-        cell.packet = packetForindexPath(indexPath: indexPath)
+        cell.artifact = artifactForIndexPath(indexPath: indexPath as NSIndexPath)
         cell.setNeedsDisplay()
         return cell
     }
     
-//    func sectionIndexTitlesForTableView(tableView: UITableView) -> [AnyObject]! {
-//        // The numbers table is juts one big section
-//        return VMRViewMasterPackets.packetTitleIndexArray
-//    }
-  
-//    func tableView(tableView: UITableView, sectionForSectionIndexTitle title: String, atIndex index: Int) -> Int {
-//        // Supposedly, you send me a section title (letter) and its index number, and I send you back
-//        //    the index number (what??!)
-//        return index
-//    }
-    
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // One big section: Return how many packets there are total
-        return VMRViewMasterPackets.packetsSortedByNumber!.count
-     }
-    
-//    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-//        // This table has multiple sections, per each initial letter of the packet titles
-//        // Return the letter that corressponds to the requested section
-//        // [From Elements project files comments:]
-//        //    "This is actually a delegate method, but we forward the request to the datasource in the view controller"
-//        return VMRViewMasterPackets.packetTitleIndexArray![section]
-//    }
-  
-    
+    // Return the packet for the given index path (--> Take a closer look at this!)
+    func artifactForIndexPath(indexPath: NSIndexPath) -> MArtifact {
+        return MArtifactArchive.artifacts[indexPath.row]
+    }
 }

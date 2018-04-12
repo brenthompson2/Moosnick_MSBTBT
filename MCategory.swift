@@ -63,7 +63,9 @@ class MCategory {
             return false
         }
     
-        categories[name] = 2 ^ categories.count
+        // to get around 'pow' not working:
+        // https://stackoverflow.com/questions/42338009/how-to-use-pow-in-swift-3-and-get-an-int
+        categories[name] = Int(powf(2, Float(categories.count)))
         
         return true
     }

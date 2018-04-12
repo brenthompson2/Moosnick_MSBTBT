@@ -20,12 +20,12 @@ class MNumberDataSource: NSObject, MTableViewDataSourceProtocol {
     // Getters for properties for navagation and tab bars
     var name: String {
         get {
-            return "Number"
+            return "Year"
         }
     }
     var navigationBarName: String {
         get {
-            return "Packets Sorted by Number"
+            return "Artifacts by Year"
         }
     }
     var tabBarImage: UIImage {
@@ -42,11 +42,16 @@ class MNumberDataSource: NSObject, MTableViewDataSourceProtocol {
     }
     
     // Return the packet for the given index path (--> Take a closer look at this!)
-    func packetForindexPath(indexPath: NSIndexPath) -> VMRPacket {
-//        println("packetForIndexPath")
-//        let firstLetter = VMRViewMasterPackets.packetTitleIndexArray![indexPath.section]
-//        let packetsWithSameFirstLetter = VMRViewMasterPackets.packetsWithInitialLetter(firstLetter)
-        return VMRViewMasterPackets.packetsSortedByNumber![indexPath.row]
+    func artifactForindexPath(indexPath: NSIndexPath) -> MArtifact {
+
+        var thisYear = "0000"
+        // get the section with the correct index
+        for (year, value) in MArtifactArchive.chronologicalArtifacts {
+            if value.0 == indexPath.section {
+                thisYear = year
+            }
+        }
+        return (MArtifactArchive.chronologicalArtifacts[thisYear]?.1[indexPath.row])!
     }
     
     // (Don't really use this)
@@ -56,44 +61,37 @@ class MNumberDataSource: NSObject, MTableViewDataSourceProtocol {
     
 //    #pragma mark - UITableViewDataSource
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
- //       println("Making a cell...")
         let cell = tableView.dequeueReusableCell(withIdentifier: "MTableViewCell", for: indexPath) as! MTableViewCell
         
         // Set the packet for this cell as indicated by the datasource
-        cell.packet = packetForindexPath(indexPath: indexPath as NSIndexPath)
+        cell.artifact = artifactForindexPath(indexPath: indexPath as NSIndexPath)
         cell.setNeedsDisplay()
         return cell
     }
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-  //      println("numberOfSectionsInTableView is \(VMRViewMasterPackets.packetTitleIndexArray!.count)")
-        // The numbers table is just one big section
-        return 1
+    // (changed func name via TheElements, swift edition)
+    func numberOfSections(in tableView: UITableView) -> Int {
+        // The number of different sections in the table depends on how many different years there were in the data
+        return MArtifactArchive.chronologicalArtifacts.count
     }
     
-//    func sectionIndexTitlesForTableView(tableView: UITableView) -> [AnyObject]! {
-//        // The numbers table is juts one big section
-//        return VMRViewMasterPackets.packetTitleIndexArray
-//    }
-  
-//    func tableView(tableView: UITableView, sectionForSectionIndexTitle title: String, atIndex index: Int) -> Int {
-//        // Supposedly, you send me a section title (letter) and its index number, and I send you back
-//        //    the index number (what??!)
-//        return index
-//    }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // One big section: Return how many packets there are total
-        return VMRViewMasterPackets.packetsSortedByNumber!.count
+        /// get the section with the correct index
+        for (_, value) in MArtifactArchive.chronologicalArtifacts {
+            if value.0 == section {
+                return value.1.count
+            }
+        }
+        return 0
      }
     
-//    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-//        // This table has multiple sections, per each initial letter of the packet titles
-//        // Return the letter that corressponds to the requested section
-//        // [From Elements project files comments:]
-//        //    "This is actually a delegate method, but we forward the request to the datasource in the view controller"
-//        return VMRViewMasterPackets.packetTitleIndexArray![section]
-//    }
-  
-    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        for (year, value) in MArtifactArchive.chronologicalArtifacts {
+            if value.0 == section {
+                return year
+            }
+        }
+        
+        return nil
+    }
 }

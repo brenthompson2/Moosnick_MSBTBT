@@ -33,7 +33,7 @@ class MTableViewController: UITableViewController {
         MArtifactArchive.loadArtifactsFromPlist()
         
         // [From doc:] "The number of table rows at which to display the index list on the right edge of the table."
-        self.tableView.sectionIndexMinimumDisplayRowCount = 10
+        self.tableView.sectionIndexMinimumDisplayRowCount = 0
         self.tableView.delegate = self
         self.tableView.dataSource = self.dataSource
         
@@ -67,7 +67,7 @@ class MTableViewController: UITableViewController {
             //            let selectedIndexPath = tableView.indexPathForSelectedRow()
             let selectedIndexPath = tableView.indexPathForSelectedRow
             // Find the corresponding view controller
-            let aPacket = dataSource!.packetForindexPath(indexPath: selectedIndexPath! as NSIndexPath)
+            let aPacket = dataSource!.artifactForindexPath(indexPath: selectedIndexPath! as NSIndexPath)
             var viewController: MArtifactViewController? = segue.destination as? MArtifactViewController
             
             if viewController != nil {
@@ -75,7 +75,7 @@ class MTableViewController: UITableViewController {
                 viewController!.hidesBottomBarWhenPushed = true
                 
                 // Pass the packet to this view controller
-                viewController!.myPacket = aPacket
+                viewController!.myArtifact = aPacket
             }
         }
     }
