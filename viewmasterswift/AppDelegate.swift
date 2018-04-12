@@ -37,6 +37,8 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         // Override point for customization after application launch.
         // print("Hello?")
         let packets = VMRViewMasterPackets.sharedViewMasterPackets()
+        
+        MArtifactArchive.loadArtifactsFromPlist()
    /**/
 /*        if packets != nil {
             print("Success in AppDelegate --- found the plist")

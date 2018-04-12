@@ -1,5 +1,5 @@
 //
-//  VMRPacketsCollectionViewController.swift
+//  MCollectionViewController
 //  Moosnick Museum
 //
 //  Created by Robert England on 3/11/18 for ViewMasterSwift
