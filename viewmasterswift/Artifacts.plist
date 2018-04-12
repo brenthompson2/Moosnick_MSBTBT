@@ -4,13 +4,55 @@
 <array>
 	<dict>
 		<key>name</key>
-		<string>Detail of the Complete Human Anatomy</string>
+		<string>Bones Showing Pathologies &amp; Anomalies</string>
 		<key>description</key>
-		<string>&quot;This is a detail from a chart depicting the anatomy of a human male. The chart, over four feet in height and two feet in width, currently hangs in a large wooden frame. Various parts of the body are numbered, although no descriptions are found on the chart.&quot; (Source: </string>
-		<key>date</key>
+		<string>&quot;Many specimens have remained to use from the early medical school. They show various abnormal and pathological conditions such as -- a) osteomyelitis of the tibia, b) thigh bone from dislocated hip, c) ankylosed bones of shank, d) a broken thigh bone which was never set, e) probably an osteoma (tumor) of the thigh bone, and f) two skull caps one having been trephined and the other showing a depressed fracture of the frontal bone.&quot; (Source: http://transy.pastperfectonline.com/webobject/63781584-126C-41EC-A08C-934483363943)</string>
+		<key>year</key>
 		<string>unknown</string>
 		<key>imagePath</key>
-		<string></string>
+		<string>BonePathologies.png</string>
+		<key>categories</key>
+		<array>
+			<string>Anatomical Specimens</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Example of Planetary Paths</string>
+		<key>description</key>
+		<string>&quot;A model to illustrate Kepler&apos;s First and Second Laws of planetary motion, measures 10&apos; by 12&apos;.&quot; (Source: http://transy.pastperfectonline.com/webobject/31DCBCB3-08DD-4F67-8828-776647271500)</string>
+		<key>year</key>
+		<string>unknown</string>
+		<key>imagePath</key>
+		<string>PlanetaryPaths.png</string>
+		<key>categories</key>
+		<array>
+			<string>Scientific Apparatus</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>An Early Compass</string>
+		<key>description</key>
+		<string>&quot;Measures 6.5&quot; in diameter. The directions are labelled around the outer edge inside, that is N, S, E, W, etc.&quot; (Source: http://transy.pastperfectonline.com/webobject/6355DDC5-0087-4F73-BE6E-808322841296)</string>
+		<key>year</key>
+		<string>unknown</string>
+		<key>imagePath</key>
+		<string>EarlyCompass.png</string>
+		<key>categories</key>
+		<array>
+			<string>Scientific Apparatus</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Detail of the Complete Human Anatomy</string>
+		<key>description</key>
+		<string>&quot;This is a detail from a chart depicting the anatomy of a human male. The chart, over four feet in height and two feet in width, currently hangs in a large wooden frame. Various parts of the body are numbered, although no descriptions are found on the chart.&quot; (Source: http://transy.pastperfectonline.com/webobject/4FD61676-D2AB-49B9-8B6F-105507923184)</string>
+		<key>year</key>
+		<string>unknown</string>
+		<key>imagePath</key>
+		<string>DetailHumanAnatomy.png</string>
 		<key>categories</key>
 		<array>
 			<string>Anatomical Specimens</string>
@@ -21,10 +63,10 @@
 		<string>Two Small Human Figures</string>
 		<key>description</key>
 		<string>&quot;These two small human figures (male) are merely 10&quot; in height. Made of plaster, both show some damage due to the passage of time. Both figures depict the human muscular system.&quot; (Source: http://transy.pastperfectonline.com/webobject/74696DDC-9FA8-4C2F-B8F3-010584380734)</string>
-		<key>date</key>
+		<key>year</key>
 		<string>unknown</string>
 		<key>imagePath</key>
-		<string></string>
+		<string>TwoSmallHumanFigures.png</string>
 		<key>categories</key>
 		<array>
 			<string>Anatomical Specimens</string>
@@ -35,10 +77,10 @@
 		<string>Induction Machine</string>
 		<key>description</key>
 		<string>&quot;This instrument, known as the Toepler-Holtz Electrical Machine, develops electricity with great rapidity without friction. &quot;Toepler constructed as influence&apos; (induction) electric machine in 1865. Holtz constructed many influence machines between 1864-80&quot; (11th Edition, Encyclopedia Brit., Vol. IX).&quot; (Source: http://transy.pastperfectonline.com/webobject/4AE14BD5-0057-4160-A61E-726178687952)</string>
-		<key>date</key>
+		<key>year</key>
 		<string>1865</string>
 		<key>imagePath</key>
-		<string></string>
+		<string>InductionMachine.png</string>
 		<key>categories</key>
 		<array>
 			<string>19th Century</string>
