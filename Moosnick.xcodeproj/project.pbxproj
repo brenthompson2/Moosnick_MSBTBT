@@ -334,6 +334,11 @@
 		59E455AD1B1B4E3B0061458D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59E455AB1B1B4E3B0061458D /* LaunchScreen.xib */; };
 		59E455B91B1B4E3B0061458D /* ViewMasterSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E455B81B1B4E3B0061458D /* ViewMasterSwiftTests.swift */; };
 		8FC6A347207E636800DFB7A0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC6A346207E636800DFB7A0 /* HomeViewController.swift */; };
+		9A56AD43207F09E50014E95B /* MCabinetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A56AD42207F09E50014E95B /* MCabinetViewController.swift */; };
+		9A56AD45207F0ADE0014E95B /* cabinetBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A56AD44207F0ADE0014E95B /* cabinetBackground.jpg */; };
+		9A56AD49207F0D510014E95B /* MCabinetCollectionDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A56AD48207F0D510014E95B /* MCabinetCollectionDataSourceProtocol.swift */; };
+		9A56AD4B207F124D0014E95B /* MCabinetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A56AD4A207F124D0014E95B /* MCabinetCollectionViewCell.swift */; };
+		9A56AD4D207F19130014E95B /* MCabinetCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A56AD4C207F19130014E95B /* MCabinetCollectionDataSource.swift */; };
 		9A9A18582077F2B600A0D8A5 /* MTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9A18572077F2B600A0D8A5 /* MTileView.swift */; };
 		9A9A185B207807BF00A0D8A5 /* MTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9A185A207807BF00A0D8A5 /* MTabBarController.swift */; };
 		9ACBB5D0206EF649001E31AB /* MTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACBB5CF206EF649001E31AB /* MTableViewController.swift */; };
@@ -695,6 +700,11 @@
 		59E455B71B1B4E3B0061458D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59E455B81B1B4E3B0061458D /* ViewMasterSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMasterSwiftTests.swift; sourceTree = "<group>"; };
 		8FC6A346207E636800DFB7A0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = viewmasterswift/HomeViewController.swift; sourceTree = "<group>"; };
+		9A56AD42207F09E50014E95B /* MCabinetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCabinetViewController.swift; sourceTree = "<group>"; };
+		9A56AD44207F0ADE0014E95B /* cabinetBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cabinetBackground.jpg; sourceTree = "<group>"; };
+		9A56AD48207F0D510014E95B /* MCabinetCollectionDataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCabinetCollectionDataSourceProtocol.swift; sourceTree = "<group>"; };
+		9A56AD4A207F124D0014E95B /* MCabinetCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCabinetCollectionViewCell.swift; sourceTree = "<group>"; };
+		9A56AD4C207F19130014E95B /* MCabinetCollectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCabinetCollectionDataSource.swift; sourceTree = "<group>"; };
 		9A9A18572077F2B600A0D8A5 /* MTileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTileView.swift; sourceTree = "<group>"; };
 		9A9A18592077F65200A0D8A5 /* VMR-bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VMR-bridging-header.h"; sourceTree = "<group>"; };
 		9A9A185A207807BF00A0D8A5 /* MTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTabBarController.swift; sourceTree = "<group>"; };
@@ -779,6 +789,7 @@
 				9A9A18572077F2B600A0D8A5 /* MTileView.swift */,
 				59617B1E1B1E10860013149B /* MTableViewCell.swift */,
 				5948E5A91B32037E003EC566 /* MCollectionViewCell.swift */,
+				9A56AD4A207F124D0014E95B /* MCabinetCollectionViewCell.swift */,
 			);
 			name = "User Interface Elements";
 			sourceTree = "<group>";
@@ -788,10 +799,12 @@
 			children = (
 				9ACBB5D1206EF769001E31AB /* MTableViewDataSourceProtocol.swift */,
 				9ACBB5DB206EFFD7001E31AB /* MCollectionDataSourceProtocol.swift */,
+				9A56AD48207F0D510014E95B /* MCabinetCollectionDataSourceProtocol.swift */,
 				9ACBB5DD206F001B001E31AB /* MTitleDataSource.swift */,
 				9ACBB5D5206EFF05001E31AB /* MCategoryDataSource.swift */,
 				9ACBB5D7206EFF3B001E31AB /* MNumberDataSource.swift */,
 				9ACBB5D9206EFF6A001E31AB /* MCollectionDataSource.swift */,
+				9A56AD4C207F19130014E95B /* MCabinetCollectionDataSource.swift */,
 			);
 			name = "Data Sources";
 			sourceTree = "<group>";
@@ -803,6 +816,7 @@
 				9ACBB5CF206EF649001E31AB /* MTableViewController.swift */,
 				9ACBB5DF206F012E001E31AB /* MCollectionViewController.swift */,
 				8FC6A346207E636800DFB7A0 /* HomeViewController.swift */,
+				9A56AD42207F09E50014E95B /* MCabinetViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -810,6 +824,7 @@
 		59617B2A1B1F42F60013149B /* Pictures */ = {
 			isa = PBXGroup;
 			children = (
+				9A56AD44207F0ADE0014E95B /* cabinetBackground.jpg */,
 				595A5A491B20FA95007957A4 /* FlipFrontButton.png */,
 				595A5A471B20FA7A007957A4 /* FlipBackButton.png */,
 				59617B2B1B1F434B0013149B /* 3853757757_b13b5e361d.png */,
@@ -1426,6 +1441,7 @@
 				59617B9C1B1F434B0013149B /* A791Front_37.png in Resources */,
 				595A58FA1B20A121007957A4 /* B180Front_37.png in Resources */,
 				59617BE21B1F434B0013149B /* B687Front_256.png in Resources */,
+				9A56AD45207F0ADE0014E95B /* cabinetBackground.jpg in Resources */,
 				59617BA71B1F434B0013149B /* A795Back_256.png in Resources */,
 				595A59F21B20A14D007957A4 /* B536Back_256.png in Resources */,
 				595A59D61B20A14D007957A4 /* B224Front_256.png in Resources */,
@@ -1615,16 +1631,20 @@
 				59617B1F1B1E10860013149B /* MTableViewCell.swift in Sources */,
 				5948E5AA1B32037E003EC566 /* MCollectionViewCell.swift in Sources */,
 				597394F8205C32BC00C87E03 /* MArtifactViewController.swift in Sources */,
+				9A56AD4D207F19130014E95B /* MCabinetCollectionDataSource.swift in Sources */,
 				B6361FE0207584CA0051C631 /* MArtifactRow.swift in Sources */,
 				9ACBB5DA206EFF6A001E31AB /* MCollectionDataSource.swift in Sources */,
+				9A56AD4B207F124D0014E95B /* MCabinetCollectionViewCell.swift in Sources */,
 				597394F4205C247E00C87E03 /* MArtifactView.swift in Sources */,
 				B6361FE42075A3CA0051C631 /* MArtifactArchive.swift in Sources */,
 				8FC6A347207E636800DFB7A0 /* HomeViewController.swift in Sources */,
 				9ACBB5D0206EF649001E31AB /* MTableViewController.swift in Sources */,
 				59E455A11B1B4E3B0061458D /* AppDelegate.swift in Sources */,
 				59617B181B1CF8A60013149B /* VMRViewMasterPackets.swift in Sources */,
+				9A56AD43207F09E50014E95B /* MCabinetViewController.swift in Sources */,
 				9ACBB5DE206F001B001E31AB /* MTitleDataSource.swift in Sources */,
 				597394F6205C2EB500C87E03 /* MArtifactFlippedView.swift in Sources */,
+				9A56AD49207F0D510014E95B /* MCabinetCollectionDataSourceProtocol.swift in Sources */,
 				B6A797FE2073DB35003AA7B9 /* MCabinet.swift in Sources */,
 				B6A797FA2073D302003AA7B9 /* MArtifact.swift in Sources */,
 				9ACBB5D6206EFF05001E31AB /* MCategoryDataSource.swift in Sources */,

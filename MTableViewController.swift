@@ -30,7 +30,7 @@ class MTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        MArtifactArchive.loadArtifactsFromPlist()
+        //MArtifactArchive.loadArtifactsFromPlist()
         
         // [From doc:] "The number of table rows at which to display the index list on the right edge of the table."
         self.tableView.sectionIndexMinimumDisplayRowCount = 0
