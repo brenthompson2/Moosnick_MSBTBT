@@ -31,10 +31,6 @@ class MArtifactView: UIView {
 
         // set the background color of the view to clear
         self.backgroundColor = UIColor.clear
-        
-        // attach a tap gesture recognizer to this view so that it can flip
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(MArtifactView.tapAction(_:)))
-        self.addGestureRecognizer(tapGestureRecognizer)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -44,13 +40,6 @@ class MArtifactView: UIView {
     // yes, this view can become first responder
     override var canBecomeFirstResponder: Bool {
         return true
-    }
-    
-    @objc func tapAction(_ gestureRecognizer: UIGestureRecognizer) {
-        
-        // when a tap gesture occurs, tell the view controller to flip this view to the
-        //  back, and show the MArtifactFlippedView instead
-        self.viewController?.flipCurrentView()
     }
     
     override func draw(_ rect: CGRect) {
