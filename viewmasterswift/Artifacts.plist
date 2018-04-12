@@ -4,17 +4,60 @@
 <array>
 	<dict>
 		<key>name</key>
+		<string>Detail of the Complete Human Anatomy</string>
+		<key>description</key>
+		<string>&quot;This is a detail from a chart depicting the anatomy of a human male. The chart, over four feet in height and two feet in width, currently hangs in a large wooden frame. Various parts of the body are numbered, although no descriptions are found on the chart.&quot; (Source: </string>
+		<key>date</key>
+		<string>unknown</string>
+		<key>imagePath</key>
+		<string></string>
+		<key>categories</key>
+		<array>
+			<string>Anatomical Specimens</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Two Small Human Figures</string>
+		<key>description</key>
+		<string>&quot;These two small human figures (male) are merely 10&quot; in height. Made of plaster, both show some damage due to the passage of time. Both figures depict the human muscular system.&quot; (Source: http://transy.pastperfectonline.com/webobject/74696DDC-9FA8-4C2F-B8F3-010584380734)</string>
+		<key>date</key>
+		<string>unknown</string>
+		<key>imagePath</key>
+		<string></string>
+		<key>categories</key>
+		<array>
+			<string>Anatomical Specimens</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Induction Machine</string>
+		<key>description</key>
+		<string>&quot;This instrument, known as the Toepler-Holtz Electrical Machine, develops electricity with great rapidity without friction. &quot;Toepler constructed as influence&apos; (induction) electric machine in 1865. Holtz constructed many influence machines between 1864-80&quot; (11th Edition, Encyclopedia Brit., Vol. IX).&quot; (Source: http://transy.pastperfectonline.com/webobject/4AE14BD5-0057-4160-A61E-726178687952)</string>
+		<key>date</key>
+		<string>1865</string>
+		<key>imagePath</key>
+		<string></string>
+		<key>categories</key>
+		<array>
+			<string>19th Century</string>
+			<string>Scientific Apparatus</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>Weird smoke up your butt thing</string>
 		<key>description</key>
 		<string>If they thought you&apos;d drowned they gave you a *very* direct hit of nicotine</string>
 		<key>date</key>
-		<date>1918-04-05T02:17:15Z</date>
+		<string>1918-04-05T02:17:15Z</string>
 		<key>imagePath</key>
 		<string></string>
 		<key>categories</key>
 		<array>
 			<string>20th Century</string>
-			<string>Medical Tools</string>
+			<string>Scientific Apparatus</string>
 			<string>Butts</string>
 		</array>
 	</dict>
@@ -24,13 +67,13 @@
 		<key>description</key>
 		<string>Because of course we have one</string>
 		<key>date</key>
-		<date>1872-07-23T07:13:04Z</date>
+		<string>1872-07-23T07:13:04Z</string>
 		<key>imagePath</key>
 		<string></string>
 		<key>categories</key>
 		<array>
 			<string>19th Century</string>
-			<string>Human Remains</string>
+			<string>Anatomical Specimens</string>
 		</array>
 	</dict>
 </array>
