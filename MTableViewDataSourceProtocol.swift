@@ -21,7 +21,7 @@ protocol MTableViewDataSourceProtocol: UITableViewDataSource {
     // This method provides a standardized way of asking for the packet at a
     //    specific index path, regardless of the sorting or display technique
     //    for the particular datasource
-    func packetForindexPath(indexPath: NSIndexPath) -> VMRPacket
+    func artifactForindexPath(indexPath: NSIndexPath) -> MArtifact
     
     // [Optional:] This method allows the datasource to report the section header title,
     //    for those that have sections

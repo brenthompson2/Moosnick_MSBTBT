@@ -33,8 +33,8 @@ class MArtifactFlippedView: MArtifactView {
     // (jumpToWikipedia was here)
     
     override func draw(_ rect: CGRect) {
-        guard let packet = self.packet else {return}
-        let packetBackImage = packet.imageForPacketBackView()
+        guard let packet = self.artifact else {return}
+        let packetBackImage = UIImage(named: packet.imagePath)
         let packetRectangle = CGRect(x: 0, y: 0, width: (packetBackImage?.size.width)! * 2, height: (packetBackImage?.size.height)! * 2)
         packetBackImage?.draw(in: packetRectangle)
     }

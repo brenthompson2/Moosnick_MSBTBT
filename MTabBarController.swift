@@ -35,11 +35,11 @@ class MTabBarController: UITabBarController {
         tempViewController.dataSource = MTitleDataSource()
         tempViewControllers.append(tempNavController)
         
-        // Sorted by number...
-        //        tempNavController = storyBoard.instantiateViewController(withIdentifier: "navForTableView") as! UINavigationController
-        //        tempViewController = tempNavController.topViewController! as! MTableViewController
-        //        tempViewController.dataSource = MNumberDataSource()
-        //        tempViewControllers.append(tempNavController)
+         //Sorted by number...
+        tempNavController = storyBoard.instantiateViewController(withIdentifier: "navForTableView") as! UINavigationController
+        tempViewController = tempNavController.topViewController! as! MTableViewController
+        tempViewController.dataSource = MNumberDataSource()
+        tempViewControllers.append(tempNavController)
         
         // Sorted by category...
         tempNavController = storyBoard.instantiateViewController(withIdentifier: "navForTableView") as! UINavigationController

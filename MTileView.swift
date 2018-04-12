@@ -11,15 +11,15 @@
 import UIKit
 
 class MTileView: UIView {
-    var packet : VMRPacket
+    var artifact : MArtifact
     
     override init(frame aRect: CGRect) {
-        packet = VMRPacket()
+        artifact = MArtifact()
         super.init(frame: aRect)
     }
 
     required init (coder aDecoder: NSCoder) {
-        packet = VMRPacket()
+        artifact = MArtifact()
         super.init(coder: aDecoder)!
     }
 
@@ -27,7 +27,7 @@ class MTileView: UIView {
 //https://stackoverflow.com/questions/38335046/update-cgrectmake-to-cgrect-in-swift-3-automatically
 // AND.. shows how to update to current Swift syntax!
     override func draw(_ rect: CGRect) {
-        let tileImage = packet.imageForPacketTileView()
+        let tileImage = UIImage(named: artifact.imagePath)
 //        let tileImageRectangle = CGRectMake(0, 0, tileImage!.size.width, tileImage!.size.height)
         let tileImageRectangle = CGRect(x:0, y:0, width:tileImage!.size.width / 2, height:tileImage!.size.height / 2)
 

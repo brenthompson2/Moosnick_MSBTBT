@@ -14,7 +14,7 @@ import UIKit
 @objc(MArtifactViewController)
 class MArtifactViewController: UIViewController {
     
-    var myPacket: VMRPacket?
+    var myArtifact: MArtifact?
     
     private let kFlipTranslationDuration = 0.75
     private let reflectionFraction: CGFloat = 0.35
@@ -53,7 +53,7 @@ class MArtifactViewController: UIViewController {
         
         // add the packet View to the view controller's interface
         // tell the packet view who its controller is
-        self.packetView.packet = self.myPacket
+        self.packetView.artifact = self.myArtifact
         self.view.addSubview(self.packetView)
         
         self.packetView.viewController = self
@@ -62,7 +62,7 @@ class MArtifactViewController: UIViewController {
         let tempPacketFlippedView = MArtifactFlippedView(frame: viewRect)
         self.packetFlippedView = tempPacketFlippedView
         
-        self.packetFlippedView.packet = self.myPacket
+        self.packetFlippedView.artifact = self.myArtifact
         self.packetFlippedView.viewController = self
         //// (Note: flipped view won't be added as a subview until user flips)
         
@@ -177,7 +177,7 @@ class MArtifactViewController: UIViewController {
  let name    = fullNameArr[0]
  let surname = fullNameArr[1]
     */
-        let titleWords = self.myPacket?.title.components(separatedBy: " ")
+        let titleWords = self.myArtifact?.name.components(separatedBy: " ")
         
         // (stold this example from eBay search page URL)
         // https://www.ebay.com/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=viewmaster+babes+in+toyland&_sacat=0

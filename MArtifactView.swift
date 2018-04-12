@@ -13,7 +13,7 @@ import UIKit
 @objc(MArtifactView)
 class MArtifactView: UIView {
     
-    var packet: VMRPacket?
+    var artifact: MArtifact?
     weak var viewController: MArtifactViewController?
     
     // the preferred size of this view is the size of the packet background image
@@ -26,7 +26,7 @@ class MArtifactView: UIView {
         super.init(frame: frame)
         
         // initialization code:
-        packet = nil
+        artifact = nil
         viewController = nil
 
         // set the background color of the view to clear
@@ -54,7 +54,7 @@ class MArtifactView: UIView {
     }
     
     override func draw(_ rect: CGRect) {
-        let packetImage = self.packet?.imageForPacketFrontView()
+        let packetImage = UIImage(named: (artifact?.imagePath)!)
         let packetImageRectangle = CGRect(x: 0, y:0, width: (packetImage?.size.width)! * 2, height: (packetImage?.size.height)! * 2)
         packetImage?.draw(in: packetImageRectangle)
     }

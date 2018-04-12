@@ -21,12 +21,6 @@ protocol MCollectionDataSourceProtocol : UICollectionViewDataSource {
     // This method provides a standardized way of asking for the packet at a
     //    specific index path, regardless of the sorting or display technique
     //    for the particular datasource
-    func packetForindexPath(indexPath: NSIndexPath) -> VMRPacket
-    
-    // [Optional:] This method allows the datasource to report the section header title,
-    //    for those that have sections
-    // (Note: Tough to make this "optional" in Swift! Instances that don't want to implement
-    //        this will still need to return the empty string, for now)
-    func titleForHeaderInSection(tableView: UITableView, section: Int) -> String
-    
+    func artifactForIndexPath(indexPath: NSIndexPath) -> MArtifact
+      
 }

@@ -50,15 +50,16 @@
 		<string>Weird smoke up your butt thing</string>
 		<key>description</key>
 		<string>If they thought you&apos;d drowned they gave you a *very* direct hit of nicotine</string>
-		<key>date</key>
-		<string>1918-04-05T02:17:15Z</string>
+		<key>year</key>
+		<string>1781</string>
 		<key>imagePath</key>
-		<string></string>
+		<string>A449Front_256.png</string>
 		<key>categories</key>
 		<array>
 			<string>20th Century</string>
 			<string>Scientific Apparatus</string>
 			<string>Butts</string>
+			<string>Cool</string>
 		</array>
 	</dict>
 	<dict>
@@ -66,10 +67,10 @@
 		<string>Box of Penises</string>
 		<key>description</key>
 		<string>Because of course we have one</string>
-		<key>date</key>
-		<string>1872-07-23T07:13:04Z</string>
+		<key>year</key>
+		<string>1983</string>
 		<key>imagePath</key>
-		<string></string>
+		<string>K69Front_256.png</string>
 		<key>categories</key>
 		<array>
 			<string>19th Century</string>

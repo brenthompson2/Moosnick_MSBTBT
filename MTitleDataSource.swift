@@ -14,18 +14,19 @@ import UIKit
 //    VMRPacketsTableDataSourceProtocol
 
 class MTitleDataSource: NSObject, MTableViewDataSourceProtocol {
+    
  
     //// Protocol methods to comply with "VMRPacketsDataSource" protocol
     
     // Getters for properties for navagation and tab bars
     var name: String {
         get {
-            return "Title"
+            return "Name"
         }
     }
     var navigationBarName: String {
         get {
-            return "Packets Sorted by Title"
+            return "Artifacts"
         }
     }
     var tabBarImage: UIImage {
@@ -42,19 +43,17 @@ class MTitleDataSource: NSObject, MTableViewDataSourceProtocol {
     }
     
     // Return the packet for the given index path (--> Take a closer look at this!)
-    func packetForindexPath(indexPath: NSIndexPath) -> VMRPacket {
+    func artifactForindexPath(indexPath: NSIndexPath) -> MArtifact {
 //        println("packetForIndexPath")
 
-        let firstLetter = VMRViewMasterPackets.packetTitleIndexArray![indexPath.section]
-//        print("firstLetter is \(firstLetter)")
-//        firstLetter = "E"
-//        print("firstLetter is now \(firstLetter)")
-        let packetsWithSameFirstLetter = VMRViewMasterPackets.packetsWithInitialLetter(letter: firstLetter)
-        return packetsWithSameFirstLetter![indexPath.row]
-
-    /*
-        return VMRViewMasterPackets.sharedViewMasterPackets().packetsWithInitialLetter(VMRViewMasterPackets.sharedViewMasterPackets().packetTitleIndexArray[indexPath.section])![indexPath.row]
- */
+        var firstLetter = "a"
+        // get the section with the correct index
+        for (letter, value) in MArtifactArchive.alphabeticArtifacts {
+            if value.0 == indexPath.section {
+                firstLetter = letter
+            }
+        }
+        return (MArtifactArchive.alphabeticArtifacts[firstLetter]?.1[indexPath.row])!
     }
     
     // (Don't really use this)
@@ -68,60 +67,34 @@ class MTitleDataSource: NSObject, MTableViewDataSourceProtocol {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MTableViewCell", for: indexPath) as! MTableViewCell
         
         // Set the packet for this cell as indicated by the datasource
-        cell.packet = packetForindexPath(indexPath: indexPath as NSIndexPath)
+        cell.artifact = artifactForindexPath(indexPath: indexPath as NSIndexPath)
         cell.setNeedsDisplay()
         return cell
     }
     
     // (changed func name via TheElements, swift edition)
     func numberOfSections(in tableView: UITableView) -> Int {
-   //     print("numberOfSectionsInTableView is \(VMRViewMasterPackets.packetTitleIndexArray!.count)")
         // The number of different sections in thei table depends on the number of different first letters
-        return VMRViewMasterPackets.packetTitleIndexArray!.count
-    }
-    
-    // (another func name update)
-//    func sectionIndexTitlesForTableView(tableView: UITableView) -> [AnyObject]! {
-    func sectionIndexTitles(for tableView: UITableView) -> [String]? {
-        // Returns the array of section titles --- these are just the first letters that
-        //    occur in any packet title in the data set
-        // NOTE: "title" here is the title of a table section, *not* the title of a packet!
-//        return VMRViewMasterPackets.packetTitleIndexArray! as [AnyObject]
-        return VMRViewMasterPackets.packetTitleIndexArray!
-    }
-  
-    func tableView(_ tableView: UITableView, sectionForSectionIndexTitle title: String, at index: Int) -> Int {
-        // Supposedly, you send me a section title (letter) and its index number, and I send you back
-        //    the index number (what??!)
-        return index
+        return MArtifactArchive.alphabeticArtifacts.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
- //       print("numberOfRowsInSection \(section)")
-        // The section corresponds to the first letter of the packet title
-        // Grab that letter out of the array of packet title index letters
-        let initialLetter = VMRViewMasterPackets.packetTitleIndexArray![section]
- //       println(" initial letter \(initialLetter)")
-        
-        // Now get the array of packets whose titles start with that letter
-        let packetsWithInitialPacketTitleLetter = VMRViewMasterPackets.packetsWithInitialLetter(letter: initialLetter)
-        // Return how many there are that start with this letter
-        if packetsWithInitialPacketTitleLetter != nil {
- //           println("Number of rows in \(initialLetter) section is \(packetsWithInitialPacketTitleLetter!.count)")
-            return packetsWithInitialPacketTitleLetter!.count
-        }
-        else {
- //           println("whoops!")
+        // get the section with the correct index
+        for (_, value) in MArtifactArchive.alphabeticArtifacts {
+            if value.0 == section {
+                return value.1.count
+            }
         }
         return 0
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        // This table has multiple sections, per each initial letter of the packet titles
-        // Return the letter that corressponds to the requested section
-        // [From Elements project files comments:]
-        //    "This is actually a delegate method, but we forward the request to the datasource in the view controller"
-        return VMRViewMasterPackets.packetTitleIndexArray![section]
+        for (letter, value) in MArtifactArchive.alphabeticArtifacts {
+            if value.0 == section {
+                return letter
+            }
+        }
+        return nil
     }
   
     
