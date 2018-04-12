@@ -84,7 +84,7 @@ class MCabinetViewController: UIViewController, UICollectionViewDataSource {
     
     // Return a cell for the corresponding index path
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MCabinetCollectionViewCell", for: indexPath as IndexPath) as! MCabinetCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cabinetCollectionCell", for: indexPath as IndexPath) as! MCabinetCollectionViewCell
         
         // Set the packet for this cell as indicated by the datasource
         cell.artifact = artifactForIndexPath(indexPath: indexPath as NSIndexPath)
@@ -95,6 +95,34 @@ class MCabinetViewController: UIViewController, UICollectionViewDataSource {
     // Return the packet for the given index path (--> Take a closer look at this!)
     func artifactForIndexPath(indexPath: NSIndexPath) -> MArtifact {
         return MArtifactArchive.artifacts[indexPath.row]
+    }
+    
+    // Get the new view controller using segue.destinationViewController
+    // Pass the selected object to the new view controller
+    // prepareForSegue...
+    
+    // Google: "swift prepareforsegue"
+    //https://stackoverflow.com/questions/44790918/swift-prepareforsegue-not-working
+    //    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetail" {
+            
+            // Google: "swift indexpathforselecteditem"
+            // https://developer.apple.com/documentation/uikit/uicollectionview/1618099-indexpathsforselecteditems
+            let selectedIndexPath = cabinetCollection?.indexPathsForSelectedItems?.first as NSIndexPath?
+            
+            // Find the corresponding view controller
+            let aPacket = dataSource!.artifactForIndexPath(indexPath: selectedIndexPath!)
+            var viewController: MArtifactViewController? = segue.destination as? MArtifactViewController
+            
+            if viewController != nil {
+                // Hide the bottom tab bar when we push this new view controller
+                viewController!.hidesBottomBarWhenPushed = true
+                
+                // Pass the packet to this view controller
+                viewController!.myArtifact = aPacket
+            }
+        }
     }
     
     

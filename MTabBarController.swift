@@ -54,6 +54,11 @@ class MTabBarController: UITabBarController {
         tempViewControllers.append(tempNavController)
         // print("Got this far... Grid VC exists")
         
+        // Create a custom navigation bar button and set it to always say "Back"
+        let tempBarButtonItem = UIBarButtonItem()
+        tempBarButtonItem.title = "Back"
+        self.navigationItem.backBarButtonItem = tempBarButtonItem
+        
         self.viewControllers = tempViewControllers
     }
 
