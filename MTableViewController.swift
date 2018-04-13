@@ -79,4 +79,9 @@ class MTableViewController: UITableViewController {
             }
         }
     }
+    
+    // Return to Homescreen
+    @IBAction func backBtnPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }

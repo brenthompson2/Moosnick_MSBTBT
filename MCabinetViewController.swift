@@ -56,11 +56,6 @@ class MCabinetViewController: UIViewController, UICollectionViewDataSource {
 
         self.dataSource = MCabinetCollectionDataSource()
         
-        // Create a custom navigation bar button and set it to always say "Back"
-        let tempBarButtonItem = UIBarButtonItem()
-        tempBarButtonItem.title = "Back"
-        self.navigationItem.backBarButtonItem = tempBarButtonItem
-        
         print("viewDidLoad")
     }
 
@@ -135,5 +130,11 @@ class MCabinetViewController: UIViewController, UICollectionViewDataSource {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    // Navigation to Homescreen
+    @IBAction func backBtnPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 
 }
