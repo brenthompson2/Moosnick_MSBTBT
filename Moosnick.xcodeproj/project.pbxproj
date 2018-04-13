@@ -344,6 +344,7 @@
 		9A56AD57207F247C0014E95B /* TwoSmallHumanFigures.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A56AD54207F247B0014E95B /* TwoSmallHumanFigures.png */; };
 		9A56AD58207F247C0014E95B /* PlanetaryPaths.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A56AD55207F247B0014E95B /* PlanetaryPaths.png */; };
 		9A56AD59207F247C0014E95B /* InductionMachine.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A56AD56207F247B0014E95B /* InductionMachine.png */; };
+		9A83A8D620816BC100E24B4D /* MCabinetPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A83A8D520816BC100E24B4D /* MCabinetPageViewController.swift */; };
 		9A9A18582077F2B600A0D8A5 /* MTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9A18572077F2B600A0D8A5 /* MTileView.swift */; };
 		9A9A185B207807BF00A0D8A5 /* MTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9A185A207807BF00A0D8A5 /* MTabBarController.swift */; };
 		9ACBB5D0206EF649001E31AB /* MTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACBB5CF206EF649001E31AB /* MTableViewController.swift */; };
@@ -715,6 +716,7 @@
 		9A56AD54207F247B0014E95B /* TwoSmallHumanFigures.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TwoSmallHumanFigures.png; sourceTree = "<group>"; };
 		9A56AD55207F247B0014E95B /* PlanetaryPaths.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlanetaryPaths.png; sourceTree = "<group>"; };
 		9A56AD56207F247B0014E95B /* InductionMachine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InductionMachine.png; sourceTree = "<group>"; };
+		9A83A8D520816BC100E24B4D /* MCabinetPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCabinetPageViewController.swift; sourceTree = "<group>"; };
 		9A9A18572077F2B600A0D8A5 /* MTileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTileView.swift; sourceTree = "<group>"; };
 		9A9A18592077F65200A0D8A5 /* VMR-bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VMR-bridging-header.h"; sourceTree = "<group>"; };
 		9A9A185A207807BF00A0D8A5 /* MTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTabBarController.swift; sourceTree = "<group>"; };
@@ -827,6 +829,7 @@
 				9ACBB5DF206F012E001E31AB /* MCollectionViewController.swift */,
 				8FC6A346207E636800DFB7A0 /* HomeViewController.swift */,
 				9A56AD42207F09E50014E95B /* MCabinetViewController.swift */,
+				9A83A8D520816BC100E24B4D /* MCabinetPageViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -1660,6 +1663,7 @@
 				8FC6A347207E636800DFB7A0 /* HomeViewController.swift in Sources */,
 				9ACBB5D0206EF649001E31AB /* MTableViewController.swift in Sources */,
 				59E455A11B1B4E3B0061458D /* AppDelegate.swift in Sources */,
+				9A83A8D620816BC100E24B4D /* MCabinetPageViewController.swift in Sources */,
 				59617B181B1CF8A60013149B /* VMRViewMasterPackets.swift in Sources */,
 				9A56AD43207F09E50014E95B /* MCabinetViewController.swift in Sources */,
 				9ACBB5DE206F001B001E31AB /* MTitleDataSource.swift in Sources */,

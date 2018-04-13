@@ -49,12 +49,11 @@ class MCabinetViewController: UIViewController, UICollectionViewDataSource {
     
     @IBOutlet weak var cabinetCollection: UICollectionView! // The Collection
     
-    
     // Constructor
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.dataSource = MCabinetCollectionDataSource()
+        // self.dataSource = MCabinetCollectionDataSource()
         
         print("viewDidLoad")
     }

@@ -81,7 +81,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fZ6-p7-FOA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2501" y="1549"/>
+            <point key="canvasLocation" x="-2676" y="1549"/>
+        </scene>
+        <!--Cabinet Page View Controller-->
+        <scene sceneID="QwD-9I-Zmg">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="Epe-DY-AlT" customClass="MCabinetPageViewController" customModule="ViewMasterSwift" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S3n-BZ-aGq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2676" y="96"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="Jv4-q3-bee">
@@ -126,7 +134,7 @@
                                     <color key="titleShadowColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="11o-rJ-JVS" kind="show" id="z0M-NZ-iyX"/>
+                                    <segue destination="Epe-DY-AlT" kind="show" id="3yB-hT-dv6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GgS-iT-Cyq">
@@ -143,7 +151,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
                         <outlet property="DisplayCabinetImage" destination="ccT-72-qsW" id="HOR-wF-R92"/>
@@ -280,7 +288,7 @@
                                         </imageView>
                                     </subviews>
                                 </view>
-                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="VCy-ha-eFJ" kind="show" identifier="showDetail" id="GjF-om-gzU"/>
                                 </connections>
@@ -326,7 +334,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="256-Uq-3t5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1975" y="2449"/>
+            <point key="canvasLocation" x="-1912" y="2393"/>
         </scene>
         <!--Item-->
         <scene sceneID="uGG-xr-84S">
@@ -334,7 +342,6 @@
                 <navigationController storyboardIdentifier="navForTableView" id="wof-El-Nmt" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="ICQ-Ov-eTL"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xHZ-ro-1xP">
-                        <rect key="frame" x="0.0" y="20" width="834" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -348,7 +355,7 @@
         <!--Navigation Controller-->
         <scene sceneID="MsC-dW-vvd">
             <objects>
-                <navigationController id="11o-rJ-JVS" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="navForCabinet" id="11o-rJ-JVS" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4EU-x3-EPT">
                         <rect key="frame" x="0.0" y="20" width="834" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -359,7 +366,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XMJ-BM-FBL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2501" y="772"/>
+            <point key="canvasLocation" x="-2676" y="806"/>
         </scene>
         <!--Item-->
         <scene sceneID="axH-lf-s9G">
@@ -368,7 +375,6 @@
                     <tabBarItem key="tabBarItem" title="Item" id="Oqg-PQ-ees"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="W2V-ka-0g5">
-                        <rect key="frame" x="0.0" y="20" width="834" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -388,7 +394,7 @@
         <image name="moosnick cropped-1" width="2442" height="2078"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5ra-ue-d9e"/>
-        <segue reference="nm7-5r-Wym"/>
+        <segue reference="GjF-om-gzU"/>
+        <segue reference="hk8-xS-z26"/>
     </inferredMetricsTieBreakers>
 </document>
