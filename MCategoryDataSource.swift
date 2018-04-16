@@ -20,12 +20,12 @@ class MCategoryDataSource: NSObject, MTableViewDataSourceProtocol {
     // Getters for properties for navagation and tab bars
     var name: String {
         get {
-            return "Category"
+            return "Tag"
         }
     }
     var navigationBarName: String {
         get {
-            return "Artifacts by Category"
+            return "Artifacts by Tag"
         }
     }
     var tabBarImage: UIImage {

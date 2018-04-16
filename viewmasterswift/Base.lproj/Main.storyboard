@@ -147,7 +147,7 @@
                                     <color key="titleShadowColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="49e-Tb-3d3" kind="show" id="Jud-vk-W0Q"/>
+                                    <segue destination="0Mr-ie-uo4" kind="show" id="rmV-yZ-A6c"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -166,10 +166,93 @@
             </objects>
             <point key="canvasLocation" x="-1912.2302158273383" y="-400.35971223021585"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Rmh-M1-UZT">
+            <objects>
+                <navigationController id="0Mr-ie-uo4" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="z4H-0e-Xub">
+                        <rect key="frame" x="0.0" y="20" width="834" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Dru-eU-4Uy" kind="relationship" relationship="rootViewController" id="YFZ-CY-aSd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7I4-pR-UO5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1088" y="-1332"/>
+        </scene>
+        <!--CategorySelect-->
+        <scene sceneID="fbw-fY-MTM">
+            <objects>
+                <viewController storyboardIdentifier="CategorySelect" id="Dru-eU-4Uy" userLabel="CategorySelect" customClass="MCategorySelectViewController" customModule="ViewMasterSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Snz-dd-spI"/>
+                        <viewControllerLayoutGuide type="bottom" id="gep-73-rBC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wmg-OF-LLF">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10f-qI-IhL">
+                                <rect key="frame" x="260" y="134" width="266" height="225"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2a-oW-zCP">
+                                <rect key="frame" x="265" y="443" width="256" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="19th Century"/>
+                                <connections>
+                                    <action selector="category19th:" destination="Dru-eU-4Uy" eventType="touchUpInside" id="rTg-4Z-WfY"/>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="ayc-1d-PME"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcE-La-QZD">
+                                <rect key="frame" x="265" y="532" width="256" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="20th Century"/>
+                                <connections>
+                                    <action selector="category20th:" destination="Dru-eU-4Uy" eventType="touchUpInside" id="CLQ-wd-uvP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlO-46-ryu">
+                                <rect key="frame" x="265" y="613" width="256" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Anatomical Specimen"/>
+                                <connections>
+                                    <action selector="anatomicalSpecimen:" destination="Dru-eU-4Uy" eventType="touchUpInside" id="MpF-4u-bSS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZ8-yp-dDZ">
+                                <rect key="frame" x="265" y="697" width="256" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Butts"/>
+                                <connections>
+                                    <action selector="categoryButts:" destination="Dru-eU-4Uy" eventType="touchUpInside" id="Obt-oe-TUu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Moosnick" id="rNB-cT-98x">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="rC5-gv-Vt3">
+                            <connections>
+                                <action selector="backBtnPressed:" destination="Dru-eU-4Uy" id="Uym-iH-Tju"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u8r-MB-pRT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1088.4892086330935" y="-625.35971223021579"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController definesPresentationContext="YES" id="49e-Tb-3d3" customClass="MTabBarController" customModule="ViewMasterSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="catalogTabBarController" definesPresentationContext="YES" id="49e-Tb-3d3" customClass="MTabBarController" customModule="ViewMasterSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
@@ -342,6 +425,7 @@
                 <navigationController storyboardIdentifier="navForTableView" id="wof-El-Nmt" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="ICQ-Ov-eTL"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xHZ-ro-1xP">
+                        <rect key="frame" x="0.0" y="20" width="834" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -375,6 +459,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="Oqg-PQ-ees"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="W2V-ka-0g5">
+                        <rect key="frame" x="0.0" y="20" width="834" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -394,7 +479,7 @@
         <image name="moosnick cropped-1" width="2442" height="2078"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="GjF-om-gzU"/>
-        <segue reference="hk8-xS-z26"/>
+        <segue reference="JRd-wJ-MsW"/>
+        <segue reference="9Dl-Ql-144"/>
     </inferredMetricsTieBreakers>
 </document>

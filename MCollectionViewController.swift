@@ -57,13 +57,6 @@ class MCollectionViewController : UICollectionViewController {
         super.didReceiveMemoryWarning()
     }
     
-    // Get the new view controller using segue.destinationViewController
-    // Pass the selected object to the new view controller
-    // prepareForSegue...
-    
-    // Google: "swift prepareforsegue"
-    //https://stackoverflow.com/questions/44790918/swift-prepareforsegue-not-working
-    //    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             
@@ -88,6 +81,12 @@ class MCollectionViewController : UICollectionViewController {
     // Return to Homescreen
     @IBAction func backBtnPressed(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    // Manage Categories
+    @IBAction func manageCategories(_ sender: Any) {
+        
+        // Display Category Select
     }
 }
 

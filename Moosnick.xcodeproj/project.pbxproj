@@ -344,6 +344,7 @@
 		9A56AD57207F247C0014E95B /* TwoSmallHumanFigures.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A56AD54207F247B0014E95B /* TwoSmallHumanFigures.png */; };
 		9A56AD58207F247C0014E95B /* PlanetaryPaths.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A56AD55207F247B0014E95B /* PlanetaryPaths.png */; };
 		9A56AD59207F247C0014E95B /* InductionMachine.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A56AD56207F247B0014E95B /* InductionMachine.png */; };
+		9A5AB62420850DE200C65468 /* MCategorySelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5AB62320850DE200C65468 /* MCategorySelectViewController.swift */; };
 		9A83A8D620816BC100E24B4D /* MCabinetPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A83A8D520816BC100E24B4D /* MCabinetPageViewController.swift */; };
 		9A9A18582077F2B600A0D8A5 /* MTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9A18572077F2B600A0D8A5 /* MTileView.swift */; };
 		9A9A185B207807BF00A0D8A5 /* MTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9A185A207807BF00A0D8A5 /* MTabBarController.swift */; };
@@ -716,6 +717,7 @@
 		9A56AD54207F247B0014E95B /* TwoSmallHumanFigures.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TwoSmallHumanFigures.png; sourceTree = "<group>"; };
 		9A56AD55207F247B0014E95B /* PlanetaryPaths.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlanetaryPaths.png; sourceTree = "<group>"; };
 		9A56AD56207F247B0014E95B /* InductionMachine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InductionMachine.png; sourceTree = "<group>"; };
+		9A5AB62320850DE200C65468 /* MCategorySelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCategorySelectViewController.swift; sourceTree = "<group>"; };
 		9A83A8D520816BC100E24B4D /* MCabinetPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCabinetPageViewController.swift; sourceTree = "<group>"; };
 		9A9A18572077F2B600A0D8A5 /* MTileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTileView.swift; sourceTree = "<group>"; };
 		9A9A18592077F65200A0D8A5 /* VMR-bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VMR-bridging-header.h"; sourceTree = "<group>"; };
@@ -830,6 +832,7 @@
 				8FC6A346207E636800DFB7A0 /* HomeViewController.swift */,
 				9A56AD42207F09E50014E95B /* MCabinetViewController.swift */,
 				9A83A8D520816BC100E24B4D /* MCabinetPageViewController.swift */,
+				9A5AB62320850DE200C65468 /* MCategorySelectViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -1653,6 +1656,7 @@
 				B6A797FC2073D41D003AA7B9 /* MCategory.swift in Sources */,
 				59617B1F1B1E10860013149B /* MTableViewCell.swift in Sources */,
 				5948E5AA1B32037E003EC566 /* MCollectionViewCell.swift in Sources */,
+				9A5AB62420850DE200C65468 /* MCategorySelectViewController.swift in Sources */,
 				597394F8205C32BC00C87E03 /* MArtifactViewController.swift in Sources */,
 				9A56AD4D207F19130014E95B /* MCabinetCollectionDataSource.swift in Sources */,
 				B6361FE0207584CA0051C631 /* MArtifactRow.swift in Sources */,
