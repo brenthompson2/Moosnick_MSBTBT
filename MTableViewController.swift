@@ -37,11 +37,13 @@ class MTableViewController: UITableViewController {
         self.tableView.delegate = self
         self.tableView.dataSource = self.dataSource
         
-        // Create a custom navigation bar button and set it to always say "Packets"
+        // Create a custom navigation bar button and set it to always say "Catalog"
         let tempBarButtonItem = UIBarButtonItem()
         tempBarButtonItem.title = "Catalog"
         self.navigationItem.backBarButtonItem = tempBarButtonItem
+        
     }
+    
     
     // [Next method: In TheElements, but not in the template...]
     override func viewWillAppear(_ animated: Bool) {
@@ -68,7 +70,7 @@ class MTableViewController: UITableViewController {
             let selectedIndexPath = tableView.indexPathForSelectedRow
             // Find the corresponding view controller
             let aPacket = dataSource!.artifactForindexPath(indexPath: selectedIndexPath! as NSIndexPath)
-            var viewController: MArtifactViewController? = segue.destination as? MArtifactViewController
+            let viewController: MArtifactViewController? = segue.destination as? MArtifactViewController
             
             if viewController != nil {
                 // Hide the bottom tab bar when we push this new view controller
@@ -78,6 +80,13 @@ class MTableViewController: UITableViewController {
                 viewController!.myArtifact = aPacket
             }
         }
+    }
+    
+    // set the height of each row to 150 pts
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        var height: CGFloat
+        height = 275
+        return height
     }
     
     // Return to Homescreen

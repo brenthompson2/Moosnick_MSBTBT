@@ -25,8 +25,6 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        DisplayCabinetImage.layer.cornerRadius = 10
-        MedicalStuffImage.layer.cornerRadius = 10
         
     }
 
