@@ -11,9 +11,11 @@
 		<string>unknown</string>
 		<key>imagePath</key>
 		<string>BonePathologies.png</string>
+		<key>section</key>
+		<string>Anatomy</string>
 		<key>categories</key>
 		<array>
-			<string>Anatomical Specimens</string>
+			<string>Specimens</string>
 		</array>
 	</dict>
 	<dict>
@@ -25,9 +27,11 @@
 		<string>unknown</string>
 		<key>imagePath</key>
 		<string>PlanetaryPaths.png</string>
+		<key>section</key>
+		<string>Apparati</string>
 		<key>categories</key>
 		<array>
-			<string>Scientific Apparatus</string>
+			<string>Astronomy</string>
 		</array>
 	</dict>
 	<dict>
@@ -39,9 +43,11 @@
 		<string>unknown</string>
 		<key>imagePath</key>
 		<string>EarlyCompass.png</string>
+		<key>section</key>
+		<string>Apparati</string>
 		<key>categories</key>
 		<array>
-			<string>Scientific Apparatus</string>
+			<string>Navigation</string>
 		</array>
 	</dict>
 	<dict>
@@ -53,9 +59,11 @@
 		<string>unknown</string>
 		<key>imagePath</key>
 		<string>DetailHumanAnatomy.png</string>
+		<key>section</key>
+		<string>Anatomy</string>
 		<key>categories</key>
 		<array>
-			<string>Anatomical Specimens</string>
+			<string>Specimens</string>
 		</array>
 	</dict>
 	<dict>
@@ -67,9 +75,11 @@
 		<string>unknown</string>
 		<key>imagePath</key>
 		<string>TwoSmallHumanFigures.png</string>
+		<key>section</key>
+		<string>Anatomy</string>
 		<key>categories</key>
 		<array>
-			<string>Anatomical Specimens</string>
+			<string>Specimens</string>
 		</array>
 	</dict>
 	<dict>
@@ -81,10 +91,11 @@
 		<string>1865</string>
 		<key>imagePath</key>
 		<string>InductionMachine.png</string>
+		<key>section</key>
+		<string>Apparati</string>
 		<key>categories</key>
 		<array>
 			<string>19th Century</string>
-			<string>Scientific Apparatus</string>
 		</array>
 	</dict>
 	<dict>
@@ -96,12 +107,12 @@
 		<string>1781</string>
 		<key>imagePath</key>
 		<string>A449Front_256.png</string>
+		<key>section</key>
+		<string>Apparati</string>
 		<key>categories</key>
 		<array>
 			<string>20th Century</string>
-			<string>Scientific Apparatus</string>
 			<string>Butts</string>
-			<string>Cool</string>
 		</array>
 	</dict>
 	<dict>
@@ -113,10 +124,12 @@
 		<string>1983</string>
 		<key>imagePath</key>
 		<string>K69Front_256.png</string>
+		<key>section</key>
+		<string>Anatomy</string>
 		<key>categories</key>
 		<array>
 			<string>19th Century</string>
-			<string>Anatomical Specimens</string>
+			<string>Specimens</string>
 		</array>
 	</dict>
 </array>

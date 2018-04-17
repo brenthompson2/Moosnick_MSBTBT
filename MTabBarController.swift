@@ -9,14 +9,9 @@
 import UIKit
 
 class MTabBarController: UITabBarController {
-    
-    var selectedCategory: Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Manage Category
-        print("Selected Category: \(selectedCategory)")
         
         // For each table view screen we need to create a separate data source instance
         // We then need to create an instance of VMRPacketsTableViewCOntroller with that data source instance.

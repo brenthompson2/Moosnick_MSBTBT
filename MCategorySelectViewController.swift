@@ -36,37 +36,26 @@ class MCategorySelectViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
-    // ===============================================
-    // Handle Category Selection
-    // ===============================================
-    @IBAction func category19th(_ sender: Any) {
-        navigateToCatalog(category: 1)
+    @IBAction func setSection(_ sender: UIButton) {
+        // Use of ?? operator: Saw it on the internet many times while researching other option-related stuff. If the optional can't be unwrapped, the value after the question marks is used instead!
+        MArtifactArchive.filterSection = sender.titleLabel?.text ?? "All"
     }
     
-    @IBAction func category20th(_ sender: Any) {
-        navigateToCatalog(category: 2)
-    }
     
-    @IBAction func anatomicalSpecimen(_ sender: Any) {
-        navigateToCatalog(category: 3)
-    }
-    
-    @IBAction func categoryButts(_ sender: Any) {
-        navigateToCatalog(category: 4)
-    }
-    
-    // Navigate to the MTabBarController given the selected category
+    /*// Navigate to the MTabBarController given the selected category
     func navigateToCatalog(category: Int){
+        
+        MArtifactArchive.sortAlphabetic()
+        MArtifactArchive.sortByCategory()
         
         // Create New MTabBarController
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let tempViewController = storyBoard.instantiateViewController(withIdentifier: "catalogTabBarController") as! MTabBarController
-        tempViewController.selectedCategory = category
         
         // Navigate to new MTabBarController
         // navigation = https://makeapppie.com/2016/06/30/adding-modal-views-and-popovers-in-swift-3-0/
 //        tempViewController.modalTransitionStyle = .crossDissolve
         present(tempViewController, animated: true, completion: nil)
-    }
+    }*/
     
 }

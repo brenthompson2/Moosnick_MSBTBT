@@ -11,6 +11,14 @@ import Foundation
 class MArtifactArchive {
     static var artifacts = [MArtifact]()
     
+    static var filterSection = "All" {
+        didSet {
+            MArtifactArchive.sortByCategory()
+            MArtifactArchive.sortAlphabetic()
+            MArtifactArchive.sortChronological()
+        }
+    }
+    
     static var alphabeticArtifacts = [String: (Int, [MArtifact])]()
     static var chronologicalArtifacts = [String: (Int, [MArtifact])]()
     static var artifactsByCategory = [String: (Int, [MArtifact])]()
@@ -28,14 +36,17 @@ class MArtifactArchive {
         var letterIndex = 0
         
         for artifact in sorted {
-            let firstLetter = String(describing: (artifact.name.first)!)
-            if firstLetter != lastFirstLetter {
-                alphabeticArtifacts[firstLetter] = (0, [])
-                alphabeticArtifacts[firstLetter]?.0 = letterIndex
-                letterIndex = letterIndex + 1
-                lastFirstLetter = firstLetter
+            if (artifact.section == MArtifactArchive.filterSection || MArtifactArchive.filterSection == "All")
+            {
+                let firstLetter = String(describing: (artifact.name.first)!)
+                if firstLetter != lastFirstLetter {
+                    alphabeticArtifacts[firstLetter] = (0, [])
+                    alphabeticArtifacts[firstLetter]?.0 = letterIndex
+                    letterIndex = letterIndex + 1
+                    lastFirstLetter = firstLetter
+                }
+                alphabeticArtifacts[firstLetter]?.1.append(artifact)
             }
-            alphabeticArtifacts[firstLetter]?.1.append(artifact)
         }
     }
     
@@ -47,14 +58,17 @@ class MArtifactArchive {
         var yearIndex = 0
         
         for artifact in sorted {
-            let year = artifact.year
-            if year != lastYear {
-                chronologicalArtifacts[year] = (0, [])
-                chronologicalArtifacts[year]?.0 = yearIndex
-                yearIndex = yearIndex + 1
-                lastYear = year
+            if (artifact.section == MArtifactArchive.filterSection || MArtifactArchive.filterSection == "All")
+            {
+                let year = artifact.year
+                if year != lastYear {
+                    chronologicalArtifacts[year] = (0, [])
+                    chronologicalArtifacts[year]?.0 = yearIndex
+                    yearIndex = yearIndex + 1
+                    lastYear = year
+                }
+                chronologicalArtifacts[year]?.1.append(artifact)
             }
-            chronologicalArtifacts[year]?.1.append(artifact)
         }
     }
     
@@ -70,8 +84,11 @@ class MArtifactArchive {
             artifactsByCategory[catName] = (categoryIndex, [])
             categoryIndex = categoryIndex + 1
             for artifact in sorted {
-                if artifact.category.hasCategory(catName) {
-                    artifactsByCategory[catName]?.1.append(artifact)
+                if (artifact.section == MArtifactArchive.filterSection || MArtifactArchive.filterSection == "All")
+                {
+                    if artifact.category.hasCategory(catName) {
+                        artifactsByCategory[catName]?.1.append(artifact)
+                    }
                 }
             }
         }
@@ -92,10 +109,9 @@ class MArtifactArchive {
                 let description = artifactDataDictionary.value(forKey: "description") as! String
                 let year = artifactDataDictionary.value(forKey: "year") as! String
                 let imagePath = artifactDataDictionary.value(forKey: "imagePath") as! String
+                let section = artifactDataDictionary.value(forKey: "section") as! String
                 
-                print("Name: \(name)\nDescription: \(description)\nDate: \(year)\n")
-                
-                let artifact = MArtifact(name: name, description: description, year: year, imagePath: imagePath)
+                let artifact = MArtifact(name: name, description: description, year: year, imagePath: imagePath, section: section)
                 
                 let categories = artifactDataDictionary.value(forKey: "categories") as! NSArray
                 for category in categories {
