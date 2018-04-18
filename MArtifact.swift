@@ -11,26 +11,26 @@ import Foundation
 class MArtifact {
     var name: String
     var description: String
-    var year: String
     var imagePath: String
     var section: String
-    var category: MCategory
+    var location: String
+    var tags: MTag
     
     init() {
         name = "DEFAULT_NAME"
         description = "DEFAULT_DESCRIPTION"
-        year = "2018"
         imagePath = "A071Front_256.png"
         section = "General"
-        category = MCategory()
+        location = "Storage"
+        tags = MTag()
     }
     
-    init(name: String, description: String, year: String, imagePath: String, section: String) {
+    init(name: String, description: String, imagePath: String, section: String, location: String) {
         self.name = name
         self.description = description
-        self.year = year
         self.imagePath = imagePath
         self.section = section
-        self.category = MCategory()
+        self.location = location
+        self.tags = MTag()
     }
 }

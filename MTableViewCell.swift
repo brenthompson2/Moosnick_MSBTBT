@@ -19,10 +19,6 @@ class MTableViewCell: UITableViewCell {
             var labelView = self.contentView.viewWithTag(2) as? UILabel
             labelView!.text = self.artifact.name
             
-            // Set the label to the date of the artifact
-            labelView = self.contentView.viewWithTag(3) as? UILabel
-            labelView!.text = self.artifact.year
-            
             // Set the label to the description of the artifact (excerpt)
             labelView = self.contentView.viewWithTag(4) as? UILabel
             labelView!.text = self.artifact.description

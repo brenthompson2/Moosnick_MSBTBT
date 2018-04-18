@@ -21,15 +21,18 @@ class MArtifactViewController: UIViewController {
     private class ScrollViewDelegate: NSObject, UIScrollViewDelegate {
         let scrollLabel: UILabel
         
+        // Sets the scroll label that this delegate will fade as the scroll view goes down
         init(_ scrollLabel: UILabel) {
             self.scrollLabel = scrollLabel
         }
         
+        // Set the amount of transparency the label has to be the percent scrolled * 16
         func scrollViewDidScroll(_ scrollView: UIScrollView) {
             scrollLabel.alpha = 1 - ((scrollView.contentOffset.y / scrollView.contentSize.height) * 16)
         }
     }
     
+    // Make a new delegate for the scroll view, with a dummy label
     private var delegate = ScrollViewDelegate(UILabel())
     
     var myArtifact: MArtifact?
@@ -47,6 +50,8 @@ class MArtifactViewController: UIViewController {
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor.black
+        
+        // Get a reference to the scroll view
         let scrollView = self.view.viewWithTag(1) as! UIScrollView
         
         // Handy tip about content size:
@@ -141,6 +146,7 @@ class MArtifactViewController: UIViewController {
         scrollLabel.textColor = UIColor.white
         scrollLabel.textAlignment = NSTextAlignment.center
         
+        // Make a new delegate, this time with the real scroll label
         delegate = ScrollViewDelegate(scrollLabel)
         scrollView.delegate = delegate
         

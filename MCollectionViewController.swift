@@ -66,7 +66,7 @@ class MCollectionViewController : UICollectionViewController {
             
             // Find the corresponding view controller
             let aPacket = dataSource!.artifactForIndexPath(indexPath: selectedIndexPath!)
-            var viewController: MArtifactViewController? = segue.destination as? MArtifactViewController
+            let viewController: MArtifactViewController? = segue.destination as? MArtifactViewController
             
             if viewController != nil {
                 // Hide the bottom tab bar when we push this new view controller

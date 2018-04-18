@@ -82,6 +82,7 @@ class MTitleDataSource: NSObject, MTableViewDataSourceProtocol {
         // get the section with the correct index
         for (_, value) in MArtifactArchive.alphabeticArtifacts {
             if value.0 == section {
+                // return the size of the array (how many rows there are)
                 return value.1.count
             }
         }
@@ -89,6 +90,7 @@ class MTitleDataSource: NSObject, MTableViewDataSourceProtocol {
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        // search for the initial letter that has the section index we are looking for
         for (letter, value) in MArtifactArchive.alphabeticArtifacts {
             if value.0 == section {
                 return letter

@@ -35,16 +35,16 @@ class MTabBarController: UITabBarController {
         tempViewController.dataSource = MTitleDataSource()
         tempViewControllers.append(tempNavController)
         
-         //Sorted by number...
+        /* //Sorted by number...
         tempNavController = storyBoard.instantiateViewController(withIdentifier: "navForTableView") as! UINavigationController
         tempViewController = tempNavController.topViewController! as! MTableViewController
         tempViewController.dataSource = MNumberDataSource()
-        tempViewControllers.append(tempNavController)
+        tempViewControllers.append(tempNavController) */
         
         // Sorted by category...
         tempNavController = storyBoard.instantiateViewController(withIdentifier: "navForTableView") as! UINavigationController
         tempViewController = tempNavController.topViewController! as! MTableViewController
-        tempViewController.dataSource = MCategoryDataSource()
+        tempViewController.dataSource = MTagDataSource()
         tempViewControllers.append(tempNavController)
         
         // Sorted by number, as a grid...
