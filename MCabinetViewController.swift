@@ -51,8 +51,6 @@ class MCabinetViewController: UIViewController, UICollectionViewDataSource {
         super.viewDidLoad()
 
         // self.dataSource = MCabinetCollectionDataSource()
-        
-        print("viewDidLoad")
     }
 
     // Memory Warning
@@ -63,7 +61,7 @@ class MCabinetViewController: UIViewController, UICollectionViewDataSource {
     
     // Number of items in the section is the number of packets
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print("numberOfItemsInSection: \(MArtifactArchive.artifacts.count)")
+//        print("numberOfItemsInSection: \(MArtifactArchive.artifacts.count)")
         return MArtifactArchive.artifacts.count
     }
     
