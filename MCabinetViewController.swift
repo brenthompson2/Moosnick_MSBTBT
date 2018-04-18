@@ -11,7 +11,6 @@
 /*
     Creating Cabinet Collection View
         https://medium.com/yay-its-erica/creating-a-collection-view-swift-3-77da2898bb7c
- 
     1) Create new UIViewController
     2) Add Collection View
         - default background
@@ -23,16 +22,14 @@
     6) Set Controller for Collection View Cell to MCollectionViewCell
     7) Add UIImageView to CollectionViewCell
         - link to code
- 
- 
- 
- 
- 
  */
 
 import UIKit
 
 class MCabinetViewController: UIViewController, UICollectionViewDataSource {
+    
+    var pageIndex: Int!
+    
     var dataSource : MCabinetCollectionDataSourceProtocol? {
         didSet {
             
