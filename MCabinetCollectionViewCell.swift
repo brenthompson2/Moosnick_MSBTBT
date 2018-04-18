@@ -21,7 +21,6 @@ class MCabinetCollectionViewCell: UICollectionViewCell {
     }
     
     required init (coder aDecoder: NSCoder) {
-        print("Artifact Init")
         artifact = MArtifact()
         super.init(coder: aDecoder)!
     }

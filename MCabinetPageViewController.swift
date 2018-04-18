@@ -5,41 +5,66 @@
 //  Created by Brendan Thompson on 4/13/18.
 //  Copyright © 2018 Robert England. All rights reserved.
 //
+//  Manages which cabinets are shown
+//  Example PageViewController instantiating one view: https://gist.github.com/andreif/3bace9961c7e70995856
+//
+//
 
 import UIKit
 
 class MCabinetPageViewController: UIPageViewController {
     
-    var numPages: Int = 1
-    var cabinetControllers = [UINavigationController]()
+    // ====================================
+    // Properties
+    // ====================================
+    
+    // Page Management
+    var numPages: Int!
+    var currentPageIndex: Int = 0
 
+    // ====================================
+    // Constructors
+    // ====================================
+    
+    // View Did Load
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
         self.isDoubleSided = false
+        dataSource = self
+        numPages = 5
         
-        // The class for the data source is not important, but it must implement the
+        // Create First Page
+        currentPageIndex = 0
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        
-        // ======================================
-        // Create Pages
-        // ======================================
-        
-//        for _ in 0..<numPages{
-            // Instantiate a Page
-            var tempNavController = storyBoard.instantiateViewController(withIdentifier: "navForCabinet") as! UINavigationController
-            var tempViewController = tempNavController.topViewController! as! MCabinetViewController
-            tempViewController.dataSource = MCabinetCollectionDataSource()
-            cabinetControllers.append(tempNavController)
-            setViewControllers(cabinetControllers, direction: UIPageViewControllerNavigationDirection.forward, animated: true, completion: nil)
-            
-//        }
+        var tempNavController = storyBoard.instantiateViewController(withIdentifier: "navForCabinet") as! UINavigationController
+        var tempViewController = tempNavController.topViewController! as! MCabinetViewController
+        tempViewController.dataSource = MCabinetCollectionDataSource()
+        setViewControllers([getViewController(index: currentPageIndex)], direction: UIPageViewControllerNavigationDirection.forward, animated: true, completion: nil)
     }
 
+    // Dispose of any resources that can be recreated.
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    }
+    
+    // ====================================
+    // Manage Pages
+    // ====================================
+    
+    // Returns an MCabinetViewController for the selected index
+    func getViewController(index: Int) -> UINavigationController {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let tempNavController = storyBoard.instantiateViewController(withIdentifier: "navForCabinet") as! UINavigationController
+        let tempViewController = tempNavController.topViewController! as! MCabinetViewController
+
+        // Dont set pageIndex if not valid index
+        if (numPages == 0) || (index >= numPages) {
+            return tempNavController
+        }
+        
+        tempViewController.pageIndex = index
+        return tempNavController
     }
     
 
@@ -55,38 +80,40 @@ class MCabinetPageViewController: UIPageViewController {
 
 }
 
+// ====================================
+// UIPageViewControllerDataSource for the cabinet
+// ====================================
+
 // Example PageViewController = https://gist.github.com/andreif/3bace9961c7e70995856
-//class MCabinetPageViewDataSource: UIPageViewControllerDataSource {
-//    func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
-//        let vc = viewController as! MCabinetViewController
-//        var index = vc.pageIndex as Int
-//        if (index == 0 || index == NSNotFound) {
-//            return nil
-//        }
-//        index--
-//        return self.viewControllerAtIndex(index)
-//    }
-//
-//    func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
-//        let vc = viewController as! MCabinetViewController
-//        var index = vc.pageIndex as Int
-//        if (index == NSNotFound) {
-//            return nil
-//        }
-//        index++
-//        if (index == PAGES.count) {
-//            return nil
-//        }
-//        return self.viewControllerAtIndex(index)
-//    }
-//
-//    func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
-//        return PAGES.count
-//    }
-//
-//    func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
-//        return 0
-//    }
-//
-//}
+extension MCabinetPageViewController: UIPageViewControllerDataSource {
+    
+    // Get Previous Page
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+        if (currentPageIndex == 0 || currentPageIndex == NSNotFound) {
+            return nil
+        }
+        currentPageIndex = currentPageIndex - 1
+        return getViewController(index: currentPageIndex)
+    }
+
+    // Get Next Page
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+        if (currentPageIndex == numPages || currentPageIndex == NSNotFound) {
+            return nil
+        }
+        currentPageIndex = currentPageIndex + 1
+        return getViewController(index: currentPageIndex)
+    }
+
+    // Get Num Pages
+    func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
+        return numPages
+    }
+
+    // ?
+    func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
+        return 0
+    }
+
+}
 

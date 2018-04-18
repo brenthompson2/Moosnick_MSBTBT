@@ -419,7 +419,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E3J-Td-2yb">
+                                        <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E3J-Td-2yb">
                                             <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
@@ -535,8 +535,8 @@
         <image name="shelf.png" width="510" height="159"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5ra-ue-d9e"/>
+        <segue reference="JRd-wJ-MsW"/>
         <segue reference="NYV-8C-duS"/>
-        <segue reference="nm7-5r-Wym"/>
+        <segue reference="9Dl-Ql-144"/>
     </inferredMetricsTieBreakers>
 </document>
