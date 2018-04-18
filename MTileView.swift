@@ -30,7 +30,7 @@ class MTileView: UIView {
         let tileImage = UIImage(named: artifact.imagePath)
 //        let tileImageRectangle = CGRectMake(0, 0, tileImage!.size.width, tileImage!.size.height)
         let tileImageRectangle = CGRect(x:0, y:0, width:tileImage!.size.width / 2, height:tileImage!.size.height / 2)
-
+        
         tileImage?.draw(in: tileImageRectangle)
     }
 }
