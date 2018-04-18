@@ -138,7 +138,7 @@ class MArtifactArchive {
                 // Check the location of this artifact
                 // If the dictionary doesn't have an entry for it yet, initialize it
                 let location = artifact.location
-                if artifactsByTag[location] == nil {
+                if artifactsByLocation[location] == nil {
                     // Initialize the key for the new location
                     artifactsByLocation[location] = (0, [])
                     artifactsByLocation[location]?.0 = locationIndex
@@ -146,7 +146,6 @@ class MArtifactArchive {
                 }
                 
                 // Add the artifact to the section's array
-                print("\(artifact.name): \(location)")
                 artifactsByLocation[location]?.1.append(artifact)
             }
         }

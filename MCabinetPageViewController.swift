@@ -32,13 +32,13 @@ class MCabinetPageViewController: UIPageViewController {
 
         self.isDoubleSided = false
         dataSource = self
-        numPages = 5
+        numPages = MArtifactArchive.artifactsByLocation.count
         
         // Create First Page
         currentPageIndex = 0
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        var tempNavController = storyBoard.instantiateViewController(withIdentifier: "navForCabinet") as! UINavigationController
-        var tempViewController = tempNavController.topViewController! as! MCabinetViewController
+        let tempNavController = storyBoard.instantiateViewController(withIdentifier: "navForCabinet") as! UINavigationController
+        let tempViewController = tempNavController.topViewController! as! MCabinetViewController
         tempViewController.dataSource = MCabinetCollectionDataSource()
         setViewControllers([getViewController(index: currentPageIndex)], direction: UIPageViewControllerNavigationDirection.forward, animated: true, completion: nil)
     }
@@ -98,7 +98,7 @@ extension MCabinetPageViewController: UIPageViewControllerDataSource {
 
     // Get Next Page
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        if (currentPageIndex == numPages || currentPageIndex == NSNotFound) {
+        if (currentPageIndex == (numPages - 1) || currentPageIndex == NSNotFound) {
             return nil
         }
         currentPageIndex = currentPageIndex + 1

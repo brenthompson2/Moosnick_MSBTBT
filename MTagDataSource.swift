@@ -45,9 +45,9 @@ class MTagDataSource: NSObject, MTableViewDataSourceProtocol {
     func artifactForindexPath(indexPath: NSIndexPath) -> MArtifact {
         var thisCategory = ""
         // get the section with the correct index
-        for (category, value) in MArtifactArchive.artifactsByTag {
+        for (tag, value) in MArtifactArchive.artifactsByTag {
             if value.0 == indexPath.section {
-                thisCategory = category
+                thisCategory = tag
             }
         }
         return (MArtifactArchive.artifactsByTag[thisCategory]?.1[indexPath.row])!
@@ -86,9 +86,9 @@ class MTagDataSource: NSObject, MTableViewDataSourceProtocol {
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         // get the section that has the same section index as what we are trying to get the name of
-        for (category, value) in MArtifactArchive.artifactsByTag {
+        for (tag, value) in MArtifactArchive.artifactsByTag {
             if value.0 == section {
-                return category
+                return tag
             }
         }
         

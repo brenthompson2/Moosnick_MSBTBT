@@ -12,7 +12,7 @@
 		<key>section</key>
 		<string>Anatomy</string>
 		<key>location</key>
-		<string>TestCabinet</string>
+		<string>TestCabinet1</string>
 		<key>tags</key>
 		<array>
 			<string>Specimens</string>
@@ -28,7 +28,7 @@
 		<key>section</key>
 		<string>Apparati</string>
 		<key>location</key>
-		<string>TestCabinet</string>
+		<string>TestCabinet1</string>
 		<key>tags</key>
 		<array>
 			<string>Astronomy</string>
@@ -44,7 +44,7 @@
 		<key>section</key>
 		<string>Apparati</string>
 		<key>location</key>
-		<string>TestCabinet</string>
+		<string>TestCabinet1</string>
 		<key>tags</key>
 		<array>
 			<string>Navigation</string>
@@ -60,7 +60,7 @@
 		<key>section</key>
 		<string>Anatomy</string>
 		<key>location</key>
-		<string>TestCabinet</string>
+		<string>TestCabinet1</string>
 		<key>tags</key>
 		<array>
 			<string>Specimens</string>
@@ -76,7 +76,7 @@
 		<key>section</key>
 		<string>Anatomy</string>
 		<key>location</key>
-		<string>TestCabinet</string>
+		<string>TestCabinet2</string>
 		<key>tags</key>
 		<array>
 			<string>Specimens</string>
@@ -92,7 +92,7 @@
 		<key>section</key>
 		<string>Apparati</string>
 		<key>location</key>
-		<string>TestCabinet</string>
+		<string>TestCabinet2</string>
 		<key>tags</key>
 		<array>
 			<string>19th Century</string>
@@ -108,7 +108,7 @@
 		<key>section</key>
 		<string>Apparati</string>
 		<key>location</key>
-		<string>TestCabinet</string>
+		<string>TestCabinet2</string>
 		<key>tags</key>
 		<array>
 			<string>20th Century</string>
@@ -125,7 +125,7 @@
 		<key>section</key>
 		<string>Anatomy</string>
 		<key>location</key>
-		<string>TestCabinet</string>
+		<string>TestCabinet2</string>
 		<key>tags</key>
 		<array>
 			<string>19th Century</string>
