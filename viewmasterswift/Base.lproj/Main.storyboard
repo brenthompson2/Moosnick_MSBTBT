@@ -21,15 +21,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cabinetBackground.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="6No-BL-ucM">
-                                <rect key="frame" x="79" y="223" width="676" height="667"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shelf.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tur-6J-fGx">
+                                <rect key="frame" x="35" y="176" width="777" height="136"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shelf.png" translatesAutoresizingMaskIntoConstraints="NO" id="uiQ-QI-vTt">
+                                <rect key="frame" x="37" y="325" width="777" height="136"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="koe-f5-FV1">
-                                <rect key="frame" x="94" y="208" width="646" height="529"/>
+                                <rect key="frame" x="35" y="146" width="765" height="932"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.93445201577828718" green="1" blue="0.93662836371424563" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KNd-wW-1TJ">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="30" minimumInteritemSpacing="10" id="KNd-wW-1TJ">
                                     <size key="itemSize" width="125" height="125"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -50,7 +54,7 @@
                                             </subviews>
                                         </view>
                                         <connections>
-                                            <segue destination="VCy-ha-eFJ" kind="show" id="5ra-ue-d9e"/>
+                                            <segue destination="VCy-ha-eFJ" kind="show" identifier="showDetail" id="5ra-ue-d9e"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -81,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fZ6-p7-FOA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2676" y="1549"/>
+            <point key="canvasLocation" x="-2676.2589928057555" y="1548.5611510791368"/>
         </scene>
         <!--Cabinet Page View Controller-->
         <scene sceneID="QwD-9I-Zmg">
@@ -511,12 +515,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cabinetBackground.jpg" width="600" height="600"/>
         <image name="moosnick cropped-1" width="2442" height="2078"/>
+        <image name="shelf.png" width="510" height="159"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="JRd-wJ-MsW"/>
-        <segue reference="wsd-Hj-8Ju"/>
-        <segue reference="9Dl-Ql-144"/>
+        <segue reference="5ra-ue-d9e"/>
+        <segue reference="NYV-8C-duS"/>
+        <segue reference="nm7-5r-Wym"/>
     </inferredMetricsTieBreakers>
 </document>

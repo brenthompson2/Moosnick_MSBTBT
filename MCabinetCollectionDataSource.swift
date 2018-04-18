@@ -26,7 +26,7 @@ class MCabinetCollectionDataSource: NSObject, MCabinetCollectionDataSourceProtoc
     }
     var navigationBarName: String {
         get {
-            return "Artifacts in Grid"
+            return "Cabinet"
         }
     }
     var tabBarImage: UIImage {
