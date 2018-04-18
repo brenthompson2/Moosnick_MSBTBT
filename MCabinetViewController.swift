@@ -113,7 +113,7 @@ class MCabinetViewController: UIViewController, UICollectionViewDataSource {
             let selectedIndexPath = cabinetCollection?.indexPathsForSelectedItems?.first as NSIndexPath?
             
             // Find the corresponding view controller
-            let aPacket = dataSource!.artifactForIndexPath(indexPath: selectedIndexPath!)
+            let aPacket = artifactForIndexPath(indexPath: selectedIndexPath!)
             let viewController: MArtifactViewController? = segue.destination as? MArtifactViewController
             
             if viewController != nil {
