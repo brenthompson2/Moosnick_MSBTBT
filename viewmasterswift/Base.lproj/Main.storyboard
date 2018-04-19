@@ -155,7 +155,7 @@
                                         <rect key="frame" x="64" y="742" width="707" height="57"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="46"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="706" translatesAutoresizingMaskIntoConstraints="NO" id="75W-Hm-kQE">
@@ -167,7 +167,7 @@ A visiting specialist from the Smithsonian Institution judged Transylvania's col
 
 The museum is open by appointment.  Contact Curator and Physics Professor Jamie Day to schedule one.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -227,7 +227,7 @@ The museum is open by appointment.  Contact Curator and Physics Professor Jamie 
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
                                 <state key="normal" title="Virtual Tour">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="Epe-DY-AlT" kind="show" id="3yB-hT-dv6"/>
@@ -239,7 +239,7 @@ The museum is open by appointment.  Contact Curator and Physics Professor Jamie 
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
                                 <state key="normal" title="View Catalog">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="Dru-eU-4Uy" kind="show" id="rMK-1s-gkJ"/>
@@ -251,17 +251,17 @@ The museum is open by appointment.  Contact Curator and Physics Professor Jamie 
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
                                 <state key="normal" title="History of the Museum">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="OZH-qw-5ZA" kind="show" id="7pM-pE-bVa"/>
+                                    <segue destination="OZH-qw-5ZA" kind="show" animates="NO" id="7pM-pE-bVa"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="348" translatesAutoresizingMaskIntoConstraints="NO" id="e3Q-lt-5U6">
                                 <rect key="frame" x="64" y="742" width="405" height="57"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="46"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
