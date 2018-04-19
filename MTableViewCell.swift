@@ -12,8 +12,8 @@ class MTableViewCell: UITableViewCell {
     var artifact : MArtifact {
         didSet {
             // Associate a packet with the tile view in this cell
-            let artifactTileView = self.contentView.viewWithTag(1) as? MTileView
-            artifactTileView!.artifact = self.artifact
+            let artifactTileView = self.contentView.viewWithTag(1) as? UIImageView
+            artifactTileView!.image = UIImage(named: artifact.imagePath)
             
             // Set the label to the name of the artifact
             var labelView = self.contentView.viewWithTag(2) as? UILabel

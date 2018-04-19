@@ -58,20 +58,18 @@ class MArtifactViewController: UIViewController {
         // https://stackoverflow.com/questions/4272854/uiscrollview-wont-scroll
         scrollView.contentSize = CGSize(width: self.view.bounds.width, height: 2000)
         
-        let preferredPacketViewSize = MArtifactView.preferredViewSize()
-        
-        let viewRect = CGRect(x: (self.view.bounds.width - preferredPacketViewSize.width)/2,
-                              y: (self.view.bounds.height - preferredPacketViewSize.height)/6 - 5,
-                              width: preferredPacketViewSize.width,
-                              height: preferredPacketViewSize.height)
+        // Set the image to be in the top half of the screen space
+        let viewRect = CGRect(x: 0, y: 0,
+                              width: self.view.bounds.width,
+                              height: self.view.bounds.height / 2)
         
         // create the packet view
-        let tempPacketView = MArtifactView(frame: viewRect)
-        self.packetView = tempPacketView
+        packetView = scrollView.viewWithTag(2) as! MArtifactView
+        packetView.frame = viewRect
         
         // add the packet View to the view controller's interface
         // tell the packet view who its controller is
-        self.packetView.artifact = self.myArtifact
+        self.packetView.image = UIImage(named: (myArtifact?.imagePath)!)
         scrollView.addSubview(self.packetView)
         
         self.packetView.viewController = self

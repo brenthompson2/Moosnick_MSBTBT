@@ -21,7 +21,6 @@
 		59617B1A1B1D263A0013149B /* Artifacts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59617B191B1D263A0013149B /* Artifacts.plist */; };
 		59617B1F1B1E10860013149B /* MTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59617B1E1B1E10860013149B /* MTableViewCell.swift */; };
 		597394F4205C247E00C87E03 /* MArtifactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597394F3205C247E00C87E03 /* MArtifactView.swift */; };
-		597394F6205C2EB500C87E03 /* MArtifactFlippedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597394F5205C2EB500C87E03 /* MArtifactFlippedView.swift */; };
 		597394F8205C32BC00C87E03 /* MArtifactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597394F7205C32BC00C87E03 /* MArtifactViewController.swift */; };
 		59E455A11B1B4E3B0061458D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E455A01B1B4E3B0061458D /* AppDelegate.swift */; };
 		59E455A81B1B4E3B0061458D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59E455A61B1B4E3B0061458D /* Main.storyboard */; };
@@ -83,7 +82,6 @@
 		59617B191B1D263A0013149B /* Artifacts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Artifacts.plist; sourceTree = "<group>"; };
 		59617B1E1B1E10860013149B /* MTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTableViewCell.swift; sourceTree = "<group>"; };
 		597394F3205C247E00C87E03 /* MArtifactView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MArtifactView.swift; sourceTree = "<group>"; };
-		597394F5205C2EB500C87E03 /* MArtifactFlippedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MArtifactFlippedView.swift; sourceTree = "<group>"; };
 		597394F7205C32BC00C87E03 /* MArtifactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MArtifactViewController.swift; sourceTree = "<group>"; };
 		59E4559B1B1B4E3B0061458D /* ViewMasterSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewMasterSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59E4559F1B1B4E3B0061458D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -106,7 +104,7 @@
 		9A56AD56207F247B0014E95B /* InductionMachine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InductionMachine.png; sourceTree = "<group>"; };
 		9A5AB62320850DE200C65468 /* MCategorySelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCategorySelectViewController.swift; sourceTree = "<group>"; };
 		9A5B369C2087A0EC00D964DC /* shelf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shelf.png; sourceTree = "<group>"; };
-		9A5B36A02087C63500D964DC /* woodBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = woodBackground.png; path = ../../../Downloads/woodBackground.png; sourceTree = "<group>"; };
+		9A5B36A02087C63500D964DC /* woodBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = woodBackground.png; sourceTree = "<group>"; };
 		9A83A8D520816BC100E24B4D /* MCabinetPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCabinetPageViewController.swift; sourceTree = "<group>"; };
 		9A9A18572077F2B600A0D8A5 /* MTileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTileView.swift; sourceTree = "<group>"; };
 		9A9A18592077F65200A0D8A5 /* VMR-bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VMR-bridging-header.h"; sourceTree = "<group>"; };
@@ -164,7 +162,6 @@
 			isa = PBXGroup;
 			children = (
 				597394F3205C247E00C87E03 /* MArtifactView.swift */,
-				597394F5205C2EB500C87E03 /* MArtifactFlippedView.swift */,
 			);
 			name = "User Interface Elements";
 			sourceTree = "<group>";
@@ -453,7 +450,6 @@
 				9A83A8D620816BC100E24B4D /* MCabinetPageViewController.swift in Sources */,
 				9A56AD43207F09E50014E95B /* MCabinetViewController.swift in Sources */,
 				9ACBB5DE206F001B001E31AB /* MTitleDataSource.swift in Sources */,
-				597394F6205C2EB500C87E03 /* MArtifactFlippedView.swift in Sources */,
 				9A56AD49207F0D510014E95B /* MCabinetCollectionDataSourceProtocol.swift in Sources */,
 				B6A797FA2073D302003AA7B9 /* MArtifact.swift in Sources */,
 				9ACBB5D6206EFF05001E31AB /* MTagDataSource.swift in Sources */,
