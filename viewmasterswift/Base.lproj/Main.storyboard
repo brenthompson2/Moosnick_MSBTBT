@@ -472,7 +472,7 @@ The museum is open by appointment.  Contact Curator and Physics Professor Jamie 
                                         <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="552" translatesAutoresizingMaskIntoConstraints="NO" id="x9Y-d1-qVR">
                                             <rect key="frame" x="286" y="11" width="502" height="122"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -480,10 +480,10 @@ The museum is open by appointment.  Contact Curator and Physics Professor Jamie 
                                             <rect key="frame" x="11" y="11" width="250" height="250"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="560" translatesAutoresizingMaskIntoConstraints="NO" id="Jl9-86-GjR">
-                                            <rect key="frame" x="286" y="130" width="502" height="131"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="560" translatesAutoresizingMaskIntoConstraints="NO" id="Jl9-86-GjR">
+                                            <rect key="frame" x="286" y="141" width="502" height="120"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -670,8 +670,8 @@ The museum is open by appointment.  Contact Curator and Physics Professor Jamie 
         <image name="shelf.png" width="510" height="159"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="JRd-wJ-MsW"/>
+        <segue reference="5ra-ue-d9e"/>
         <segue reference="wsd-Hj-8Ju"/>
-        <segue reference="9Dl-Ql-144"/>
+        <segue reference="nm7-5r-Wym"/>
     </inferredMetricsTieBreakers>
 </document>
