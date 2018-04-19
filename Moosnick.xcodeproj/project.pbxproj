@@ -26,6 +26,7 @@
 		59E455A81B1B4E3B0061458D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59E455A61B1B4E3B0061458D /* Main.storyboard */; };
 		59E455B91B1B4E3B0061458D /* ViewMasterSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E455B81B1B4E3B0061458D /* ViewMasterSwiftTests.swift */; };
 		8F1A5971208904B400D06E0D /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1A5970208904B400D06E0D /* HistoryViewController.swift */; };
+		8F408B2420891309003D95DD /* woodBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F408B2320891309003D95DD /* woodBackground.jpg */; };
 		8FC6A347207E636800DFB7A0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC6A346207E636800DFB7A0 /* HomeViewController.swift */; };
 		9A56AD43207F09E50014E95B /* MCabinetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A56AD42207F09E50014E95B /* MCabinetViewController.swift */; };
 		9A56AD45207F0ADE0014E95B /* cabinetBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A56AD44207F0ADE0014E95B /* cabinetBackground.jpg */; };
@@ -40,7 +41,6 @@
 		9A56AD59207F247C0014E95B /* InductionMachine.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A56AD56207F247B0014E95B /* InductionMachine.png */; };
 		9A5AB62420850DE200C65468 /* MCategorySelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5AB62320850DE200C65468 /* MCategorySelectViewController.swift */; };
 		9A5B369D2087A0EC00D964DC /* shelf.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A5B369C2087A0EC00D964DC /* shelf.png */; };
-		9A5B36A12087C63500D964DC /* woodBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A5B36A02087C63500D964DC /* woodBackground.png */; };
 		9A83A8D620816BC100E24B4D /* MCabinetPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A83A8D520816BC100E24B4D /* MCabinetPageViewController.swift */; };
 		9A9A18582077F2B600A0D8A5 /* MTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9A18572077F2B600A0D8A5 /* MTileView.swift */; };
 		9A9A185B207807BF00A0D8A5 /* MTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9A185A207807BF00A0D8A5 /* MTabBarController.swift */; };
@@ -92,6 +92,7 @@
 		59E455B71B1B4E3B0061458D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59E455B81B1B4E3B0061458D /* ViewMasterSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMasterSwiftTests.swift; sourceTree = "<group>"; };
 		8F1A5970208904B400D06E0D /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		8F408B2320891309003D95DD /* woodBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = woodBackground.jpg; sourceTree = "<group>"; };
 		8FC6A346207E636800DFB7A0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = viewmasterswift/HomeViewController.swift; sourceTree = "<group>"; };
 		9A56AD42207F09E50014E95B /* MCabinetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCabinetViewController.swift; sourceTree = "<group>"; };
 		9A56AD44207F0ADE0014E95B /* cabinetBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cabinetBackground.jpg; sourceTree = "<group>"; };
@@ -106,7 +107,6 @@
 		9A56AD56207F247B0014E95B /* InductionMachine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InductionMachine.png; sourceTree = "<group>"; };
 		9A5AB62320850DE200C65468 /* MCategorySelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCategorySelectViewController.swift; sourceTree = "<group>"; };
 		9A5B369C2087A0EC00D964DC /* shelf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shelf.png; sourceTree = "<group>"; };
-		9A5B36A02087C63500D964DC /* woodBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = woodBackground.png; sourceTree = "<group>"; };
 		9A83A8D520816BC100E24B4D /* MCabinetPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCabinetPageViewController.swift; sourceTree = "<group>"; };
 		9A9A18572077F2B600A0D8A5 /* MTileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTileView.swift; sourceTree = "<group>"; };
 		9A9A18592077F65200A0D8A5 /* VMR-bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VMR-bridging-header.h"; sourceTree = "<group>"; };
@@ -309,7 +309,7 @@
 			isa = PBXGroup;
 			children = (
 				9A56AD44207F0ADE0014E95B /* cabinetBackground.jpg */,
-				9A5B36A02087C63500D964DC /* woodBackground.png */,
+				8F408B2320891309003D95DD /* woodBackground.jpg */,
 				9A5B369C2087A0EC00D964DC /* shelf.png */,
 			);
 			path = Assets;
@@ -395,8 +395,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A5B36A12087C63500D964DC /* woodBackground.png in Resources */,
 				9ACBB5D4206EFD7F001E31AB /* Images.xcassets in Resources */,
+				8F408B2420891309003D95DD /* woodBackground.jpg in Resources */,
 				595A59451B20A121007957A4 /* H83Front_37.png in Resources */,
 				595A58861B2091FC007957A4 /* TabTitle.png in Resources */,
 				9A56AD59207F247C0014E95B /* InductionMachine.png in Resources */,

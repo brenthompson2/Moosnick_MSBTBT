@@ -82,7 +82,7 @@ class MTableViewController: UITableViewController {
     func designInterface(){
         // Set Background = https://stackoverflow.com/questions/36384060/design-uitableview-background-image
         let bgView = UIImageView(frame: tableView.bounds)
-        bgView.image = UIImage(named: "woodBackground")
+        bgView.image = UIImage(named: "woodBackground.jpg")
         tableView.backgroundView = bgView
     }
     

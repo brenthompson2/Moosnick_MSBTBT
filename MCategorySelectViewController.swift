@@ -14,6 +14,11 @@ class MCategorySelectViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        // Set Background = https://stackoverflow.com/questions/6910651/set-background-image-for-a-custom-uiview?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+        // using view = https://stackoverflow.com/questions/33519685/how-to-set-uiviewcontroller-background-image-to-fill-screen?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+        let background = UIImageView(image: UIImage(named: "woodBackground.jpg"))
+        self.view.addSubview(background)
+        self.view.sendSubview(toBack: background)
     }
 
     override func didReceiveMemoryWarning() {
