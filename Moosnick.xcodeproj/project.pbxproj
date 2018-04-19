@@ -27,6 +27,9 @@
 		59E455B91B1B4E3B0061458D /* ViewMasterSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E455B81B1B4E3B0061458D /* ViewMasterSwiftTests.swift */; };
 		8F1A5971208904B400D06E0D /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1A5970208904B400D06E0D /* HistoryViewController.swift */; };
 		8F408B2420891309003D95DD /* woodBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F408B2320891309003D95DD /* woodBackground.jpg */; };
+		8F408B2820891B57003D95DD /* Icon-87.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F408B2520891B56003D95DD /* Icon-87.png */; };
+		8F408B2920891B57003D95DD /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F408B2620891B56003D95DD /* Icon-76.png */; };
+		8F408B2A20891B57003D95DD /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F408B2720891B57003D95DD /* Icon-40.png */; };
 		8FC6A347207E636800DFB7A0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC6A346207E636800DFB7A0 /* HomeViewController.swift */; };
 		9A56AD43207F09E50014E95B /* MCabinetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A56AD42207F09E50014E95B /* MCabinetViewController.swift */; };
 		9A56AD45207F0ADE0014E95B /* cabinetBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A56AD44207F0ADE0014E95B /* cabinetBackground.jpg */; };
@@ -93,6 +96,9 @@
 		59E455B81B1B4E3B0061458D /* ViewMasterSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMasterSwiftTests.swift; sourceTree = "<group>"; };
 		8F1A5970208904B400D06E0D /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		8F408B2320891309003D95DD /* woodBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = woodBackground.jpg; sourceTree = "<group>"; };
+		8F408B2520891B56003D95DD /* Icon-87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-87.png"; sourceTree = "<group>"; };
+		8F408B2620891B56003D95DD /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		8F408B2720891B57003D95DD /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
 		8FC6A346207E636800DFB7A0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = viewmasterswift/HomeViewController.swift; sourceTree = "<group>"; };
 		9A56AD42207F09E50014E95B /* MCabinetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCabinetViewController.swift; sourceTree = "<group>"; };
 		9A56AD44207F0ADE0014E95B /* cabinetBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cabinetBackground.jpg; sourceTree = "<group>"; };
@@ -310,6 +316,9 @@
 			children = (
 				9A56AD44207F0ADE0014E95B /* cabinetBackground.jpg */,
 				8F408B2320891309003D95DD /* woodBackground.jpg */,
+				8F408B2720891B57003D95DD /* Icon-40.png */,
+				8F408B2620891B56003D95DD /* Icon-76.png */,
+				8F408B2520891B56003D95DD /* Icon-87.png */,
 				9A5B369C2087A0EC00D964DC /* shelf.png */,
 			);
 			path = Assets;
@@ -406,17 +415,20 @@
 				9A56AD45207F0ADE0014E95B /* cabinetBackground.jpg in Resources */,
 				9A56AD58207F247C0014E95B /* PlanetaryPaths.png in Resources */,
 				9A56AD4F207F24240014E95B /* BonePathologies.png in Resources */,
+				8F408B2820891B57003D95DD /* Icon-87.png in Resources */,
 				59617B1A1B1D263A0013149B /* Artifacts.plist in Resources */,
 				595A5A321B20B583007957A4 /* TabNumber.png in Resources */,
 				595A59461B20A121007957A4 /* H83Front_256.png in Resources */,
 				9A56AD57207F247C0014E95B /* TwoSmallHumanFigures.png in Resources */,
 				595A5A051B20A14D007957A4 /* K69Front_37.png in Resources */,
+				8F408B2920891B57003D95DD /* Icon-76.png in Resources */,
 				595A5A311B20B583007957A4 /* TabGrid.png in Resources */,
 				595A5A061B20A14D007957A4 /* K69Front_256.png in Resources */,
 				9A56AD51207F24410014E95B /* DetailHumanAnatomy.png in Resources */,
 				9A56AD53207F245E0014E95B /* EarlyCompass.png in Resources */,
 				595A5A041B20A14D007957A4 /* K69Back_256.png in Resources */,
 				595A5A301B20B583007957A4 /* TabCategory.png in Resources */,
+				8F408B2A20891B57003D95DD /* Icon-40.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
