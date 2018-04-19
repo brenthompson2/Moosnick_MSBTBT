@@ -160,11 +160,11 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="706" translatesAutoresizingMaskIntoConstraints="NO" id="75W-Hm-kQE">
                                         <rect key="frame" x="64" y="807" width="706" height="678"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                        <mutableString key="text">The Monroe Moosnick Medical and Science Museum, named after the late Transylvania chemistry professor, displays a portion of the University's extensive holdings of nineteenth-century science artifacts, anatomical models, and botanical paintings that were used to teach the principles of physics, chemistry, and biology. The instruments were purchased in London and Paris from 1820 to about 1850 and brought to Transylvania, where they were used extensively by the students in Transylvania's flourishing medical school, which turned out thousands of doctors.
+                                        <string key="text">The Monroe Moosnick Medical and Science Museum, named after the late Transylvania chemistry professor, displays a portion of the University's extensive holdings of nineteenth-century science artifacts, anatomical models, and botanical paintings that were used to teach the principles of physics, chemistry, and biology. The instruments were purchased in London and Paris from 1820 to about 1850 and brought to Transylvania, where they were used extensively by the students in Transylvania's flourishing medical school, which turned out thousands of doctors.
 
 A visiting specialist from the Smithsonian Institution judged Transylvania's collections to be among the finest in the nation for this time period.
 
-The museum is open by appointment.  Contact Curator and Physics Professor Jamie Day to schedule one.</mutableString>
+The museum is open by appointment.  Contact Curator and Physics Professor Jamie Day to schedule one.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -192,7 +192,7 @@ The museum is open by appointment.  Contact Curator and Physics Professor Jamie 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p99-Ll-EBJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2834.5323741007196" y="-650.1798561151079"/>
+            <point key="canvasLocation" x="-2676" y="-645"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="Jv4-q3-bee">
@@ -284,7 +284,7 @@ The museum is open by appointment.  Contact Curator and Physics Professor Jamie 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ney-tA-yai" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1912.2302158273383" y="-400.35971223021585"/>
+            <point key="canvasLocation" x="-1912" y="-1332"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Rmh-M1-UZT">
