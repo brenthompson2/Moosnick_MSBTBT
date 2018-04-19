@@ -106,6 +106,8 @@ class MArtifactViewController: UIViewController {
         nameLabel.font = UIFont.boldSystemFont(ofSize: 45)
         nameLabel.textColor = UIColor.white
         nameLabel.textAlignment = NSTextAlignment.center
+        nameLabel.lineBreakMode = NSLineBreakMode.byWordWrapping
+        nameLabel.numberOfLines = 3
         
         scrollView.addSubview(nameLabel)
         

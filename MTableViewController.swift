@@ -91,18 +91,18 @@ class MTableViewController: UITableViewController {
     // ======================
     
     // Section Header Background
-    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = UIView()
-        headerView.backgroundColor = UIColor.black
-        return headerView
-    }
+//    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//        let headerView = UIView()
+//        headerView.backgroundColor = UIColor.black
+//        return headerView
+//    }
     
     // Section Header Text = https://stackoverflow.com/questions/31381762/swift-ios-8-change-font-title-of-section-in-a-tableview
-    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-        let header = view as? UITableViewHeaderFooterView
-        header?.textLabel?.font = UIFont(name: "Futura", size: 12) // change it according to ur requirement
-        header?.textLabel?.textColor = UIColor.white // change it according to ur requirement
-    }
+//    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+//        let header = view as? UITableViewHeaderFooterView
+//        header?.textLabel?.font = UIFont(name: "Futura", size: 12) // change it according to ur requirement
+//        header?.textLabel?.textColor = UIColor.white // change it according to ur requirement
+//    }
     
     // Section Header Height
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat
