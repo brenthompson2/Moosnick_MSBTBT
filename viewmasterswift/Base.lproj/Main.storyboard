@@ -84,10 +84,12 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="X3P-Xr-zJM">
                         <barButtonItem key="leftBarButtonItem" title="Back" style="done" id="j1U-Zz-9sr">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Nxf-sx-Q5m">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Nxf-sx-Q5m">
                                 <rect key="frame" x="20" y="7" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.76478248829999995" green="0.2188072331" blue="0.26353253850000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="backBtnPressed:" destination="lyz-SZ-mdC" eventType="touchUpInside" id="Bgn-vt-ziS"/>
                                     <segue destination="RTq-02-THR" kind="show" id="nm7-5r-Wym"/>
@@ -111,10 +113,10 @@
             </objects>
             <point key="canvasLocation" x="-2676" y="96"/>
         </scene>
-        <!--View Controller-->
+        <!--History View Controller-->
         <scene sceneID="1Fy-6t-eOc">
             <objects>
-                <viewController id="OZH-qw-5ZA" sceneMemberID="viewController">
+                <viewController id="OZH-qw-5ZA" customClass="HistoryViewController" customModule="ViewMasterSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BYq-2z-7EF"/>
                         <viewControllerLayoutGuide type="bottom" id="DE4-ay-ZRn"/>
@@ -189,10 +191,41 @@ The museum is open by appointment.  Contact Curator and Physics Professor Jamie 
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <accessibility key="accessibilityConfiguration" label="History Page"/>
                     </view>
+                    <navigationItem key="navigationItem" id="WCl-AG-hvZ">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="f7X-Vq-wnS">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SIJ-eG-byB">
+                                <rect key="frame" x="20" y="7" width="185" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.76478248829999995" green="0.2188072331" blue="0.26353253850000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <connections>
+                                <action selector="backButtonPressed:" destination="OZH-qw-5ZA" id="Z6f-6G-V9l"/>
+                                <segue destination="RTq-02-THR" kind="show" id="2qa-oJ-5aw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p99-Ll-EBJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2676" y="-645"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GNt-GW-dV1">
+            <objects>
+                <navigationController id="Gcw-Gr-xoE" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cJ7-jG-2Kd">
+                        <rect key="frame" x="0.0" y="20" width="834" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="OZH-qw-5ZA" kind="relationship" relationship="rootViewController" id="UKH-t1-NRn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w7N-pu-QeQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2740" y="-1332"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="Jv4-q3-bee">
@@ -262,7 +295,7 @@ The museum is open by appointment.  Contact Curator and Physics Professor Jamie 
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="OZH-qw-5ZA" kind="show" id="UNq-4U-Vse"/>
+                                    <segue destination="Gcw-Gr-xoE" kind="show" id="BGG-0Q-p2k"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="348" translatesAutoresizingMaskIntoConstraints="NO" id="e3Q-lt-5U6">
@@ -378,9 +411,19 @@ The museum is open by appointment.  Contact Curator and Physics Professor Jamie 
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" title="Moosnick" id="rNB-cT-98x">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="rC5-gv-Vt3">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="2sW-lL-pRd">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tap-qZ-17C">
+                                <rect key="frame" x="20" y="7" width="185" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.76478248829999995" green="0.2188072331" blue="0.26353253850000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="RTq-02-THR" kind="show" id="JiP-U7-6mW"/>
+                                </connections>
+                            </button>
                             <connections>
-                                <action selector="backBtnPressed:" destination="Dru-eU-4Uy" id="Uym-iH-Tju"/>
+                                <action selector="backButtonPressed:" destination="Dru-eU-4Uy" id="4ui-12-AW6"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -438,13 +481,6 @@ The museum is open by appointment.  Contact Curator and Physics Professor Jamie 
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="110" translatesAutoresizingMaskIntoConstraints="NO" id="yg6-O8-7JY">
-                                            <rect key="frame" x="286" y="72" width="110" height="22"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="560" translatesAutoresizingMaskIntoConstraints="NO" id="Jl9-86-GjR">
                                             <rect key="frame" x="286" y="108" width="502" height="21"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -469,10 +505,12 @@ The museum is open by appointment.  Contact Curator and Physics Professor Jamie 
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Root View Controller" id="Psp-TE-GYa">
                         <barButtonItem key="leftBarButtonItem" title="Back" style="done" id="duJ-DS-LLV">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BZf-e6-7wQ">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BZf-e6-7wQ">
                                 <rect key="frame" x="20" y="7" width="100" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.76478248829999995" green="0.2188072331" blue="0.26353253850000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="backBtnPressed:" destination="QM7-Xr-R48" eventType="touchUpInside" id="Xsw-lp-UU8"/>
                                 </connections>
@@ -528,10 +566,12 @@ The museum is open by appointment.  Contact Curator and Physics Professor Jamie 
                     </collectionView>
                     <navigationItem key="navigationItem" id="mvt-0U-S2H">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="0nm-Dq-WP6">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hM7-F7-mcR">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hM7-F7-mcR">
                                 <rect key="frame" x="20" y="7" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.76478248829999995" green="0.2188072331" blue="0.26353253850000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="backBtnPressed:" destination="E1m-ri-X1e" eventType="touchUpInside" id="gFc-vC-JeO"/>
                                     <segue destination="RTq-02-THR" kind="show" id="hk8-xS-z26"/>
@@ -625,8 +665,8 @@ The museum is open by appointment.  Contact Curator and Physics Professor Jamie 
         <image name="shelf.png" width="510" height="159"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="GjF-om-gzU"/>
-        <segue reference="NYV-8C-duS"/>
+        <segue reference="JRd-wJ-MsW"/>
+        <segue reference="wsd-Hj-8Ju"/>
         <segue reference="uDV-9S-hYd"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -10,7 +10,7 @@
 		<key>imagePath</key>
 		<string>BonePathologies.png</string>
 		<key>section</key>
-		<string>Anatomy</string>
+		<string>Anatomical Specimens</string>
 		<key>location</key>
 		<string>TestCabinet1</string>
 		<key>tags</key>
@@ -26,7 +26,7 @@
 		<key>imagePath</key>
 		<string>PlanetaryPaths.png</string>
 		<key>section</key>
-		<string>Apparati</string>
+		<string>Physical Apparatuses</string>
 		<key>location</key>
 		<string>TestCabinet1</string>
 		<key>tags</key>
@@ -42,7 +42,7 @@
 		<key>imagePath</key>
 		<string>EarlyCompass.png</string>
 		<key>section</key>
-		<string>Apparati</string>
+		<string>Physical Apparatuses</string>
 		<key>location</key>
 		<string>TestCabinet1</string>
 		<key>tags</key>
@@ -58,7 +58,7 @@
 		<key>imagePath</key>
 		<string>DetailHumanAnatomy.png</string>
 		<key>section</key>
-		<string>Anatomy</string>
+		<string>Anatomical Specimens</string>
 		<key>location</key>
 		<string>TestCabinet1</string>
 		<key>tags</key>
@@ -74,7 +74,7 @@
 		<key>imagePath</key>
 		<string>TwoSmallHumanFigures.png</string>
 		<key>section</key>
-		<string>Anatomy</string>
+		<string>Anatomical Specimens</string>
 		<key>location</key>
 		<string>TestCabinet2</string>
 		<key>tags</key>
@@ -90,7 +90,7 @@
 		<key>imagePath</key>
 		<string>InductionMachine.png</string>
 		<key>section</key>
-		<string>Apparati</string>
+		<string>Physical Apparatuses</string>
 		<key>location</key>
 		<string>TestCabinet2</string>
 		<key>tags</key>
@@ -106,7 +106,7 @@
 		<key>imagePath</key>
 		<string>H83Front_256.png</string>
 		<key>section</key>
-		<string>Apparati</string>
+		<string>Physical Apparatuses</string>
 		<key>location</key>
 		<string>TestCabinet2</string>
 		<key>tags</key>
@@ -123,7 +123,7 @@
 		<key>imagePath</key>
 		<string>K69Front_256.png</string>
 		<key>section</key>
-		<string>Anatomy</string>
+		<string>Anatomical Specimens</string>
 		<key>location</key>
 		<string>TestCabinet2</string>
 		<key>tags</key>

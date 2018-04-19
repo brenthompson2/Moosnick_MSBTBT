@@ -25,6 +25,7 @@
 		59E455A11B1B4E3B0061458D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E455A01B1B4E3B0061458D /* AppDelegate.swift */; };
 		59E455A81B1B4E3B0061458D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59E455A61B1B4E3B0061458D /* Main.storyboard */; };
 		59E455B91B1B4E3B0061458D /* ViewMasterSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E455B81B1B4E3B0061458D /* ViewMasterSwiftTests.swift */; };
+		8F1A5971208904B400D06E0D /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1A5970208904B400D06E0D /* HistoryViewController.swift */; };
 		8FC6A347207E636800DFB7A0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC6A346207E636800DFB7A0 /* HomeViewController.swift */; };
 		9A56AD43207F09E50014E95B /* MCabinetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A56AD42207F09E50014E95B /* MCabinetViewController.swift */; };
 		9A56AD45207F0ADE0014E95B /* cabinetBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A56AD44207F0ADE0014E95B /* cabinetBackground.jpg */; };
@@ -90,6 +91,7 @@
 		59E455B21B1B4E3B0061458D /* ViewMasterSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewMasterSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59E455B71B1B4E3B0061458D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59E455B81B1B4E3B0061458D /* ViewMasterSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMasterSwiftTests.swift; sourceTree = "<group>"; };
+		8F1A5970208904B400D06E0D /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		8FC6A346207E636800DFB7A0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = viewmasterswift/HomeViewController.swift; sourceTree = "<group>"; };
 		9A56AD42207F09E50014E95B /* MCabinetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCabinetViewController.swift; sourceTree = "<group>"; };
 		9A56AD44207F0ADE0014E95B /* cabinetBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cabinetBackground.jpg; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				9A56AD42207F09E50014E95B /* MCabinetViewController.swift */,
 				9A83A8D520816BC100E24B4D /* MCabinetPageViewController.swift */,
 				9A5AB62320850DE200C65468 /* MCategorySelectViewController.swift */,
+				8F1A5970208904B400D06E0D /* HistoryViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 				B6A797FC2073D41D003AA7B9 /* MTag.swift in Sources */,
 				59617B1F1B1E10860013149B /* MTableViewCell.swift in Sources */,
 				5948E5AA1B32037E003EC566 /* MCollectionViewCell.swift in Sources */,
+				8F1A5971208904B400D06E0D /* HistoryViewController.swift in Sources */,
 				9A5AB62420850DE200C65468 /* MCategorySelectViewController.swift in Sources */,
 				597394F8205C32BC00C87E03 /* MArtifactViewController.swift in Sources */,
 				9A56AD4D207F19130014E95B /* MCabinetCollectionDataSource.swift in Sources */,

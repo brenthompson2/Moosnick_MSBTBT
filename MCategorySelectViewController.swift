@@ -21,7 +21,8 @@ class MCategorySelectViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    
+    
     /*
     // MARK: - Navigation
 
@@ -32,7 +33,8 @@ class MCategorySelectViewController: UIViewController {
     }
     */
 
-    @IBAction func backBtnPressed(_ sender: Any) {
+
+    @IBAction func backButtonPressed(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     
