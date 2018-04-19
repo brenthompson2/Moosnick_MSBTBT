@@ -11,7 +11,6 @@
 /*
     Creating Cabinet Collection View
         https://medium.com/yay-its-erica/creating-a-collection-view-swift-3-77da2898bb7c
- 
     1) Create new UIViewController
     2) Add Collection View
         - default background
@@ -23,16 +22,14 @@
     6) Set Controller for Collection View Cell to MCollectionViewCell
     7) Add UIImageView to CollectionViewCell
         - link to code
- 
- 
- 
- 
- 
  */
 
 import UIKit
 
 class MCabinetViewController: UIViewController, UICollectionViewDataSource {
+    
+    var pageIndex: Int!
+    
     var dataSource : MCabinetCollectionDataSourceProtocol? {
         didSet {
             
@@ -54,8 +51,6 @@ class MCabinetViewController: UIViewController, UICollectionViewDataSource {
         super.viewDidLoad()
 
         // self.dataSource = MCabinetCollectionDataSource()
-        
-        print("viewDidLoad")
     }
 
     // Memory Warning
@@ -66,8 +61,13 @@ class MCabinetViewController: UIViewController, UICollectionViewDataSource {
     
     // Number of items in the section is the number of packets
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print("numberOfItemsInSection: \(MArtifactArchive.artifacts.count)")
-        return MArtifactArchive.artifacts.count
+        // Search the artifacts by location list for the array with the correct index, then return its size
+        for (_, value) in MArtifactArchive.artifactsByLocation {
+            if value.0 == section {
+                return value.1.count
+            }
+        }
+        return 0
     }
     
     // Just one section in the grid
@@ -88,7 +88,14 @@ class MCabinetViewController: UIViewController, UICollectionViewDataSource {
     
     // Return the packet for the given index path (--> Take a closer look at this!)
     func artifactForIndexPath(indexPath: NSIndexPath) -> MArtifact {
-        return MArtifactArchive.artifacts[indexPath.row]
+        // Look for the location that corresponds with the index of this page, and use that as the data source
+        var thisLocation = ""
+        for (location, value) in MArtifactArchive.artifactsByLocation {
+            if value.0 == pageIndex {
+                thisLocation = location
+            }
+        }
+        return MArtifactArchive.artifactsByLocation[thisLocation]!.1[indexPath.row]
     }
     
     // Get the new view controller using segue.destinationViewController
@@ -106,8 +113,8 @@ class MCabinetViewController: UIViewController, UICollectionViewDataSource {
             let selectedIndexPath = cabinetCollection?.indexPathsForSelectedItems?.first as NSIndexPath?
             
             // Find the corresponding view controller
-            let aPacket = dataSource!.artifactForIndexPath(indexPath: selectedIndexPath!)
-            var viewController: MArtifactViewController? = segue.destination as? MArtifactViewController
+            let aPacket = artifactForIndexPath(indexPath: selectedIndexPath!)
+            let viewController: MArtifactViewController? = segue.destination as? MArtifactViewController
             
             if viewController != nil {
                 // Hide the bottom tab bar when we push this new view controller

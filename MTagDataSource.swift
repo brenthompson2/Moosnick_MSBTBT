@@ -1,11 +1,11 @@
 //
-//  VMRPacketsSortedByCategoryDataSource.swift
+//  MTagDataSource.swift
 //  Moosnick Museum
 //
 //  Created by Robert England on 3/11/18 for ViewMasterSwift
 //  Copyright (c) 2018 Robert England. All rights reserved.
 //
-//  Description: Provides the table view data for the packets sorted by category
+//  Description: Provides the table view data for the artifacts sorted by tag
 //
 
 import UIKit
@@ -13,9 +13,9 @@ import UIKit
 // Note: Thie *automatically* picks up UITableDataSource protocol through
 //    VMRPacketsTableDataSourceProtocol
 
-class MCategoryDataSource: NSObject, MTableViewDataSourceProtocol {
+class MTagDataSource: NSObject, MTableViewDataSourceProtocol {
     
-    //// Protocol methods to comply with "VMRPacketsDataSource" protocol
+    //// Protocol methods to comply with "MTableViewDataSourceProtocol" protocol
     
     // Getters for properties for navagation and tab bars
     var name: String {
@@ -45,12 +45,12 @@ class MCategoryDataSource: NSObject, MTableViewDataSourceProtocol {
     func artifactForindexPath(indexPath: NSIndexPath) -> MArtifact {
         var thisCategory = ""
         // get the section with the correct index
-        for (category, value) in MArtifactArchive.artifactsByCategory {
+        for (tag, value) in MArtifactArchive.artifactsByTag {
             if value.0 == indexPath.section {
-                thisCategory = category
+                thisCategory = tag
             }
         }
-        return (MArtifactArchive.artifactsByCategory[thisCategory]?.1[indexPath.row])!
+        return (MArtifactArchive.artifactsByTag[thisCategory]?.1[indexPath.row])!
     }
     
 //    #pragma mark - UITableViewDataSource
@@ -70,13 +70,13 @@ class MCategoryDataSource: NSObject, MTableViewDataSourceProtocol {
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        // The number of different sections in thetable depends on how many categories have been used
-        return MArtifactArchive.artifactsByCategory.count
+        // The number of different sections in thetable depends on how many tags have been used
+        return MArtifactArchive.artifactsByTag.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         /// get the section with the correct index
-        for (_, value) in MArtifactArchive.artifactsByCategory {
+        for (_, value) in MArtifactArchive.artifactsByTag {
             if value.0 == section {
                 return value.1.count
             }
@@ -85,9 +85,10 @@ class MCategoryDataSource: NSObject, MTableViewDataSourceProtocol {
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        for (category, value) in MArtifactArchive.artifactsByCategory {
+        // get the section that has the same section index as what we are trying to get the name of
+        for (tag, value) in MArtifactArchive.artifactsByTag {
             if value.0 == section {
-                return category
+                return tag
             }
         }
         

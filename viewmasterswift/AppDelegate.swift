@@ -34,29 +34,8 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     
 //    private func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        // print("Hello?")
-        let packets = VMRViewMasterPackets.sharedViewMasterPackets()
         
         MArtifactArchive.loadArtifactsFromPlist()
-   /**/
-/*        if packets != nil {
-            print("Success in AppDelegate --- found the plist")
-        }
-        else {
-            print("Problems reading plist")
-        }
-        print("Here's the categories: \(VMRViewMasterPackets.packetCategories)")
-        let aCategory = "SHOWTIME"
-        print("Here's a categories dictionary entry: \(VMRViewMasterPackets.categoriesDictionary![aCategory])")
-        print("Here's the whole categories dictionary: \(VMRViewMasterPackets.categoriesDictionary!)")
-        let aLetter = "B"
-        print("Here's the B first letter dictionary: \(VMRViewMasterPackets.titlesIndexDictionary![aLetter])")
-        print("Here's the packets sorted by number: \(VMRViewMasterPackets.packetsSortedByNumber!)")
-*/
-        
-//// Start REAL implementation...
-        
         
         return true
     }

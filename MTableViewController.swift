@@ -10,6 +10,11 @@ import UIKit
 
 @objc(MTableViewController)
 class MTableViewController: UITableViewController {
+    
+    // ======================
+    // Data Source
+    // ======================
+    
     var dataSource : MTableViewDataSourceProtocol? {
         didSet {
             // Set the title and tab bar images from the dataSource object
@@ -23,12 +28,17 @@ class MTableViewController: UITableViewController {
         }
     }
     
+    // ======================
+    // Constructors
+    // ======================
+    
     required init (coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        designInterface()
         
         //MArtifactArchive.loadArtifactsFromPlist()
         
@@ -57,9 +67,57 @@ class MTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
     }
     
-    // Get the new view controller using segue.destinationViewController
-    // Pass the selected object to the new view controller
-    // prepareForSegue...
+    // ======================
+    // Table View Design
+    // ======================
+    
+    // set the height of each row
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        var height: CGFloat
+        height = 275
+        return height
+    }
+    
+    // Table Background
+    func designInterface(){
+        // Set Background = https://stackoverflow.com/questions/36384060/design-uitableview-background-image
+        let bgView = UIImageView(frame: tableView.bounds)
+        bgView.image = UIImage(named: "woodBackground")
+        tableView.backgroundView = bgView
+    }
+    
+    // ======================
+    // Design Section Headers
+    // ======================
+    
+    // Section Header Background
+//    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//        let headerView = UIView()
+//        headerView.backgroundColor = UIColor.black
+//        return headerView
+//    }
+    
+    // Section Header Text = https://stackoverflow.com/questions/31381762/swift-ios-8-change-font-title-of-section-in-a-tableview
+//    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+//        let header = view as? UITableViewHeaderFooterView
+//        header?.textLabel?.font = UIFont(name: "Futura", size: 12) // change it according to ur requirement
+//        header?.textLabel?.textColor = UIColor.white // change it according to ur requirement
+//    }
+    
+    // Section Header Height
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat
+    {
+        return 44
+    }
+    
+    // ======================
+    // Navigation
+    // ======================
+    
+    // Return to Homescreen
+    @IBAction func backBtnPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     // Google: "swift prepareforsegue"
     //https://stackoverflow.com/questions/44790918/swift-prepareforsegue-not-working
@@ -80,17 +138,5 @@ class MTableViewController: UITableViewController {
                 viewController!.myArtifact = aPacket
             }
         }
-    }
-    
-    // set the height of each row to 150 pts
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        var height: CGFloat
-        height = 275
-        return height
-    }
-    
-    // Return to Homescreen
-    @IBAction func backBtnPressed(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
     }
 }
