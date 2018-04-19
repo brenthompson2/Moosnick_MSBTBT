@@ -37,8 +37,7 @@ class MCabinetPageViewController: UIPageViewController {
         // Create First Page
         currentPageIndex = 0
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let tempNavController = storyBoard.instantiateViewController(withIdentifier: "navForCabinet") as! UINavigationController
-        let tempViewController = tempNavController.topViewController! as! MCabinetViewController
+        let tempViewController = storyBoard.instantiateViewController(withIdentifier: "cabinetView") as! MCabinetViewController
         tempViewController.dataSource = MCabinetCollectionDataSource()
         setViewControllers([getViewController(index: currentPageIndex)], direction: UIPageViewControllerNavigationDirection.forward, animated: true, completion: nil)
     }
@@ -53,18 +52,17 @@ class MCabinetPageViewController: UIPageViewController {
     // ====================================
     
     // Returns an MCabinetViewController for the selected index
-    func getViewController(index: Int) -> UINavigationController {
+    func getViewController(index: Int) -> MCabinetViewController {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let tempNavController = storyBoard.instantiateViewController(withIdentifier: "navForCabinet") as! UINavigationController
-        let tempViewController = tempNavController.topViewController! as! MCabinetViewController
+        let tempViewController = storyBoard.instantiateViewController(withIdentifier: "cabinetView") as! MCabinetViewController
 
         // Dont set pageIndex if not valid index
         if (numPages == 0) || (index >= numPages) {
-            return tempNavController
+            return tempViewController
         }
         
         tempViewController.pageIndex = index
-        return tempNavController
+        return tempViewController
     }
     
 

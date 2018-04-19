@@ -23,17 +23,16 @@ class MTabBarController: UITabBarController {
         //    VMRPacketDataSourceProtocol (...and the UITableViewDataSource protocol, too?)
         var _ : MTableViewDataSourceProtocol
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        var tempViewControllers = [UINavigationController]()
+        var tempViewControllers = [UIViewController]()
         
         // Now create our tab bar view controllers.
         // Since we already have one defined in the storyboard, we will create as many instances of it
         //    as we need for the different ways of display, and assign each its own data source.
         
         // Sorted by title...
-        var tempNavController = storyBoard.instantiateViewController(withIdentifier: "navForTableView") as! UINavigationController
-        var tempViewController = tempNavController.topViewController! as! MTableViewController
+        var tempViewController = storyBoard.instantiateViewController(withIdentifier: "catalogTableView") as! MTableViewController
         tempViewController.dataSource = MTitleDataSource()
-        tempViewControllers.append(tempNavController)
+        tempViewControllers.append(tempViewController)
         
         /* //Sorted by number...
         tempNavController = storyBoard.instantiateViewController(withIdentifier: "navForTableView") as! UINavigationController
@@ -42,16 +41,14 @@ class MTabBarController: UITabBarController {
         tempViewControllers.append(tempNavController) */
         
         // Sorted by category...
-        tempNavController = storyBoard.instantiateViewController(withIdentifier: "navForTableView") as! UINavigationController
-        tempViewController = tempNavController.topViewController! as! MTableViewController
+        tempViewController = storyBoard.instantiateViewController(withIdentifier: "catalogTableView") as! MTableViewController
         tempViewController.dataSource = MTagDataSource()
-        tempViewControllers.append(tempNavController)
+        tempViewControllers.append(tempViewController)
         
         // Sorted by number, as a grid...
-        tempNavController = storyBoard.instantiateViewController(withIdentifier: "navForCollectionView") as! UINavigationController
-        let tempGridViewController = tempNavController.topViewController! as! MCollectionViewController
+        let tempGridViewController = storyBoard.instantiateViewController(withIdentifier: "catalogCollectionView") as! MCollectionViewController
         tempGridViewController.dataSource = MCollectionDataSource()
-        tempViewControllers.append(tempNavController)
+        tempViewControllers.append(tempGridViewController)
         // print("Got this far... Grid VC exists")
         
         // Create a custom navigation bar button and set it to always say "Back"
